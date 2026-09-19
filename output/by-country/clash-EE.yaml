@@ -4,22 +4,22 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - sub
   server: 94.183.170.147
   port: 8443
   udp: true
   type: vless
-  uuid: 66ac188b-bd8d-4218-b9ba-0bad0e152cd0
+  uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
   tls: true
   reality-opts:
     public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
     short-id: 72ccd4a7563c2953
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: ''
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - sub
   server: 94.183.170.135
   port: 443
   udp: true
@@ -28,9 +28,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: estproxy4.lockdwn.com
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - sub
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -40,7 +38,17 @@ proxies:
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - sub
+  server: ee1.sferavpn.pro
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cd74c0a406664a5bc0bac098220a2468
+  sni: ee1.sferavpn.pro
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - sub
   server: 109.206.241.10
   port: 449
   udp: true
@@ -48,7 +56,7 @@ proxies:
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   sni: 109.206.241.10
   skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - sub
   server: estomin1.vodniki.monster
   port: 443
   udp: true
@@ -61,17 +69,7 @@ proxies:
     short-id: d98e7afec9c0c359
   servername: estomin1.vodniki.monster
   client-fingerprint: random
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  server: ee1.sferavpn.pro
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: ee1.sferavpn.pro
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - sub
   server: 95.85.224.17
   port: 443
   udp: true
@@ -88,24 +86,24 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - sub
 rules:
 - MATCH,PROXIES
