@@ -4,71 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - sub",
-      "server": "172.67.231.254",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
+      "server": "freesocks.work",
+      "server_port": 2052,
+      "uuid": "c2e317b0-0847-4579-9b78-7b678634ffc4",
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/@BlueKnight_net--@BlueKnight_net",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "uwu.blueknightnet.qzz.io"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 02 - sub",
-      "server": "172.67.231.254",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 03 - sub",
-      "server": "172.64.150.28",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 04 - sub",
-      "server": "172.64.150.28",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
       }
     },
     {
@@ -76,20 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - sub",
-        "🌐 其他地区 (Other) 02 - sub",
-        "🌐 其他地区 (Other) 03 - sub",
-        "🌐 其他地区 (Other) 04 - sub"
+        "🌐 其他地区 (Other) 01 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - sub",
-        "🌐 其他地区 (Other) 02 - sub",
-        "🌐 其他地区 (Other) 03 - sub",
-        "🌐 其他地区 (Other) 04 - sub"
+        "🌐 其他地区 (Other) 01 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,66 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - sub
-  server: 172.67.231.254
-  port: 443
+  server: freesocks.work
+  port: 2052
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
+  type: vless
+  uuid: c2e317b0-0847-4579-9b78-7b678634ffc4
   network: ws
   ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 02 - sub
-  server: 172.67.231.254
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌐 其他地区 (Other) 03 - sub
-  server: 172.64.150.28
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 04 - sub
-  server: 172.64.150.28
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
+    path: /@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - sub
-  - 🌐 其他地区 (Other) 02 - sub
-  - 🌐 其他地区 (Other) 03 - sub
-  - 🌐 其他地区 (Other) 04 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - sub
-  - 🌐 其他地区 (Other) 02 - sub
-  - 🌐 其他地区 (Other) 03 - sub
-  - 🌐 其他地区 (Other) 04 - sub
 rules:
 - MATCH,PROXIES

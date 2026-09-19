@@ -5,34 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - sub
-  server: 195.238.126.84
-  port: 9039
+  server: 195.238.126.20
+  port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
+  password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - sub
   server: 195.238.126.20
-  port: 9045
+  port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
+  password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - sub
-  server: 103.139.51.21
-  port: 443
+  server: 195.238.126.20
+  port: 9068
   udp: true
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: auth.figmafound.org
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - sub
-  server: 103.139.51.51
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - sub
+  server: cloud.figmafound.org
   port: 443
   udp: true
   type: vless
@@ -43,48 +44,15 @@ proxies:
     public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
     short-id: 711ad7f475c35e5e
   servername: cloud.figmafound.org
-  client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - sub
-  server: 103.139.51.41
-  port: 443
-  udp: true
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: mail.figmafound.org
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇱🇹 立陶宛 (Lithuania) 06 - sub
   server: 195.238.126.20
-  port: 9012
+  port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
+  password: b8KkNDjEd5QqFyRm
 - name: 🇱🇹 立陶宛 (Lithuania) 07 - sub
-  server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - sub
-  server: api.figmafound.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: api.figmafound.org
-  client-fingerprint: random
-- name: 🇱🇹 立陶宛 (Lithuania) 09 - sub
   server: lt.aether-runet.top
   port: 443
   udp: true
@@ -96,6 +64,19 @@ proxies:
     public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
     short-id: 4fa44664f6a566d3
   servername: lt.aether-runet.top
+  client-fingerprint: firefox
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - sub
+  server: auth.figmafound.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
+    short-id: 711ad7f475c35e5e
+  servername: auth.figmafound.org
   client-fingerprint: random
 proxy-groups:
 - name: PROXIES
@@ -110,7 +91,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 06 - sub
   - 🇱🇹 立陶宛 (Lithuania) 07 - sub
   - 🇱🇹 立陶宛 (Lithuania) 08 - sub
-  - 🇱🇹 立陶宛 (Lithuania) 09 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,6 +104,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 06 - sub
   - 🇱🇹 立陶宛 (Lithuania) 07 - sub
   - 🇱🇹 立陶宛 (Lithuania) 08 - sub
-  - 🇱🇹 立陶宛 (Lithuania) 09 - sub
 rules:
 - MATCH,PROXIES

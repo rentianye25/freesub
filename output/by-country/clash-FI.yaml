@@ -5,24 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - sub
-  server: 185.79.138.71
-  port: 448
-  udp: true
-  type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 - sub
   server: 82.47.186.18
   port: 19290
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: o2rw2hICwu1blrr_gZAl2Q
+- name: 🇫🇮 芬兰 (Finland) 02 - sub
+  server: 87.58.148.70
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: rg0g3xp9rk9nk9o0
 - name: 🇫🇮 芬兰 (Finland) 03 - sub
   server: 95.216.27.15
   port: 2053
@@ -34,8 +29,21 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - sub
+  server: 62.238.103.54
+  port: 2083
+  udp: true
+  type: vless
+  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
+    short-id: d059fb98048c5318
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - sub
   server: 144.31.150.111
   port: 443
   udp: true
@@ -48,32 +56,7 @@ proxies:
     short-id: cdf67af2
   servername: vera.kyras.pw
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - sub
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 06 - sub
-  server: est1313.ggisopi.su
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - sub
   server: 31.77.199.182
   port: 443
   udp: true
@@ -85,22 +68,22 @@ proxies:
     public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
     short-id: abcd1234
   servername: fi2.yservice.help
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 08 - sub
-  server: 196.196.206.38
-  port: 443
+  client-fingerprint: random
+- name: 🇫🇮 芬兰 (Finland) 07 - sub
+  server: 31.77.199.147
+  port: 4443
   udp: true
   type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
-    short-id: d110331f200987ae
-  servername: finkafsb.finiki.lol
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 09 - sub
-  server: jujujuj.mervi.icu
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: random
+- name: 🇫🇮 芬兰 (Finland) 08 - sub
+  server: 31.76.80.238
   port: 443
   udp: true
   type: vless
@@ -111,8 +94,8 @@ proxies:
     public-key: j7_ysAZxK5vBkMqvu0r8_UUuR3Qp7Yml3fXFDGR5x3w
     short-id: 573703f224b75e8c
   servername: jujujuj.mervi.icu
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 10 - sub
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 09 - sub
   server: 37.143.129.244
   port: 443
   udp: true
@@ -125,6 +108,53 @@ proxies:
     short-id: 48fd192dc4e46bc0
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 10 - sub
+  server: 196.196.206.38
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
+    short-id: d110331f200987ae
+  servername: finkafsb.finiki.lol
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 11 - sub
+  server: 185.79.138.71
+  port: 448
+  udp: true
+  type: vless
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  tls: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 12 - sub
+  server: est1313.ggisopi.su
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 13 - sub
+  server: 13.143.129.130
+  port: 23719
+  udp: true
+  type: hysteria2
+  password: 1d0be037-f650-4d33-b683-0fec61b2ccc3
+  sni: 13.143.129.130
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: gCytSLRsXmPSJIPLCtQz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -140,6 +170,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 08 - sub
   - 🇫🇮 芬兰 (Finland) 09 - sub
   - 🇫🇮 芬兰 (Finland) 10 - sub
+  - 🇫🇮 芬兰 (Finland) 11 - sub
+  - 🇫🇮 芬兰 (Finland) 12 - sub
+  - 🇫🇮 芬兰 (Finland) 13 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -155,5 +188,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 08 - sub
   - 🇫🇮 芬兰 (Finland) 09 - sub
   - 🇫🇮 芬兰 (Finland) 10 - sub
+  - 🇫🇮 芬兰 (Finland) 11 - sub
+  - 🇫🇮 芬兰 (Finland) 12 - sub
+  - 🇫🇮 芬兰 (Finland) 13 - sub
 rules:
 - MATCH,PROXIES

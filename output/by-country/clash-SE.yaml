@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - sub
-  server: 193.42.39.10
+  server: 79.141.174.147
   port: 33743
   udp: true
   type: vless
@@ -19,15 +19,6 @@ proxies:
   grpc-opts:
     grpc-service-name: TunService
 - name: 🇸🇪 瑞典 (Sweden) 02 - sub
-  server: 143.246.194.60
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 03 - sub
   server: 143.246.195.138
   port: 8081
   udp: true
@@ -36,18 +27,24 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 04 - sub
-  server: 34.51.172.152
-  port: 443
+- name: 🇸🇪 瑞典 (Sweden) 03 - sub
+  server: 143.246.195.98
+  port: 8081
   udp: true
   type: vless
-  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
-  tls: true
-  reality-opts:
-    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
-    short-id: b4a6faed784ff461
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇸🇪 瑞典 (Sweden) 04 - sub
+  server: 143.246.194.60
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 - name: 🇸🇪 瑞典 (Sweden) 05 - sub
   server: se-node.rumedia-cdn.com
   port: 25443
@@ -55,28 +52,36 @@ proxies:
   type: hysteria2
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   sni: cf2.rumedia-cdn.com
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 06 - sub
-  server: se2.belka.network
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 192776da-1743-4724-b342-96dafa2eb54e
-  sni: se2.belka.network
   skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 06 - sub
+  server: 91.193.17.156
+  port: 9458
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 - name: 🇸🇪 瑞典 (Sweden) 07 - sub
-  server: 177.3.215.171
+  server: 95.129.236.239
   port: 443
   udp: true
   type: vless
-  uuid: c47b421f-65f1-4190-b7ba-bd2045086fe4
-  flow: xtls-rprx-vision
+  uuid: bdc4d14a-2315-4d4e-9fbb-c692cc14da3f
   tls: true
-  reality-opts:
-    public-key: diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI
-    short-id: 7f2e9c4b1a8d6e53
-  servername: yahoo.com
-  client-fingerprint: firefox
+  servername: wiki.solarinfra.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /stream/615428/socket
+    headers:
+      Host: wiki.solarinfra.net
 - name: 🇸🇪 瑞典 (Sweden) 08 - sub
   server: svvedko.nxxzxaw.beer
   port: 443
@@ -90,20 +95,6 @@ proxies:
     short-id: fb442438e2223836
   servername: svvedko.nxxzxaw.beer
   client-fingerprint: random
-- name: 🇸🇪 瑞典 (Sweden) 09 - sub
-  server: 91.193.17.156
-  port: 9458
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -117,7 +108,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - sub
   - 🇸🇪 瑞典 (Sweden) 07 - sub
   - 🇸🇪 瑞典 (Sweden) 08 - sub
-  - 🇸🇪 瑞典 (Sweden) 09 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -131,6 +121,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - sub
   - 🇸🇪 瑞典 (Sweden) 07 - sub
   - 🇸🇪 瑞典 (Sweden) 08 - sub
-  - 🇸🇪 瑞典 (Sweden) 09 - sub
 rules:
 - MATCH,PROXIES

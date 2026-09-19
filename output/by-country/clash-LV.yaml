@@ -6,53 +6,53 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - sub
   server: 185.135.86.175
+  port: 9082
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - sub
+  server: 185.135.86.175
   port: 9033
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: UTJA57ypk2XKQpnm
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - sub
-  server: 185.135.86.175
-  port: 9036
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - sub
-  server: 185.135.86.175
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - sub
   server: 185.135.86.175
   port: 9034
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: Yg4MbdXFQ9HFFVY6
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - sub
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - sub
   server: 185.135.86.175
   port: 9017
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: HAVAdE3nXhqA5nHp
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - sub
+  server: 185.135.86.175
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇻 拉脱维亚 (Latvia) 06 - sub
   server: 185.135.86.175
-  port: 9082
+  port: 9036
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
+  password: hbtvgUz5uNYyB3Rf
 - name: 🇱🇻 拉脱维亚 (Latvia) 07 - sub
   server: 185.135.86.175
-  port: 9094
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: rpgbNnU9rDDU4aWZ
+  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇻 拉脱维亚 (Latvia) 08 - sub
   server: 185.135.86.175
   port: 9007
@@ -72,21 +72,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 10 - sub
-  server: shprcdn.quest
-  port: 10443
-  udp: true
-  type: vless
-  uuid: a85ddf9f-329b-4c31-a80a-cd0f2e5b2a30
-  tls: true
-  reality-opts:
-    public-key: KoNQ52irUOW-fybKx-gUKCuHpMnHhgQ_skjd8TmqJ2k
-  servername: shprcdn.quest
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: google.storage.v2.Storage
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,7 +87,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 07 - sub
   - 🇱🇻 拉脱维亚 (Latvia) 08 - sub
   - 🇱🇻 拉脱维亚 (Latvia) 09 - sub
-  - 🇱🇻 拉脱维亚 (Latvia) 10 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,6 +101,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 07 - sub
   - 🇱🇻 拉脱维亚 (Latvia) 08 - sub
   - 🇱🇻 拉脱维亚 (Latvia) 09 - sub
-  - 🇱🇻 拉脱维亚 (Latvia) 10 - sub
 rules:
 - MATCH,PROXIES

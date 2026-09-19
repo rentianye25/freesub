@@ -15,7 +15,7 @@
         "server_name": "usa.oblaco.bet",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -36,7 +36,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -46,28 +46,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - sub",
-      "server": "34.158.23.115",
-      "server_port": 443,
-      "uuid": "a18f08dc-76ae-453a-98f5-d41eab7e649b",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "f8aV8naD8NKt_mLKaOou0qUrIM1Ge25kJNxywpF3OB0",
-          "short_id": "d016c76007f78038"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - sub",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - sub",
       "server": "82.38.64.229",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
@@ -79,18 +59,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - sub",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - sub",
       "server": "151.242.2.81",
       "server_port": 443,
       "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
       "tls": {
         "enabled": true,
         "server_name": "cf9.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -102,47 +78,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - sub",
-      "server": "34.65.191.159",
-      "server_port": 443,
-      "uuid": "bd93a117-2e9d-4e1e-b9b9-69d8d7089bdb",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DE-S0R0KYYTuBsuQmT-iip6rJ2QsuH6z3SJYlsNyUUI",
-          "short_id": "5214a92cad4ad90e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 07 - sub",
-      "server": "helvetica.pelmexo.ir",
-      "server_port": 7911,
-      "uuid": "23ddda0f-6333-493a-839d-f9c8e561f7e4",
-      "tls": {
-        "enabled": true,
-        "server_name": "play-apps-features.googleusercontent.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3WnHdv9A0tNParChTLxPnDteRD841h8thOGR7MBgAhY",
-          "short_id": ""
-        }
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - sub",
+      "server": "131.123.34.145",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 08 - sub",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - sub",
       "server": "152.67.75.161",
       "server_port": 443,
       "password": "3a702d4d1de4949005d8431220e040fb",
@@ -166,9 +113,7 @@
         "🇨🇭 瑞士 (Switzerland) 03 - sub",
         "🇨🇭 瑞士 (Switzerland) 04 - sub",
         "🇨🇭 瑞士 (Switzerland) 05 - sub",
-        "🇨🇭 瑞士 (Switzerland) 06 - sub",
-        "🇨🇭 瑞士 (Switzerland) 07 - sub",
-        "🇨🇭 瑞士 (Switzerland) 08 - sub"
+        "🇨🇭 瑞士 (Switzerland) 06 - sub"
       ]
     },
     {
@@ -180,9 +125,7 @@
         "🇨🇭 瑞士 (Switzerland) 03 - sub",
         "🇨🇭 瑞士 (Switzerland) 04 - sub",
         "🇨🇭 瑞士 (Switzerland) 05 - sub",
-        "🇨🇭 瑞士 (Switzerland) 06 - sub",
-        "🇨🇭 瑞士 (Switzerland) 07 - sub",
-        "🇨🇭 瑞士 (Switzerland) 08 - sub"
+        "🇨🇭 瑞士 (Switzerland) 06 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
