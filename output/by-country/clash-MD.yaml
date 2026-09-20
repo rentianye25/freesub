@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇩 摩尔多瓦 (Moldova) 01 🔓2 - sub
-  server: 143.246.216.64
+  server: 143.246.219.51
   port: 8081
   udp: true
   type: vless

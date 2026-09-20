@@ -5,26 +5,53 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔓2 - sub
-  server: 185.136.12.190
-  port: 443
+  server: 162.159.24.131
+  port: 2095
   udp: true
   type: vless
-  uuid: 2cca8201-c93e-40eb-bd8a-fea4170c169e
-  flow: xtls-rprx-vision
-  tls: true
-  servername: deu683.lackerdeu.org
-  skip-cert-verify: false
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 🔓2 - sub
+  server: 162.159.38.127
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 🔓2 - sub
+  server: 172.64.53.55
+  port: 2082
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔓2 - sub
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 🔓2 - sub
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔓2 - sub
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 🔓2 - sub
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 🔓2 - sub
 rules:
 - MATCH,PROXIES
