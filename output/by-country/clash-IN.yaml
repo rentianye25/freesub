@@ -28,16 +28,8 @@ proxies:
     public-key: QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI
     short-id: 221873918e0bb74d
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: edge
 - name: 🇮🇳 印度 (India) 03 🔓2 - sub
-  server: 35.154.58.87
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-in-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 04 🔓2 - sub
   server: 34.47.245.203
   port: 443
   udp: true
@@ -49,6 +41,14 @@ proxies:
     short-id: 50440423703c945f
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 04 🔓2 - sub
+  server: 35.154.58.87
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-in-001.fastervpn.world
+  skip-cert-verify: true
 - name: 🇮🇳 印度 (India) 05 🔓2 - sub
   server: 13.207.151.141
   port: 443
