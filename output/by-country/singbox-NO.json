@@ -22,7 +22,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -56,7 +56,7 @@
       "tag": "🇳🇴 挪威 (Norway) 04 🔓2 - sub",
       "server": "151.242.168.125",
       "server_port": 390,
-      "uuid": "7b363f9c-3df9-4b60-a789-9cd36be0bdfe",
+      "uuid": "b02ff150-ee30-46e0-9ea1-adbfd7762a06",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -73,26 +73,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇳🇴 挪威 (Norway) 05 🔓2 - sub",
-      "server": "185.125.171.128",
-      "server_port": 8443,
-      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "server": "46.8.210.129",
+      "server_port": 22443,
+      "password": "2a3b101d-d8f9-40e7-9373-b0ef487c0035",
       "tls": {
         "enabled": true,
-        "server_name": "kkkk-xcd.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "kkkk-xcd.pages.dev"
-        }
+        "server_name": "disk.api-yandex.net",
+        "insecure": false
       }
     },
     {

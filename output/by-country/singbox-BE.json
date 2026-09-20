@@ -5,7 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 🔓2 - sub",
+      "tag": "🇧🇪 比利时 (Belgium) 01 🔓1 - sub",
+      "server": "172.67.155.136",
+      "server_port": 2086,
+      "uuid": "73796e63-0000-4000-8000-000000000007",
+      "transport": {
+        "type": "ws",
+        "path": "/sync ",
+        "headers": {
+          "Host": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇪 比利时 (Belgium) 02 🔓2 - sub",
       "server": "172.67.155.136",
       "server_port": 2095,
       "uuid": "73796e63-0000-4000-8000-000000000008",
@@ -18,34 +32,11 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 02 🔓2 - sub",
-      "server": "141.227.137.177",
-      "server_port": 2053,
-      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
-      "tls": {
-        "enabled": true,
-        "server_name": "kkkk-xcd.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "kkkk-xcd.pages.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 🔓2 - sub",
+        "🇧🇪 比利时 (Belgium) 01 🔓1 - sub",
         "🇧🇪 比利时 (Belgium) 02 🔓2 - sub"
       ]
     },
@@ -53,7 +44,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 🔓2 - sub",
+        "🇧🇪 比利时 (Belgium) 01 🔓1 - sub",
         "🇧🇪 比利时 (Belgium) 02 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
