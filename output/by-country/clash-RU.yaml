@@ -4,85 +4,112 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - sub
-  server: 164.92.147.213
-  port: 2087
+- name: 🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub
+  server: 188.114.97.6
+  port: 8080
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
+  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
   network: ws
   ws-opts:
-    path: /city/my?ed=2560
+    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
     headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 02 - sub
+      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
+- name: 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
+  server: 172.67.156.87
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4ccf70f9-7632-4b5a-9557-10d2dd347bb2
+  tls: true
+  servername: tO6R63-kkCHIgHQM2.vXZ0dDUq7to7SU0cdQF.wOrKERS.Dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/VEyizgqHTVJUF3AcZhYc7j0dW3wCfGYE?ed=2560
+    headers:
+      Host: to6r63-kkchighqm2.vxz0dduq7to7su0cdqf.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
+  server: 94.249.187.46
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+- name: 🇷🇺 俄罗斯 (Russia) 04 🔓1 - sub
+  server: 94.249.187.46
+  port: 2086
+  udp: true
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
+- name: 🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
+- name: 🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - sub
-  server: msk.frkn.org
-  port: 443
-  udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
+  sni: itsallproxy.quattro-tech.ru
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 04 - sub
-  server: ru.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: fdd503fe-9cef-4c91-948a-8149a7c8a2d2
-  sni: ru.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - sub
-  server: 45.12.75.242
-  port: 26424
+- name: 🇷🇺 俄罗斯 (Russia) 07 🔓1 - sub
+  server: 188.130.209.151
+  port: 444
   udp: true
   type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  uuid: 83fdcfab-711d-49c2-b998-4b1561f7eab2
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 06 - sub
-  server: 31.76.71.252
-  port: 443
+    public-key: P7F65GjTQGZju-N8CVHtlKNaWebVe_76Xt7Lm00RuH0
+  servername: vextor.win
+  client-fingerprint: safari
+- name: 🇷🇺 俄罗斯 (Russia) 08 🔓2 - sub
+  server: 130.49.189.158
+  port: 45433
   udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: gta.internet-card.sbs
-  skip-cert-verify: true
+  type: vless
+  uuid: 4ea67585-c211-4358-9173-cbdff7a6aede
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dfJb8gJq6IRsE1KMsfZp5tNLiwBNQMbSl5NF1z5dq3c
+    short-id: 5e101cd5
+  servername: addons.mozilla.org
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - sub
-  - 🇷🇺 俄罗斯 (Russia) 02 - sub
-  - 🇷🇺 俄罗斯 (Russia) 03 - sub
-  - 🇷🇺 俄罗斯 (Russia) 04 - sub
-  - 🇷🇺 俄罗斯 (Russia) 05 - sub
-  - 🇷🇺 俄罗斯 (Russia) 06 - sub
+  - 🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 04 🔓1 - sub
+  - 🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 07 🔓1 - sub
+  - 🇷🇺 俄罗斯 (Russia) 08 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - sub
-  - 🇷🇺 俄罗斯 (Russia) 02 - sub
-  - 🇷🇺 俄罗斯 (Russia) 03 - sub
-  - 🇷🇺 俄罗斯 (Russia) 04 - sub
-  - 🇷🇺 俄罗斯 (Russia) 05 - sub
-  - 🇷🇺 俄罗斯 (Russia) 06 - sub
+  - 🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 04 🔓1 - sub
+  - 🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 07 🔓1 - sub
+  - 🇷🇺 俄罗斯 (Russia) 08 🔓2 - sub
 rules:
 - MATCH,PROXIES

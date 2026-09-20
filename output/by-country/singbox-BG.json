@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - sub",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01 🔓2 - sub",
       "server": "192.145.31.5",
       "server_port": 443,
       "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
@@ -14,28 +14,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - sub",
-      "server": "192.145.31.5",
-      "server_port": 8443,
-      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
-      "tls": {
-        "enabled": true,
-        "server_name": "neth9.lunariai.ru",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 🔓2 - sub",
+      "server": "213.183.63.60",
+      "server_port": 9085,
+      "method": "aes-256-cfb",
+      "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - sub",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 🔓2 - sub",
       "server": "193.148.59.178",
       "server_port": 443,
       "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
@@ -56,18 +44,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - sub",
-      "server": "131.123.39.29",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 🔓2 - sub",
+      "server": "neth9.lunariai.ru",
+      "server_port": 8443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "neth9.lunariai.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - sub",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 🔓2 - sub",
       "server": "131.123.41.31",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
@@ -78,50 +71,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - sub",
-      "server": "131.123.41.18",
-      "server_port": 443,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sheetpeek.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo",
-          "short_id": "84be686ea1d16478"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - sub",
-      "server": "131.123.41.18",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - sub",
-      "server": "131.123.37.199",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - sub",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 🔓2 - sub",
       "server": "131.123.39.29",
       "server_port": 443,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
@@ -142,8 +92,120 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - sub",
-      "server": "144.31.50.236",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 🔓2 - sub",
+      "server": "131.123.41.18",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 🔓2 - sub",
+      "server": "131.123.39.29",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 🔒 - sub",
+      "server": "108.165.233.223",
+      "server_port": 443,
+      "uuid": "2388e166-3890-33ae-f77e-efac00000001",
+      "tls": {
+        "enabled": true,
+        "server_name": "netlivpn4813.ddhshhshs.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "netlivpn4813.ddhshhshs.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 🔓2 - sub",
+      "server": "131.123.41.18",
+      "server_port": 443,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "sheetpeek.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo",
+          "short_id": "84be686ea1d16478"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 11 🔓2 - sub",
+      "server": "104.152.48.248",
+      "server_port": 443,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tls": {
+        "enabled": true,
+        "server_name": "kkkk-8oc.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "kkkk-8oc.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 12 🔓2 - sub",
+      "server": "104.19.106.19",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-4beea30ea96c",
+      "tls": {
+        "enabled": true,
+        "server_name": "4cz9gseouyns.2iz1ile4upks.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/4beea30ea96c/loc-0",
+        "headers": {
+          "Host": "4cz9gseouyns.2iz1ile4upks.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 13 🔓2 - sub",
+      "server": "prep.wwwinternetvideo.click",
       "server_port": 443,
       "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
       "flow": "xtls-rprx-vision",
@@ -166,32 +228,38 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 04 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 05 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 06 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 09 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 10 - sub"
+        "🇧🇬 保加利亚 (Bulgaria) 01 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 02 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 03 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 04 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 05 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 06 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 07 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 08 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 09 🔒 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 10 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 11 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 12 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 13 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 03 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 04 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 05 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 06 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 09 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 10 - sub"
+        "🇧🇬 保加利亚 (Bulgaria) 01 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 02 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 03 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 04 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 05 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 06 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 07 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 08 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 09 🔒 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 10 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 11 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 12 🔓2 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 13 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

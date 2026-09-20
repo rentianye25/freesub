@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇷 希腊 (Greece) 01 - sub",
+      "tag": "🇬🇷 希腊 (Greece) 01 🔓2 - sub",
       "server": "185.126.238.87",
       "server_port": 2083,
       "uuid": "7668f678-faee-40cc-9b56-9c39dc773388",
@@ -16,7 +16,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇷 希腊 (Greece) 02 - sub",
+      "tag": "🇬🇷 希腊 (Greece) 02 🔓2 - sub",
       "server": "85.90.197.220",
       "server_port": 443,
       "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
@@ -26,7 +26,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -36,20 +36,45 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇬🇷 希腊 (Greece) 03 🔓2 - sub",
+      "server": "38.54.29.210",
+      "server_port": 2053,
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "tls": {
+        "enabled": true,
+        "server_name": "kkkk-xcd.pages.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2048",
+        "headers": {
+          "Host": "kkkk-xcd.pages.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 希腊 (Greece) 01 - sub",
-        "🇬🇷 希腊 (Greece) 02 - sub"
+        "🇬🇷 希腊 (Greece) 01 🔓2 - sub",
+        "🇬🇷 希腊 (Greece) 02 🔓2 - sub",
+        "🇬🇷 希腊 (Greece) 03 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 希腊 (Greece) 01 - sub",
-        "🇬🇷 希腊 (Greece) 02 - sub"
+        "🇬🇷 希腊 (Greece) 01 🔓2 - sub",
+        "🇬🇷 希腊 (Greece) 02 🔓2 - sub",
+        "🇬🇷 希腊 (Greece) 03 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

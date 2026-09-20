@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 01 - sub",
+      "tag": "🇨🇦 加拿大 (Canada) 01 🔓2 - sub",
       "server": "149.22.95.183",
       "server_port": 443,
       "method": "aes-128-gcm",
@@ -13,31 +13,31 @@
     },
     {
       "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 02 - sub",
-      "server": "23.162.200.198",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 03 - sub",
-      "server": "yyz-ca-01.blncvpn4u.cc",
-      "server_port": 9443,
-      "method": "aes-256-gcm",
-      "password": "eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 04 - sub",
+      "tag": "🇨🇦 加拿大 (Canada) 02 🔓2 - sub",
       "server": "134.195.196.211",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 03 🔓2 - sub",
+      "server": "51.79.64.198",
+      "server_port": 8119,
+      "method": "aes-256-gcm",
+      "password": "cdBIDV42DCwnfIN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 04 🔓2 - sub",
+      "server": "51.222.107.43",
+      "server_port": 2083,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs="
+    },
+    {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 05 - sub",
+      "tag": "🇨🇦 加拿大 (Canada) 05 🔓2 - sub",
       "server": "216.152.147.28",
       "server_port": 443,
       "uuid": "d9e4721d-cdac-44c7-bc91-117367eac194",
@@ -57,28 +57,60 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 06 🔓2 - sub",
+      "server": "51.222.12.127",
+      "server_port": 445,
+      "method": "aes-256-gcm",
+      "password": "zDNVedRFPQexG9v"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 加拿大 (Canada) 07 🔓2 - sub",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 08 🔓2 - sub",
+      "server": "yyz-ca-01.blncvpn4u.cc",
+      "server_port": 9443,
+      "method": "aes-256-gcm",
+      "password": "eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇨🇦 加拿大 (Canada) 06 - sub",
+      "tag": "🇨🇦 加拿大 (Canada) 09 🔓2 - sub",
       "server": "15.223.122.197",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "t.me",
+        "server_name": "15.223.122.197",
         "insecure": true
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 07 - sub",
-      "server": "51.222.200.165",
-      "server_port": 5000,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
+      "tag": "🇨🇦 加拿大 (Canada) 10 🔓2 - sub",
+      "server": "15.235.75.71",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "FD3rCuOsxOay"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 11 🔓2 - sub",
+      "server": "137.184.174.93",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 08 - sub",
+      "tag": "🇨🇦 加拿大 (Canada) 12 🔓2 - sub",
       "server": "130.107.73.148",
       "server_port": 41373,
       "uuid": "a71c8954-66a8-4321-bedb-2336230d81ce",
@@ -99,31 +131,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 09 - sub",
-      "server": "15.235.75.71",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "FD3rCuOsxOay"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 10 - sub",
+      "tag": "🇨🇦 加拿大 (Canada) 13 🔓2 - sub",
       "server": "138.197.141.58",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 11 - sub",
-      "server": "137.184.174.93",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 12 - sub",
+      "tag": "🇨🇦 加拿大 (Canada) 14 🔓2 - sub",
       "server": "158.69.112.254",
       "server_port": 443,
       "uuid": "661f395d-b153-4199-a04b-693f5fe7f261",
@@ -133,7 +149,7 @@
         "server_name": "www.speedtest.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -143,28 +159,16 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 13 - sub",
-      "server": "66.70.179.198",
-      "server_port": 2053,
-      "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU",
-          "short_id": "83f8317a948bb769"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 15 🔓2 - sub",
+      "server": "51.79.49.116",
+      "server_port": 8882,
+      "method": "aes-256-gcm",
+      "password": "kDWvXYZoTBcGkC4"
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 14 - sub",
+      "tag": "🇨🇦 加拿大 (Canada) 16 🔓2 - sub",
       "server": "209.200.246.148",
       "server_port": 443,
       "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
@@ -174,7 +178,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -185,7 +189,59 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 15 - sub",
+      "tag": "🇨🇦 加拿大 (Canada) 17 🔓2 - sub",
+      "server": "66.70.179.198",
+      "server_port": 2053,
+      "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU",
+          "short_id": "83f8317a948bb769"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 18 🔓2 - sub",
+      "server": "lizca2.footballfantasyforum.com",
+      "server_port": 443,
+      "uuid": "716426fa-bcb7-4eb9-b460-36399ebf740d",
+      "tls": {
+        "enabled": true,
+        "server_name": "lizca2.footballfantasyforum.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇦 加拿大 (Canada) 19 🔓2 - sub",
+      "server": "docs.fastline-labs.com",
+      "server_port": 443,
+      "password": "334f25ef-3fb7-44a0-8ab7-79527d613281",
+      "tls": {
+        "enabled": true,
+        "server_name": "docs.fastline-labs.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 20 🔓2 - sub",
+      "server": "51.222.200.165",
+      "server_port": 5000,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 21 🔓2 - sub",
       "server": "66.70.179.124",
       "server_port": 443,
       "uuid": "c8f9e08d-7d07-4059-9f71-0b014b9e0ec7",
@@ -206,16 +262,16 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 16 - sub",
-      "server": "51.222.107.43",
-      "server_port": 2083,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs="
+      "tag": "🇨🇦 加拿大 (Canada) 22 🔓2 - sub",
+      "server": "51.222.136.236",
+      "server_port": 8882,
+      "method": "aes-256-gcm",
+      "password": "kDWvXYZoTBcGkC4"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 17 - sub",
-      "server": "51.222.12.127",
+      "tag": "🇨🇦 加拿大 (Canada) 23 🔓2 - sub",
+      "server": "51.222.141.125",
       "server_port": 445,
       "method": "aes-256-gcm",
       "password": "zDNVedRFPQexG9v"
@@ -225,46 +281,58 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇦 加拿大 (Canada) 01 - sub",
-        "🇨🇦 加拿大 (Canada) 02 - sub",
-        "🇨🇦 加拿大 (Canada) 03 - sub",
-        "🇨🇦 加拿大 (Canada) 04 - sub",
-        "🇨🇦 加拿大 (Canada) 05 - sub",
-        "🇨🇦 加拿大 (Canada) 06 - sub",
-        "🇨🇦 加拿大 (Canada) 07 - sub",
-        "🇨🇦 加拿大 (Canada) 08 - sub",
-        "🇨🇦 加拿大 (Canada) 09 - sub",
-        "🇨🇦 加拿大 (Canada) 10 - sub",
-        "🇨🇦 加拿大 (Canada) 11 - sub",
-        "🇨🇦 加拿大 (Canada) 12 - sub",
-        "🇨🇦 加拿大 (Canada) 13 - sub",
-        "🇨🇦 加拿大 (Canada) 14 - sub",
-        "🇨🇦 加拿大 (Canada) 15 - sub",
-        "🇨🇦 加拿大 (Canada) 16 - sub",
-        "🇨🇦 加拿大 (Canada) 17 - sub"
+        "🇨🇦 加拿大 (Canada) 01 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 02 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 03 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 04 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 05 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 06 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 07 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 08 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 09 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 10 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 11 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 12 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 13 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 14 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 15 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 16 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 17 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 18 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 19 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 20 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 21 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 22 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 23 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇦 加拿大 (Canada) 01 - sub",
-        "🇨🇦 加拿大 (Canada) 02 - sub",
-        "🇨🇦 加拿大 (Canada) 03 - sub",
-        "🇨🇦 加拿大 (Canada) 04 - sub",
-        "🇨🇦 加拿大 (Canada) 05 - sub",
-        "🇨🇦 加拿大 (Canada) 06 - sub",
-        "🇨🇦 加拿大 (Canada) 07 - sub",
-        "🇨🇦 加拿大 (Canada) 08 - sub",
-        "🇨🇦 加拿大 (Canada) 09 - sub",
-        "🇨🇦 加拿大 (Canada) 10 - sub",
-        "🇨🇦 加拿大 (Canada) 11 - sub",
-        "🇨🇦 加拿大 (Canada) 12 - sub",
-        "🇨🇦 加拿大 (Canada) 13 - sub",
-        "🇨🇦 加拿大 (Canada) 14 - sub",
-        "🇨🇦 加拿大 (Canada) 15 - sub",
-        "🇨🇦 加拿大 (Canada) 16 - sub",
-        "🇨🇦 加拿大 (Canada) 17 - sub"
+        "🇨🇦 加拿大 (Canada) 01 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 02 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 03 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 04 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 05 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 06 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 07 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 08 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 09 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 10 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 11 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 12 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 13 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 14 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 15 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 16 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 17 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 18 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 19 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 20 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 21 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 22 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 23 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
