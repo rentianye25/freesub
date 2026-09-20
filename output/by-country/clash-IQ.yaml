@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 🔓1 - sub
-  server: soskeynets.ghydgdbdbddvv.workers.dev
+- name: 🇮🇶 IQ 01 🔓2 - sub
+  server: 63.141.128.22
   port: 443
   udp: true
   type: vless
-  uuid: 07821f66-cdb7-4c70-9de6-e230cffac470
+  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
   tls: true
-  servername: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
+  servername: misty-tooth-78ca.fobogah414-e7b.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/Li1khIHH3DNItJyzraemsPBQvu
+    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
     headers:
-      Host: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
+      Host: misty-tooth-78ca.fobogah414-e7b.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 🔓1 - sub
+  - 🇮🇶 IQ 01 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 🔓1 - sub
+  - 🇮🇶 IQ 01 🔓2 - sub
 rules:
 - MATCH,PROXIES

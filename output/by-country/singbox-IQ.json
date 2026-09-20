@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 🔓1 - sub",
-      "server": "soskeynets.ghydgdbdbddvv.workers.dev",
+      "tag": "🇮🇶 IQ 01 🔓2 - sub",
+      "server": "63.141.128.22",
       "server_port": 443,
-      "uuid": "07821f66-cdb7-4c70-9de6-e230cffac470",
+      "uuid": "b8b01773-36b1-4b49-9bd0-6249f52345b4",
       "tls": {
         "enabled": true,
-        "server_name": "wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev",
+        "server_name": "misty-tooth-78ca.fobogah414-e7b.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/Li1khIHH3DNItJyzraemsPBQvu",
+        "path": "/eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
         "headers": {
-          "Host": "wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev"
+          "Host": "misty-tooth-78ca.fobogah414-e7b.workers.dev"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 🔓1 - sub"
+        "🇮🇶 IQ 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 🔓1 - sub"
+        "🇮🇶 IQ 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

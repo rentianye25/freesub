@@ -26,21 +26,6 @@ proxies:
     short-id: 94acb54627612d43
   servername: www.cloudflare.com
   client-fingerprint: ios
-- name: 🇬🇷 希腊 (Greece) 03 🔓1 - sub
-  server: 91.186.218.227
-  port: 4443
-  udp: true
-  type: vless
-  uuid: c4aba2a4-ce37-4133-a3bb-7fe23a21ea95
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇬🇷 希腊 (Greece) 01 🔓2 - sub
   - 🇬🇷 希腊 (Greece) 02 🔓2 - sub
-  - 🇬🇷 希腊 (Greece) 03 🔓1 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇬🇷 希腊 (Greece) 01 🔓2 - sub
   - 🇬🇷 希腊 (Greece) 02 🔓2 - sub
-  - 🇬🇷 希腊 (Greece) 03 🔓1 - sub
 rules:
 - MATCH,PROXIES

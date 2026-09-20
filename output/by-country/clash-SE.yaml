@@ -14,20 +14,6 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇸🇪 瑞典 (Sweden) 02 🔓2 - sub
-  server: 91.193.17.156
-  port: 9458
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 03 🔓2 - sub
   server: 143.246.195.98
   port: 8081
   udp: true
@@ -36,7 +22,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 04 🔓2 - sub
+- name: 🇸🇪 瑞典 (Sweden) 03 🔓2 - sub
   server: 143.246.194.60
   port: 8081
   udp: true
@@ -45,7 +31,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 05 🔓2 - sub
+- name: 🇸🇪 瑞典 (Sweden) 04 🔓2 - sub
   server: svvedko.nxxzxaw.beer
   port: 443
   udp: true
@@ -58,33 +44,6 @@ proxies:
     short-id: fb442438e2223836
   servername: svvedko.nxxzxaw.beer
   client-fingerprint: random
-- name: 🇸🇪 瑞典 (Sweden) 06 🔓2 - sub
-  server: 79.141.174.147
-  port: 33743
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 07 🔒 - sub
-  server: se.belka.network
-  port: 443
-  udp: true
-  type: vless
-  uuid: c47b421f-65f1-4190-b7ba-bd2045086fe4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI
-    short-id: 7f2e9c4b1a8d6e53
-  servername: yahoo.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,9 +53,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 03 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 04 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 05 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 06 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 07 🔒 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -106,8 +62,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 03 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 04 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 05 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 06 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 07 🔒 - sub
 rules:
 - MATCH,PROXIES

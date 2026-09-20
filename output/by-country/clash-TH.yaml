@@ -14,8 +14,8 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 02 🔓1 - sub
+      Host: ais.speedtest.net
+- name: 🇹🇭 泰国 (Thailand) 02 🔓2 - sub
   server: 34.15.162.1
   port: 443
   udp: true
@@ -26,9 +26,9 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: random
 - name: 🇹🇭 泰国 (Thailand) 03 🔓2 - sub
-  server: 104.19.32.166
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
@@ -41,21 +41,38 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 (Thailand) 04 🔓2 - sub
+  server: 8.222.84.103
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /member/discount?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 🔓2 - sub
-  - 🇹🇭 泰国 (Thailand) 02 🔓1 - sub
+  - 🇹🇭 泰国 (Thailand) 02 🔓2 - sub
   - 🇹🇭 泰国 (Thailand) 03 🔓2 - sub
+  - 🇹🇭 泰国 (Thailand) 04 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 🔓2 - sub
-  - 🇹🇭 泰国 (Thailand) 02 🔓1 - sub
+  - 🇹🇭 泰国 (Thailand) 02 🔓2 - sub
   - 🇹🇭 泰国 (Thailand) 03 🔓2 - sub
+  - 🇹🇭 泰国 (Thailand) 04 🔓2 - sub
 rules:
 - MATCH,PROXIES

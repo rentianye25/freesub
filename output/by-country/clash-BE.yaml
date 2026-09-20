@@ -4,41 +4,48 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 比利时 (Belgium) 01 🔓1 - sub
-  server: 172.67.155.136
-  port: 2086
+- name: 🇧🇪 比利时 (Belgium) 01 🔓2 - sub
+  server: 95.85.89.70
+  port: 81
   udp: true
   type: vless
-  uuid: 73796e63-0000-4000-8000-000000000007
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: '/sync '
+    path: /trade?ed=2560fp=chrome
     headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+      Host: cdn8848.776676.xyz
 - name: 🇧🇪 比利时 (Belgium) 02 🔓2 - sub
-  server: 172.67.155.136
-  port: 2095
+  server: 193.181.216.117
+  port: 2053
   udp: true
   type: vless
-  uuid: 73796e63-0000-4000-8000-000000000008
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /sync
+    path: /payment?ed=2560fp=chrome
     headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 比利时 (Belgium) 01 🔓1 - sub
+  - 🇧🇪 比利时 (Belgium) 01 🔓2 - sub
   - 🇧🇪 比利时 (Belgium) 02 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 比利时 (Belgium) 01 🔓1 - sub
+  - 🇧🇪 比利时 (Belgium) 01 🔓2 - sub
   - 🇧🇪 比利时 (Belgium) 02 🔓2 - sub
 rules:
 - MATCH,PROXIES
