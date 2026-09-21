@@ -4,18 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 01 🔓2 - sub",
-      "server": "151.101.56.7",
-      "server_port": 443,
-      "password": "MiTIVPN",
+      "server": "185.125.100.76",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
+        "server_name": "cdn8848.776676.xyz",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,34 +20,15 @@
       },
       "transport": {
         "type": "ws",
+        "path": "/trade/game/movies",
         "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-22e.global.ssl.fastly.net"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 02 🔓2 - sub",
-      "server": "35.199.90.53",
-      "server_port": 443,
-      "uuid": "e9c2ed7f-79ab-40a8-8910-24468f5da712",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw",
-          "short_id": "4b414f69a06e1e81"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 03 🔓2 - sub",
       "server": "34.39.174.220",
       "server_port": 443,
       "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
@@ -74,8 +52,7 @@
       "outbounds": [
         "auto",
         "🇧🇷 巴西 (Brazil) 01 🔓2 - sub",
-        "🇧🇷 巴西 (Brazil) 02 🔓2 - sub",
-        "🇧🇷 巴西 (Brazil) 03 🔓2 - sub"
+        "🇧🇷 巴西 (Brazil) 02 🔓2 - sub"
       ]
     },
     {
@@ -83,8 +60,7 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇷 巴西 (Brazil) 01 🔓2 - sub",
-        "🇧🇷 巴西 (Brazil) 02 🔓2 - sub",
-        "🇧🇷 巴西 (Brazil) 03 🔓2 - sub"
+        "🇧🇷 巴西 (Brazil) 02 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

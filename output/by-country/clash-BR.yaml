@@ -5,29 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 🔓2 - sub
-  server: 151.101.56.7
-  port: 443
-  udp: true
-  type: trojan
-  password: MiTIVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇧🇷 巴西 (Brazil) 02 🔓2 - sub
-  server: 35.199.90.53
-  port: 443
+  server: 185.125.100.76
+  port: 8443
   udp: true
   type: vless
-  uuid: e9c2ed7f-79ab-40a8-8910-24468f5da712
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  reality-opts:
-    public-key: 0WXz3PJQnr-KprrwiO5BlKVRdqA4ZS6U5jGHc_aeJnw
-    short-id: 4b414f69a06e1e81
-  servername: www.cloudflare.com
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇧🇷 巴西 (Brazil) 03 🔓2 - sub
+  network: ws
+  ws-opts:
+    path: /trade/game/movies
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇧🇷 巴西 (Brazil) 02 🔓2 - sub
   server: 34.39.174.220
   port: 443
   udp: true
@@ -46,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 🔓2 - sub
   - 🇧🇷 巴西 (Brazil) 02 🔓2 - sub
-  - 🇧🇷 巴西 (Brazil) 03 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 🔓2 - sub
   - 🇧🇷 巴西 (Brazil) 02 🔓2 - sub
-  - 🇧🇷 巴西 (Brazil) 03 🔓2 - sub
 rules:
 - MATCH,PROXIES
