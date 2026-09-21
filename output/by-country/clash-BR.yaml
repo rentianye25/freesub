@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 🔓2 - sub
+  server: 151.101.56.7
+  port: 443
+  udp: true
+  type: trojan
+  password: MiTIVPN
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇧🇷 巴西 (Brazil) 02 🔓2 - sub
   server: 35.199.90.53
   port: 443
   udp: true
@@ -16,7 +27,7 @@ proxies:
     short-id: 4b414f69a06e1e81
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇧🇷 巴西 (Brazil) 02 🔓2 - sub
+- name: 🇧🇷 巴西 (Brazil) 03 🔓2 - sub
   server: 34.39.174.220
   port: 443
   udp: true
@@ -35,6 +46,7 @@ proxy-groups:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 🔓2 - sub
   - 🇧🇷 巴西 (Brazil) 02 🔓2 - sub
+  - 🇧🇷 巴西 (Brazil) 03 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +54,6 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 🔓2 - sub
   - 🇧🇷 巴西 (Brazil) 02 🔓2 - sub
+  - 🇧🇷 巴西 (Brazil) 03 🔓2 - sub
 rules:
 - MATCH,PROXIES

@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇩 摩尔多瓦 (Moldova) 01 🔓1 - sub
-  server: moldova.cdn-europe.org
-  port: 4443
+- name: 🇮🇪 爱尔兰 (Ireland) 01 🔓2 - sub
+  server: 3.9.135.156
+  port: 51847
   udp: true
   type: vless
-  uuid: d7c94b82-657a-4bb7-9b24-2ae566669835
+  uuid: 391a01e9-b664-407b-9158-610fab3f5920
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: cYwrRCz_hKgT_JE8WywuLE3XOkAEqCTuBiUvXAaEjn8
-    short-id: 694ee64512cfcbef
-  servername: moldova.cdn-europe.org
+    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
+    short-id: 0eec442e7b34d2f2
+  servername: www.tesla.com
   client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇩 摩尔多瓦 (Moldova) 01 🔓1 - sub
+  - 🇮🇪 爱尔兰 (Ireland) 01 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇩 摩尔多瓦 (Moldova) 01 🔓1 - sub
+  - 🇮🇪 爱尔兰 (Ireland) 01 🔓2 - sub
 rules:
 - MATCH,PROXIES

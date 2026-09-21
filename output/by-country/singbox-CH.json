@@ -4,29 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01 🔓2 - sub",
-      "server": "138.124.60.146",
-      "server_port": 443,
-      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "usa.oblaco.bet",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub",
+      "tag": "🇨🇭 瑞士 (Switzerland) 01 🔓2 - sub",
       "server": "82.38.64.229",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
@@ -38,7 +17,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -48,7 +27,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -59,8 +38,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 🔓1 - sub",
-      "server": "ch.cache-4d8a.com",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 🔓1 - sub",
+      "server": "179.43.162.252",
       "server_port": 443,
       "uuid": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
       "flow": "xtls-rprx-vision",
@@ -69,7 +48,7 @@
         "server_name": "ch.cache-4d8a.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -80,7 +59,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 🔓2 - sub",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub",
       "server": "151.242.2.81",
       "server_port": 443,
       "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
@@ -95,7 +74,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/cdn/v3/live"
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "cf9.rumedia-cdn.com"
+        }
       }
     },
     {
@@ -105,9 +87,8 @@
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 🔓2 - sub",
         "🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub",
-        "🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub",
-        "🇨🇭 瑞士 (Switzerland) 04 🔓1 - sub",
-        "🇨🇭 瑞士 (Switzerland) 05 🔓2 - sub"
+        "🇨🇭 瑞士 (Switzerland) 03 🔓1 - sub",
+        "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub"
       ]
     },
     {
@@ -116,9 +97,8 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 🔓2 - sub",
         "🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub",
-        "🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub",
-        "🇨🇭 瑞士 (Switzerland) 04 🔓1 - sub",
-        "🇨🇭 瑞士 (Switzerland) 05 🔓2 - sub"
+        "🇨🇭 瑞士 (Switzerland) 03 🔓1 - sub",
+        "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

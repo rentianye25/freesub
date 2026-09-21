@@ -4,8 +4,33 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇧🇷 巴西 (Brazil) 01 🔓2 - sub",
+      "server": "151.101.56.7",
+      "server_port": 443,
+      "password": "MiTIVPN",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "mitivpn---ss--s---mitivpn-22e.global.ssl.fastly.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 02 🔓2 - sub",
       "server": "35.199.90.53",
       "server_port": 443,
       "uuid": "e9c2ed7f-79ab-40a8-8910-24468f5da712",
@@ -25,7 +50,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 02 🔓2 - sub",
+      "tag": "🇧🇷 巴西 (Brazil) 03 🔓2 - sub",
       "server": "34.39.174.220",
       "server_port": 443,
       "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
@@ -49,7 +74,8 @@
       "outbounds": [
         "auto",
         "🇧🇷 巴西 (Brazil) 01 🔓2 - sub",
-        "🇧🇷 巴西 (Brazil) 02 🔓2 - sub"
+        "🇧🇷 巴西 (Brazil) 02 🔓2 - sub",
+        "🇧🇷 巴西 (Brazil) 03 🔓2 - sub"
       ]
     },
     {
@@ -57,7 +83,8 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇷 巴西 (Brazil) 01 🔓2 - sub",
-        "🇧🇷 巴西 (Brazil) 02 🔓2 - sub"
+        "🇧🇷 巴西 (Brazil) 02 🔓2 - sub",
+        "🇧🇷 巴西 (Brazil) 03 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
