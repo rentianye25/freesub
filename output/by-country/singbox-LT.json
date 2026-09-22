@@ -5,15 +5,23 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - sub",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 🔓2 - sub",
       "server": "195.238.126.20",
-      "server_port": 9068,
+      "server_port": 9011,
       "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - sub",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 🔓2 - sub",
+      "server": "195.238.126.20",
+      "server_port": 9002,
+      "method": "aes-256-cfb",
+      "password": "b8KkNDjEd5QqFyRm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 🔓2 - sub",
       "server": "195.238.126.20",
       "server_port": 9012,
       "method": "aes-256-cfb",
@@ -21,7 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - sub",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 🔓2 - sub",
       "server": "84.32.215.5",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
@@ -45,18 +53,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - sub",
-        "🇱🇹 立陶宛 (Lithuania) 02 - sub",
-        "🇱🇹 立陶宛 (Lithuania) 03 - sub"
+        "🇱🇹 立陶宛 (Lithuania) 01 🔓2 - sub",
+        "🇱🇹 立陶宛 (Lithuania) 02 🔓2 - sub",
+        "🇱🇹 立陶宛 (Lithuania) 03 🔓2 - sub",
+        "🇱🇹 立陶宛 (Lithuania) 04 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - sub",
-        "🇱🇹 立陶宛 (Lithuania) 02 - sub",
-        "🇱🇹 立陶宛 (Lithuania) 03 - sub"
+        "🇱🇹 立陶宛 (Lithuania) 01 🔓2 - sub",
+        "🇱🇹 立陶宛 (Lithuania) 02 🔓2 - sub",
+        "🇱🇹 立陶宛 (Lithuania) 03 🔓2 - sub",
+        "🇱🇹 立陶宛 (Lithuania) 04 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

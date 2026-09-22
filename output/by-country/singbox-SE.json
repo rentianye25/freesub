@@ -5,15 +5,55 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 - sub",
+      "tag": "🇸🇪 瑞典 (Sweden) 01 🔓2 - sub",
+      "server": "13.61.0.108",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 🔓2 - sub",
+      "server": "16.171.55.2",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 🔓2 - sub",
       "server": "70.34.212.124",
       "server_port": 8388,
       "method": "aes-256-gcm",
       "password": "AxIYWtskJWIIaefW"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub",
+      "server": "16.170.221.224",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 🔓1 - sub",
+      "server": "16.170.163.124",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 🔓2 - sub",
+      "server": "16.170.214.108",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - sub",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 🔓2 - sub",
       "server": "193.42.39.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -22,7 +62,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -33,68 +73,11 @@
       "transport": {
         "type": "grpc",
         "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - sub",
-      "server": "143.246.196.152",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - sub",
-      "server": "143.246.195.98",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - sub",
-      "server": "91.193.17.156",
-      "server_port": 9458,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - sub",
-      "server": "143.246.195.138",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - sub",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 🔓2 - sub",
       "server": "se-node.rumedia-cdn.com",
       "server_port": 25443,
       "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
@@ -106,8 +89,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - sub",
-      "server": "143.246.194.60",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 🔓2 - sub",
+      "server": "143.246.195.98",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
@@ -116,32 +99,87 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 10 🔓2 - sub",
+      "server": "143.246.195.138",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇸🇪 瑞典 (Sweden) 11 🔓2 - sub",
+      "server": "svip.skycon808.com",
+      "server_port": 60005,
+      "password": "13f0acfa-38c1-4e82-a758-583aa31740df",
+      "tls": {
+        "enabled": true,
+        "server_name": "xjp18.2uuzhe.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 12 🔓2 - sub",
+      "server": "91.193.17.156",
+      "server_port": 9458,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - sub",
-        "🇸🇪 瑞典 (Sweden) 02 - sub",
-        "🇸🇪 瑞典 (Sweden) 03 - sub",
-        "🇸🇪 瑞典 (Sweden) 04 - sub",
-        "🇸🇪 瑞典 (Sweden) 05 - sub",
-        "🇸🇪 瑞典 (Sweden) 06 - sub",
-        "🇸🇪 瑞典 (Sweden) 07 - sub",
-        "🇸🇪 瑞典 (Sweden) 08 - sub"
+        "🇸🇪 瑞典 (Sweden) 01 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 02 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 03 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 05 🔓1 - sub",
+        "🇸🇪 瑞典 (Sweden) 06 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 07 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 08 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 09 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 10 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 11 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 12 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - sub",
-        "🇸🇪 瑞典 (Sweden) 02 - sub",
-        "🇸🇪 瑞典 (Sweden) 03 - sub",
-        "🇸🇪 瑞典 (Sweden) 04 - sub",
-        "🇸🇪 瑞典 (Sweden) 05 - sub",
-        "🇸🇪 瑞典 (Sweden) 06 - sub",
-        "🇸🇪 瑞典 (Sweden) 07 - sub",
-        "🇸🇪 瑞典 (Sweden) 08 - sub"
+        "🇸🇪 瑞典 (Sweden) 01 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 02 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 03 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 05 🔓1 - sub",
+        "🇸🇪 瑞典 (Sweden) 06 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 07 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 08 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 09 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 10 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 11 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 12 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

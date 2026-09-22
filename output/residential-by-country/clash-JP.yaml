@@ -4,32 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) - sub
-  server: 57.129.52.47
-  port: 52014
+- name: 🇯🇵 日本 (Japan) 01 (家宽) 🔓2 - sub
+  server: 210.152.85.154
+  port: 19364
   udp: true
   type: vless
-  uuid: ecc4675b-1607-4699-8b20-23af97b671af
+  uuid: 342200c2-4bb1-4906-8615-3aea59e178a0
   tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristiflow=
+    path: /@Marisa_kristi
     headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) - sub
+  - 🇯🇵 日本 (Japan) 01 (家宽) 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) - sub
+  - 🇯🇵 日本 (Japan) 01 (家宽) 🔓2 - sub
 rules:
 - MATCH,PROXIES

@@ -4,14 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇰 丹麦 (Denmark) 01 - sub
+- name: 🇩🇰 丹麦 (Denmark) 01 🔓2 - sub
   server: 38.180.214.110
   port: 5600
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
-- name: 🇩🇰 丹麦 (Denmark) 02 - sub
+- name: 🇩🇰 丹麦 (Denmark) 02 🔓2 - sub
   server: se.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -24,14 +24,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇩🇰 丹麦 (Denmark) 01 - sub
-  - 🇩🇰 丹麦 (Denmark) 02 - sub
+  - 🇩🇰 丹麦 (Denmark) 01 🔓2 - sub
+  - 🇩🇰 丹麦 (Denmark) 02 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇰 丹麦 (Denmark) 01 - sub
-  - 🇩🇰 丹麦 (Denmark) 02 - sub
+  - 🇩🇰 丹麦 (Denmark) 01 🔓2 - sub
+  - 🇩🇰 丹麦 (Denmark) 02 🔓2 - sub
 rules:
 - MATCH,PROXIES

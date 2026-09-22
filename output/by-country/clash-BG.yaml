@@ -4,70 +4,63 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01 - sub
-  server: 213.183.63.60
-  port: 9098
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - sub
+- name: 🇧🇬 保加利亚 (Bulgaria) 01 🔓2 - sub
   server: 213.183.63.60
   port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - sub
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 🔓2 - sub
   server: 213.183.63.60
-  port: 9061
+  port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - sub
-  server: 213.183.63.60
-  port: 9029
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - sub
-  server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - sub
-  server: 213.183.63.60
-  port: 9049
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - sub
-  server: 213.183.63.60
-  port: 9066
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - sub
-  server: 213.183.63.60
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - sub
+  password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 🔓2 - sub
   server: 213.183.63.60
   port: 9085
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 10 - sub
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 🔓2 - sub
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 🔒 - sub
+  server: 213.183.63.60
+  port: 9061
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 🔓2 - sub
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 🔓2 - sub
+  server: 213.183.63.60
+  port: 9066
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 2KUaE2a8NWTvuCZ3
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 🔓2 - sub
+  server: 213.183.63.60
+  port: 9049
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 🔓2 - sub
   server: 193.148.59.178
   port: 443
   udp: true
@@ -80,34 +73,7 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 11 - sub
-  server: 131.123.41.31
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 12 - sub
-  server: 131.123.37.199
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 13 - sub
-  server: 131.123.41.18
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 14 - sub
+- name: 🇧🇬 保加利亚 (Bulgaria) 10 🔓2 - sub
   server: 131.123.41.177
   port: 8081
   udp: true
@@ -116,7 +82,25 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 15 - sub
+- name: 🇧🇬 保加利亚 (Bulgaria) 11 🔓2 - sub
+  server: 131.123.41.18
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇧🇬 保加利亚 (Bulgaria) 12 🔓2 - sub
+  server: 131.123.37.199
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇧🇬 保加利亚 (Bulgaria) 13 🔓2 - sub
   server: 131.123.41.18
   port: 443
   udp: true
@@ -129,22 +113,16 @@ proxies:
     short-id: 84be686ea1d16478
   servername: sheetpeek.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 16 - sub
-  server: 108.165.233.223
-  port: 443
+- name: 🇧🇬 保加利亚 (Bulgaria) 14 🔓2 - sub
+  server: 131.123.41.31
+  port: 8081
   udp: true
   type: vless
-  uuid: 2388e166-3890-33ae-f77e-efac00000001
-  tls: true
-  servername: netlivpn4813.ddhshhshs.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   network: ws
   ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-- name: 🇧🇬 保加利亚 (Bulgaria) 17 - sub
+    path: /vless-test
+- name: 🇧🇬 保加利亚 (Bulgaria) 15 🔓2 - sub
   server: 144.31.50.236
   port: 443
   udp: true
@@ -156,61 +134,46 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: randomized
-- name: 🇧🇬 保加利亚 (Bulgaria) 18 - sub
-  server: 192.145.31.5
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  network: ws
-  ws-opts:
-    path: /
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 02 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 04 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 06 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 08 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 09 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 10 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 11 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 12 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 13 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 14 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 15 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 16 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 17 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 18 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 01 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 02 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 03 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 04 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 05 🔒 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 06 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 07 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 08 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 09 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 10 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 11 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 12 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 13 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 14 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 15 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 02 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 04 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 06 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 08 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 09 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 10 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 11 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 12 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 13 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 14 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 15 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 16 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 17 - sub
-  - 🇧🇬 保加利亚 (Bulgaria) 18 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 01 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 02 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 03 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 04 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 05 🔒 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 06 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 07 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 08 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 09 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 10 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 11 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 12 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 13 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 14 🔓2 - sub
+  - 🇧🇬 保加利亚 (Bulgaria) 15 🔓2 - sub
 rules:
 - MATCH,PROXIES

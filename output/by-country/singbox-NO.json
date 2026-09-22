@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇳🇴 挪威 (Norway) 01 - sub",
+      "tag": "🇳🇴 挪威 (Norway) 01 🔓2 - sub",
       "server": "185.213.23.63",
       "server_port": 990,
       "method": "chacha20-ietf-poly1305",
@@ -13,7 +13,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 02 - sub",
+      "tag": "🇳🇴 挪威 (Norway) 02 🔓2 - sub",
       "server": "46.29.238.88",
       "server_port": 40443,
       "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
@@ -22,7 +22,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -36,16 +36,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - sub",
-        "🇳🇴 挪威 (Norway) 02 - sub"
+        "🇳🇴 挪威 (Norway) 01 🔓2 - sub",
+        "🇳🇴 挪威 (Norway) 02 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - sub",
-        "🇳🇴 挪威 (Norway) 02 - sub"
+        "🇳🇴 挪威 (Norway) 01 🔓2 - sub",
+        "🇳🇴 挪威 (Norway) 02 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

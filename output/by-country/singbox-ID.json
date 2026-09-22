@@ -5,10 +5,10 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - sub",
-      "server": "172.233.14.17",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 🔓2 - sub",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16298,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
       "security": "auto"
     },
     {
@@ -16,14 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - sub"
+        "🇮🇩 印尼 (Indonesia) 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - sub"
+        "🇮🇩 印尼 (Indonesia) 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

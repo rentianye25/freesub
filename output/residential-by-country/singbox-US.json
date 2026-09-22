@@ -4,22 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - sub",
-      "server": "188.114.97.6",
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub",
+      "server": "155.117.19.17",
       "server_port": 443,
-      "uuid": "efe19c5a-0ea1-4666-8a4c-4a33f4670775",
+      "password": "5fa748137b6d822308eea4611f474ad5",
       "tls": {
         "enabled": true,
-        "server_name": "playlux.homes",
-        "insecure": false
+        "server_name": "www.bing.com",
+        "insecure": true
       },
-      "transport": {
-        "type": "ws",
-        "path": "/raccoonwsvless",
-        "headers": {
-          "Host": "playlux.homes"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
       }
     },
     {
@@ -27,14 +24,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - sub"
+        "🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - sub"
+        "🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
