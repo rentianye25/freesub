@@ -13,7 +13,7 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 02 🔓2 - sub
-  server: 149.88.23.202
+  server: 149.88.23.207
   port: 18000
   udp: true
   type: vmess
@@ -21,27 +21,70 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 03 🔓2 - sub
-  server: 167.150.100.93
-  port: 29824
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: 2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94=
-- name: 🇸🇬 新加坡 (Singapore) 04 🔓2 - sub
   server: 167.150.100.115
   port: 27755
   udp: true
   type: ss
   cipher: 2022-blake3-aes-256-gcm
   password: fnvo82p9y4AKykZXyIFtnodFy6fQmWnVlI2SvGleOB0=
+- name: 🇸🇬 新加坡 (Singapore) 04 🔓2 - sub
+  server: 168.107.90.132
+  port: 56927
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: FlMox1ED3YzmDQ6wsmDKTtaJhcwrGvPaWMUpJcWTGCg=
 - name: 🇸🇬 新加坡 (Singapore) 05 🔓2 - sub
+  server: 167.150.100.93
+  port: 29824
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: 2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94=
+- name: 🇸🇬 新加坡 (Singapore) 06 🔓2 - sub
+  server: 134.185.89.83
+  port: 56927
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: Gy4t/ay4dV3dWTnsOtaDn5i0LZfX2dLEuhLZk4H0Ufk=
+- name: 🇸🇬 新加坡 (Singapore) 07 🔓2 - sub
+  server: 134.185.86.8
+  port: 56927
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: UozmDdiXI4lZJIW6AilErmrmqOwn6vHbcbxZnk+9YnA=
+- name: 🇸🇬 新加坡 (Singapore) 08 🔓2 - sub
+  server: 161.118.194.55
+  port: 56927
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: fr3hOR0KUIzbLs7tEKX67dZv69jUPKaXTQzJeD+my2g=
+- name: 🇸🇬 新加坡 (Singapore) 09 🔓2 - sub
+  server: 129.150.45.119
+  port: 56927
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: JWRZ7+0mUkmiBvXBEykz2Qf668TcUwAsRc3vVoTMHmI=
+- name: 🇸🇬 新加坡 (Singapore) 10 🔓2 - sub
   server: 194.233.74.160
   port: 2342
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: XV4bvaJIWoxl3IYEC1e6W7
-- name: 🇸🇬 新加坡 (Singapore) 06 🔓2 - sub
+- name: 🇸🇬 新加坡 (Singapore) 11 🔓2 - sub
+  server: 149.88.23.202
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 12 🔓2 - sub
   server: 138.2.73.238
   port: 50160
   udp: true
@@ -49,7 +92,7 @@ proxies:
   password: f87376e17da040ed04c9665ce8972930
   sni: 138.2.73.238
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 07 🔓2 - sub
+- name: 🇸🇬 新加坡 (Singapore) 13 🔓2 - sub
   server: 206.206.76.75
   port: 443
   udp: true
@@ -62,28 +105,7 @@ proxies:
     short-id: 9930177816ab09da
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 08 🔓2 - sub
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 09 🔓2 - sub
-  server: 146.235.16.130
-  port: 19825
-  udp: true
-  type: vless
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 10 🔓2 - sub
+- name: 🇸🇬 新加坡 (Singapore) 14 🔓2 - sub
   server: sg-1.gsafevpnapi.com
   port: 20270
   udp: true
@@ -96,15 +118,33 @@ proxies:
     short-id: fc13d6208ebbae16
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 11 🔓2 - sub
-  server: vpn-sg-001.fastervpn.world
-  port: 443
+- name: 🇸🇬 新加坡 (Singapore) 15 🔓2 - sub
+  server: 5.223.74.174
+  port: 2053
   udp: true
-  type: hysteria2
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  sni: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 12 🔓2 - sub
+  type: vless
+  uuid: 29b81e1a-1989-4778-b0cb-a7223730f59d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pIkxGlcFFawk7e0T-2VcdFXOc9LsjoBhl47vl8EuRgg
+    short-id: 36151c48e28cfb65
+  servername: 5.223.74.174
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 16 🔓1 - sub
+  server: sg2-8sb.6121999.dpdns.org
+  port: 19825
+  udp: true
+  type: vless
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  servername: sg2-8sb.6121999.dpdns.org
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 17 🔓2 - sub
   server: msjp.mangshe.xyz
   port: 20562
   udp: true
@@ -112,7 +152,7 @@ proxies:
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   sni: www.microsoft.com
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 13 🔓2 - sub
+- name: 🇸🇬 新加坡 (Singapore) 18 🔓2 - sub
   server: 217.217.254.126
   port: 2053
   udp: true
@@ -123,35 +163,33 @@ proxies:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
     short-id: 87829de0e2bb82cb
   servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 19 🔓2 - sub
+  server: 146.235.16.130
+  port: 19825
+  udp: true
+  type: vless
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 14 🔓2 - sub
-  server: 45.192.247.199
+- name: 🇸🇬 新加坡 (Singapore) 20 🔓2 - sub
+  server: signodels.jumpernode.online
   port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 051fbf39-789a-4017-9022-eb32daeb5efd
+  flow: xtls-rprx-vision
   tls: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-- name: 🇸🇬 新加坡 (Singapore) 15 🔓2 - sub
-  server: 156.224.76.187
-  port: 443
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: e34bq.oa9r.zl3.hh.vavava.kdns.fr
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: e34bq.oa9r.zl3.hh.vavava.kdns.fr
+  reality-opts:
+    public-key: Q8vb7a7wHy2nB-9fVuVeeizz9efta09IHHmC-mRbgQw
+    short-id: 334b080fa37c42f4
+  servername: shop.business.amazon.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -172,6 +210,11 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 13 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 14 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 15 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 16 🔓1 - sub
+  - 🇸🇬 新加坡 (Singapore) 17 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 18 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 19 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 20 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -192,5 +235,10 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 13 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 14 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 15 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 16 🔓1 - sub
+  - 🇸🇬 新加坡 (Singapore) 17 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 18 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 19 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 20 🔓2 - sub
 rules:
 - MATCH,PROXIES

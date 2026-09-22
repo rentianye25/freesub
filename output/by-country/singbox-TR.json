@@ -4,17 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇷 土耳其 (Turkey) 01 🔓2 - sub",
-      "server": "188.114.98.16",
-      "server_port": 2082,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "server": "206.1.97.212",
+      "server_port": 28351,
+      "uuid": "Nitro_Skybot@",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/rry8le3tt8f3g5j7kr",
-        "headers": {
-          "Host": "index.harmonica02.workers.dev"
-        }
+        "path": "/"
       }
     },
     {
@@ -49,35 +47,12 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
           "short_id": "9e419c0759b54d6f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub",
-      "server": "146.75.84.3",
-      "server_port": 443,
-      "uuid": "8abb648a-b004-42a4-aa05-49cdc2f94d4e",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "BechBad.global.ssl.fastly.net"
         }
       }
     },
@@ -88,8 +63,7 @@
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 🔓2 - sub",
         "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub"
+        "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub"
       ]
     },
     {
@@ -98,8 +72,7 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 🔓2 - sub",
         "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub"
+        "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

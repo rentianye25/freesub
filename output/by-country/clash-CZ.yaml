@@ -5,22 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 🔓2 - sub
-  server: 104.18.216.180
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 845bd981-8725-4f9e-9ae8-6f500ec84001
-  tls: true
-  servername: w2r2hnwmlm-p33c1-vnwd.hameddsharabi.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /vl/n4iEhIlCgZ2KerLvX8CLDGWraBrBwAq?ed=2560
-    headers:
-      Host: w2r2hnwmlm-p33c1-vnwd.hameddsharabi.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 🔓2 - sub
-  server: www.speedtest.net
+  server: 104.21.58.246
   port: 443
   udp: true
   type: vless
@@ -31,7 +16,7 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/hZ8s90SJBdce8aSl3H4X?ed=2560
+    path: /vl/MoCdc0wOC7T6JiYflef9hYfM?ed=2560
     headers:
       Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
 proxy-groups:
@@ -40,13 +25,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 🔓2 - sub
-  - 🇨🇿 捷克 (Czech) 02 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 🔓2 - sub
-  - 🇨🇿 捷克 (Czech) 02 🔓2 - sub
 rules:
 - MATCH,PROXIES
