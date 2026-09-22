@@ -14,42 +14,17 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇯🇵 日本 (Japan) 03 (家宽) 🔓2 - sub
-  server: 210.152.85.154
-  port: 19364
-  udp: true
-  type: vless
-  uuid: 342200c2-4bb1-4906-8615-3aea59e178a0
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
-  - 🇯🇵 日本 (Japan) 03 (家宽) 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
-  - 🇯🇵 日本 (Japan) 03 (家宽) 🔓2 - sub
 rules:
 - MATCH,PROXIES

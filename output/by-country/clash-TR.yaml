@@ -4,29 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 🔓1 - sub
-  server: 188.114.97.6
-  port: 8080
+- name: 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
+  server: 188.114.98.16
+  port: 2082
   udp: true
   type: vless
   uuid: a22bff60-a40a-4250-bde2-4c660e363b47
   network: ws
   ws-opts:
-    path: /j100sy9wn073cxbvir
+    path: /rry8le3tt8f3g5j7kr
     headers:
       Host: index.harmonica02.workers.dev
 - name: 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
-  server: 104.20.6.153
-  port: 8880
-  udp: true
-  type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.harmonica02.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
   server: 78.135.73.47
   port: 443
   udp: true
@@ -39,7 +28,7 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 🔓2 - sub
+- name: 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -50,13 +39,28 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 04 🔓2 - sub
+  server: 146.75.84.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  tls: true
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: BechBad.global.ssl.fastly.net
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 🔓1 - sub
+  - 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 04 🔓2 - sub
@@ -65,7 +69,7 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 🔓1 - sub
+  - 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 04 🔓2 - sub

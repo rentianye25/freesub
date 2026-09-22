@@ -5,34 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 01 🔓2 - sub",
-      "server": "104.18.54.66",
-      "server_port": 443,
-      "uuid": "9fc02b14-87a2-463b-842f-f333bc2aee5b",
-      "tls": {
-        "enabled": true,
-        "server_name": "7-rvvn-65i3yyar89e314193cjx.cdzsqje4u3ms.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/dNjOO2z1qGOZW5QMcxxY0bhFOCXEn8Fh?ed=2560",
-        "headers": {
-          "Host": "7-rvvn-65i3yyar89e314193cjx.cdzsqje4u3ms.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 02 🔓2 - sub",
-      "server": "104.27.110.232",
+      "tag": "🇬🇧 英国 (United Kingdom) 01 🔓1 - sub",
+      "server": "104.26.0.1",
       "server_port": 2053,
       "uuid": "dce8ca0a-ed26-45c9-9962-38888c19a0ad",
       "tls": {
@@ -56,70 +30,39 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 02 🔓2 - sub",
+      "server": "146.70.61.37",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 03 🔓2 - sub",
-      "server": "104.18.216.180",
-      "server_port": 2087,
-      "uuid": "845bd981-8725-4f9e-9ae8-6f500ec84001",
-      "tls": {
-        "enabled": true,
-        "server_name": "w2r2hnwmlm-p33c1-vnwd.hameddsharabi.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/n4iEhIlCgZ2KerLvX8CLDGWraBrBwAq?ed=2560",
-        "headers": {
-          "Host": "w2r2hnwmlm-p33c1-vnwd.hameddsharabi.workers.dev"
-        }
-      }
+      "server": "51.77.225.200",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "zRZNBszYyWo5"
     },
     {
       "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 04 🔓2 - sub",
-      "server": "104.21.70.21",
-      "server_port": 8080,
-      "uuid": "8f53fce2-6c17-4e37-9ae9-d969fd85117c",
+      "server": "66.90.104.42",
+      "server_port": 2083,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "transport": {
-        "type": "ws",
-        "path": "/vl/Wp4FqWLcoYNYXCovu4?ed=2560",
-        "headers": {
-          "Host": "api-hub-c9a393.alimirzai539-484.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 05 🔓2 - sub",
-      "server": "172.67.143.94",
-      "server_port": 443,
-      "password": "Telegram_healer_config",
-      "tls": {
-        "enabled": true,
-        "server_name": "Z6Y-Daox0HyHdTDy.R720KPBYx2L3I406.WorKERS.DEV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tr/ZizffFwMuYF9RUfnS3Ad2bGqcOrQk?ed=2560",
-        "headers": {
-          "Host": "z6y-daox0hyhdtdy.r720kpbyx2l3i406.workers.dev"
-        }
-      }
+      "server": "149.102.132.184",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "g5h5jleTRSyO3Rk4"
     },
     {
       "type": "shadowsocks",
@@ -132,10 +75,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 07 🔓2 - sub",
-      "server": "146.70.61.37",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
+      "server": "141.98.101.181",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "shadowsocks",
@@ -146,43 +89,32 @@
       "password": "Pd3wPrQChdIKBVDeZ9In4vIj5Lq1w4lygpl82gPp4po="
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 09 🔓2 - sub",
-      "server": "66.90.104.42",
-      "server_port": 2083,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
+      "server": "149.102.132.184",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "g5h5jleTRSyO3Rk4"
     },
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 10 🔓2 - sub",
-      "server": "141.98.101.181",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "server": "134.65.56.231",
+      "server_port": 61312,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "+v9GwPXdDOfF7rNuBwUv2zztIa8B8jTGzbthZepuyLM="
     },
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 11 🔓2 - sub",
-      "server": "149.102.132.184",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "g5h5jleTRSyO3Rk4"
+      "server": "146.70.23.32",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 12 🔓2 - sub",
-      "server": "149.102.132.184",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "g5h5jleTRSyO3Rk4"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 13 🔓2 - sub",
       "server": "129.151.72.134",
       "server_port": 61312,
       "method": "2022-blake3-chacha20-poly1305",
@@ -190,49 +122,33 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 14 🔓2 - sub",
-      "server": "51.77.225.200",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "zRZNBszYyWo5"
+      "tag": "🇬🇧 英国 (United Kingdom) 13 🔓2 - sub",
+      "server": "149.102.149.207",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "LXchLsIwtCeUAUgu"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 15 🔓2 - sub",
+      "tag": "🇬🇧 英国 (United Kingdom) 14 🔓2 - sub",
       "server": "144.24.229.97",
       "server_port": 61312,
       "method": "2022-blake3-chacha20-poly1305",
       "password": "pfXiuLfaGDAlLQRsBXMGn0JepNmrqAMESQDiMP+neyU="
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 16 🔓2 - sub",
-      "server": "158.173.221.214",
-      "server_port": 11001,
-      "method": "chacha20-ietf-poly1305",
-      "password": "c58d16e593d44f42"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 17 🔓2 - sub",
-      "server": "146.70.61.18",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 18 🔓2 - sub",
+      "tag": "🇬🇧 英国 (United Kingdom) 15 🔓2 - sub",
       "server": "78.129.208.44",
       "server_port": 421,
-      "uuid": "a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18",
+      "uuid": "a9900333-444b-4a36-a2f0-0567946c47cd",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "chistomat.dry.care",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -242,113 +158,17 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 19 🔓1 - sub",
-      "server": "57.129.132.223",
-      "server_port": 80,
-      "uuid": "9e20b04d-5a81-4e16-b421-01e502f0aac6",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/",
-        "headers": {
-          "Host": "google.com"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 20 🔓2 - sub",
-      "server": "146.70.23.32",
+      "tag": "🇬🇧 英国 (United Kingdom) 16 🔓2 - sub",
+      "server": "146.70.61.18",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 21 🔓2 - sub",
-      "server": "31.76.7.154",
-      "server_port": 7443,
-      "uuid": "d7cad038-0c3f-4cce-8f8a-36464aaf66c0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ya.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
-          "short_id": "d2061bb1"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇬🇧 英国 (United Kingdom) 22 🔓2 - sub",
-      "server": "labs.frkn.org",
-      "server_port": 443,
-      "password": "3b8c82ed-fe66-472d-915e-034ccb57103f",
-      "tls": {
-        "enabled": true,
-        "server_name": "labs.frkn.org",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 23 🔓2 - sub",
-      "server": "149.102.149.207",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "LXchLsIwtCeUAUgu"
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 24 🔓2 - sub",
-      "server": "95.85.224.51",
-      "server_port": 443,
-      "uuid": "342ab7e4-5a89-0001-8809-304120d4aa83",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "max.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
-          "short_id": "a696de84963656de"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 25 🔓2 - sub",
-      "server": "46.250.250.149",
-      "server_port": 2053,
-      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
-          "short_id": "9922313fffed1c63"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 26 🔓2 - sub",
-      "server": "az-hti-de.ramzshadi.ir",
+      "tag": "🇬🇧 英国 (United Kingdom) 17 🔓2 - sub",
+      "server": "171.22.119.160",
       "server_port": 31770,
       "uuid": "8124ddbb-bf22-49d9-945d-2e72c554deb2",
       "flow": "xtls-rprx-vision",
@@ -368,26 +188,152 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 27 🔓2 - sub",
+      "tag": "🇬🇧 英国 (United Kingdom) 18 🔒 - sub",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "dbb78c94-9f87-4d7d-b945-2000b60352fd",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇬🇧 英国 (United Kingdom) 19 🔓2 - sub",
+      "server": "labs.frkn.org",
+      "server_port": 443,
+      "password": "3b8c82ed-fe66-472d-915e-034ccb57103f",
+      "tls": {
+        "enabled": true,
+        "server_name": "labs.frkn.org",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 20 🔓2 - sub",
       "server": "31.76.88.10",
       "server_port": 443,
       "uuid": "03c48eca-e0aa-4e18-998c-1f53f1de293c",
       "tls": {
         "enabled": true,
         "server_name": "cf5.rumedia-cdn.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "cf5.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 21 🔓2 - sub",
+      "server": "46.250.250.149",
+      "server_port": 2053,
+      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
+          "short_id": "9922313fffed1c63"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇬🇧 英国 (United Kingdom) 22 🔓2 - sub",
+      "server": "pahobac.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "pahobac.org",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/cdn/v3/live"
+        "path": "/linkvws",
+        "headers": {
+          "Host": "pahobac.org"
+        }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 23 🔓2 - sub",
+      "server": "176.108.243.18",
+      "server_port": 9872,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sm3E3hjmT6_Gmg_O9rBz4nfXYrHpnl6-LvcCp6T6_xc",
+          "short_id": "aabb"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 24 🔓2 - sub",
+      "server": "31.76.7.154",
+      "server_port": 7443,
+      "uuid": "d7cad038-0c3f-4cce-8f8a-36464aaf66c0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
+          "short_id": "d2061bb1"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 25 🔓2 - sub",
+      "server": "51.38.71.51",
+      "server_port": 2083,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho="
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇧 英国 (United Kingdom) 01 🔓2 - sub",
+        "🇬🇧 英国 (United Kingdom) 01 🔓1 - sub",
         "🇬🇧 英国 (United Kingdom) 02 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 03 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 04 🔓2 - sub",
@@ -404,23 +350,21 @@
         "🇬🇧 英国 (United Kingdom) 15 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 16 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 17 🔓2 - sub",
-        "🇬🇧 英国 (United Kingdom) 18 🔓2 - sub",
-        "🇬🇧 英国 (United Kingdom) 19 🔓1 - sub",
+        "🇬🇧 英国 (United Kingdom) 18 🔒 - sub",
+        "🇬🇧 英国 (United Kingdom) 19 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 20 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 21 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 22 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 23 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 24 🔓2 - sub",
-        "🇬🇧 英国 (United Kingdom) 25 🔓2 - sub",
-        "🇬🇧 英国 (United Kingdom) 26 🔓2 - sub",
-        "🇬🇧 英国 (United Kingdom) 27 🔓2 - sub"
+        "🇬🇧 英国 (United Kingdom) 25 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇧 英国 (United Kingdom) 01 🔓2 - sub",
+        "🇬🇧 英国 (United Kingdom) 01 🔓1 - sub",
         "🇬🇧 英国 (United Kingdom) 02 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 03 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 04 🔓2 - sub",
@@ -437,16 +381,14 @@
         "🇬🇧 英国 (United Kingdom) 15 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 16 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 17 🔓2 - sub",
-        "🇬🇧 英国 (United Kingdom) 18 🔓2 - sub",
-        "🇬🇧 英国 (United Kingdom) 19 🔓1 - sub",
+        "🇬🇧 英国 (United Kingdom) 18 🔒 - sub",
+        "🇬🇧 英国 (United Kingdom) 19 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 20 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 21 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 22 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 23 🔓2 - sub",
         "🇬🇧 英国 (United Kingdom) 24 🔓2 - sub",
-        "🇬🇧 英国 (United Kingdom) 25 🔓2 - sub",
-        "🇬🇧 英国 (United Kingdom) 26 🔓2 - sub",
-        "🇬🇧 英国 (United Kingdom) 27 🔓2 - sub"
+        "🇬🇧 英国 (United Kingdom) 25 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
