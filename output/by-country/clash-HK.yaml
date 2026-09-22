@@ -5,25 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 🔓2 - sub
-  server: dog-hk.kunlun01dns.com
-  port: 21021
+  server: 46.29.163.78
+  port: 10090
   udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-gcm
+  password: 6b39ae3234dfd68b
 - name: 🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub
-  server: 31.58.181.88
-  port: 8443
+  server: 103.136.150.119
+  port: 10090
   udp: true
-  type: vless
-  uuid: d25940f6-1d52-4f2d-968d-d34016d2b5ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
 - name: 🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub
   server: sth.free-outline.giize.com
   port: 1081
@@ -32,28 +26,32 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: r6tptrwvddxap6al
 - name: 🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub
-  server: 89.223.95.77
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub
-  server: 202.146.222.174
+  server: 119.246.1.143
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
+  type: trojan
+  password: BxceQaOe
+  sni: t.me
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub
+  server: 207.57.133.53
+  port: 51135
+  udp: true
+  type: vless
+  uuid: 87f0cd64-02c8-49e7-b07a-349afed26693
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k41ba-Wiolay7UfP9gId9WXfOKcFkwS2Vwh5je7NWko
+  servername: www.ebay.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub
-  server: 202.146.222.29
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹү
+  sni: 202.146.222.89
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub
   server: hk-1.gsafevpnapi.com
@@ -69,55 +67,73 @@ proxies:
   servername: www.yahoo.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub
-  server: nas.aizhzo.com
-  port: 5010
+  server: 202.146.222.174
+  port: 443
   udp: true
   type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 09 🔓2 - sub
-  server: 207.57.133.53
-  port: 51135
+  server: 31.58.181.88
+  port: 8443
   udp: true
   type: vless
-  uuid: 87f0cd64-02c8-49e7-b07a-349afed26693
+  uuid: 431acd7d-ef6c-4d2b-b471-bcdddca8050c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: k41ba-Wiolay7UfP9gId9WXfOKcFkwS2Vwh5je7NWko
-  servername: www.ebay.com
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
   client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 10 🔓2 - sub
-  server: 34.96.146.210
+  server: 202.146.222.29
   port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 11 🔓2 - sub
+  server: 47.239.6.251
+  port: 13779
   udp: true
   type: vless
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-    short-id: 56d4e7ae4f86fa39
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 11 🔓2 - sub
-  server: 47.76.44.32
-  port: 443
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 12 🔓2 - sub
+  server: mz.hkychina.com
+  port: 8443
   udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 93ucrn4i0pffuabk.v.3dns.vip
-  skip-cert-verify: false
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 13 🔓2 - sub
+  server: hk2.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: hk2.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 14 🔓2 - sub
+  server: champion.xn--kivt58h.lol
+  port: 80
+  udp: true
+  type: vless
+  uuid: b5af4a3d-f525-43aa-9cc3-de1ba437e4ed
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /
     headers:
-      Host: 93ucrn4i0pffuabk.v.3dns.vip
+      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -134,6 +150,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 🔓2 - sub
   - 🇭🇰 中国香港 (Hong Kong) 10 🔓2 - sub
   - 🇭🇰 中国香港 (Hong Kong) 11 🔓2 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 12 🔓2 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 13 🔓2 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 14 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -150,5 +169,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 09 🔓2 - sub
   - 🇭🇰 中国香港 (Hong Kong) 10 🔓2 - sub
   - 🇭🇰 中国香港 (Hong Kong) 11 🔓2 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 12 🔓2 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 13 🔓2 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 14 🔓2 - sub
 rules:
 - MATCH,PROXIES
