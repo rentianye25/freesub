@@ -5,16 +5,24 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 01 🔓2 - sub",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - sub",
       "server": "195.238.126.20",
-      "server_port": 9002,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - sub",
+      "server": "195.238.126.20",
+      "server_port": 9012,
+      "method": "aes-256-cfb",
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 🔓2 - sub",
-      "server": "84.32.215.94",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - sub",
+      "server": "84.32.215.5",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
@@ -23,7 +31,7 @@
         "server_name": "lt.aether-runet.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -37,16 +45,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 🔓2 - sub",
-        "🇱🇹 立陶宛 (Lithuania) 02 🔓2 - sub"
+        "🇱🇹 立陶宛 (Lithuania) 01 - sub",
+        "🇱🇹 立陶宛 (Lithuania) 02 - sub",
+        "🇱🇹 立陶宛 (Lithuania) 03 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 🔓2 - sub",
-        "🇱🇹 立陶宛 (Lithuania) 02 🔓2 - sub"
+        "🇱🇹 立陶宛 (Lithuania) 01 - sub",
+        "🇱🇹 立陶宛 (Lithuania) 02 - sub",
+        "🇱🇹 立陶宛 (Lithuania) 03 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

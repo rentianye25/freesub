@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇦🇹 奥地利 (Austria) 01 🔓2 - sub",
+      "tag": "🇦🇹 奥地利 (Austria) 01 - sub",
       "server": "82.110.60.9",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -13,7 +13,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 02 🔓2 - sub",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - sub",
       "server": "152.53.1.40",
       "server_port": 443,
       "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
@@ -23,7 +23,7 @@
         "server_name": "at.quattro-tech.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -33,20 +33,62 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 03 - sub",
+      "server": "50.7.184.190",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "austria-dedic1.failspace.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 04 - sub",
+      "server": "eat8xny7.selqora.ir",
+      "server_port": 51595,
+      "uuid": "d9826bd9-1023-4a3b-895e-3ba9d64061f2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.aparat.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2r94D7GhoZK4inffwafDlMW23Rqj1YVR5871e8EHADs",
+          "short_id": "155e0ffd717f90d8"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 🔓2 - sub",
-        "🇦🇹 奥地利 (Austria) 02 🔓2 - sub"
+        "🇦🇹 奥地利 (Austria) 01 - sub",
+        "🇦🇹 奥地利 (Austria) 02 - sub",
+        "🇦🇹 奥地利 (Austria) 03 - sub",
+        "🇦🇹 奥地利 (Austria) 04 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 🔓2 - sub",
-        "🇦🇹 奥地利 (Austria) 02 🔓2 - sub"
+        "🇦🇹 奥地利 (Austria) 01 - sub",
+        "🇦🇹 奥地利 (Austria) 02 - sub",
+        "🇦🇹 奥地利 (Austria) 03 - sub",
+        "🇦🇹 奥地利 (Austria) 04 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

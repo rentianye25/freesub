@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) 🔓2 - sub",
-      "server": "138.2.59.96",
-      "server_port": 10129,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - sub",
+      "server": "57.129.52.47",
+      "server_port": 52014,
+      "uuid": "ecc4675b-1607-4699-8b20-23af97b671af",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
+        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,8 +20,9 @@
       },
       "transport": {
         "type": "ws",
+        "path": "/@Marisa_kristiflow=",
         "headers": {
-          "Host": "cdn8848.776676.xyz"
+          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
         }
       }
     },
@@ -30,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) 🔓2 - sub"
+        "🇯🇵 日本 (Japan) 01 (家宽) - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) 🔓2 - sub"
+        "🇯🇵 日本 (Japan) 01 (家宽) - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
