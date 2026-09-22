@@ -53,6 +53,9 @@ except ImportError as e:
 # ══════════════════════════════════════════════════════════════════
 
 SOURCE_URLS = [
+    # ══════════════════════════════════════════════════════════
+    # 原始主力源（14 个，全部保留 — 它们仍被 CI 正常抓取）
+    # ══════════════════════════════════════════════════════════
     "https://wild-cloud-9893.heleimail.workers.dev",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt",
     "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt",
@@ -67,6 +70,15 @@ SOURCE_URLS = [
     "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
     "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml",
     "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
+    # ══════════════════════════════════════════════════════════
+    # 新增源（2026-09 实测可访问，节点数据已验证）
+    # ══════════════════════════════════════════════════════════
+    # 1) cbusifabcap/daily_free_vpn — 280 star, Z.txt 直接含 4338 行节点
+    "https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/main/Z.txt",
+    # 2) sunmiao4458/free-proxy-airport — 386 star, 自愈型 Clash 订阅
+    "https://raw.githubusercontent.com/sunmiao4458/free-proxy-airport/main/output/clash.yaml",
+    # 3) zhuhaiuk/free-nodes — 262 star, 每小时更新, Clash 配置
+    "https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml",
 ]
 
 OUTPUT_DIR = "output"
@@ -89,6 +101,19 @@ IP_ECHO_TIMEOUT        = 6.0     # 出口 IP 检测超时
 SPEED_TEST_BYTES       = 2_500_000   # 2.5MB 下载测速 (2.5MB 足以算准吞吐且 < 70KB/s 判定线不变)
 SPEED_TEST_BUDGET      = 5.0         # 测速时间预算 (秒) — 2.5MB@70KB/s=36s 必断流, 5s 预算足够判型
 SPEED_MIN_BYTES_PER_S  = 70_000      # 吞吐 < 70KB/s 判定断流/不可用 (标准不变)
+
+# ── 延迟阈值 (毫秒) ──
+LATENCY_MAX_GLOBAL     = 1200     # 全局最大延迟 (ms), > 此值剔除
+LATENCY_MAX_RESIDENTIAL = 800     # 家宽最大延迟 (ms), > 此值降级或剔除
+
+# ── 流媒体解锁检测 (选配: 勾选后启用; 免费端有限, 建议关闭避免被限) ──
+STREAMING_UNLOCK_CHECK  = True    # 是否启用流媒体解锁检测
+STREAMING_TIMEOUT       = 5.0     # 每节点单检测超时 (秒)
+STREAMING_TARGETS = {
+    "netflix":  "https://www.netflix.com/title/70143836",   # Netflix Originals 标识
+    "youtube":  "https://www.youtube.com",
+    "chatgpt":  "https://chat.openai.com/cdn-cgi/trace",    # ChatGPT 可达性
+}
 IP_ECHO_URLS = [                    # 经代理获取出口 IP (多路冗余)
     "https://api.ip.sb/geoip",                         # JSON: country_code/asn/isp
     "https://ipinfo.io/json",                          # JSON: country/org
@@ -1319,6 +1344,23 @@ def test_single_node(item, keep_alive_check=True):
         # 断流判定: 连 70KB/s 都达不到 → 断流/极慢, 真实不可用
         is_stalled = speed_bps < SPEED_MIN_BYTES_PER_S
 
+        # --- 5) 流媒体解锁检测 (Netflix / YouTube / ChatGPT) ---
+        unlocks = {}
+        if STREAMING_UNLOCK_CHECK and not is_stalled and not mitm_risk:
+            for svc, url in STREAMING_TARGETS.items():
+                try:
+                    r2 = PROBE_SESSION.get(url, proxies=proxies, timeout=STREAMING_TIMEOUT,
+                                           allow_redirects=True, verify=True)
+                    # Netflix: 收到包含"title"的 HTML ≈ 解锁; 被弹 redirect/country-block ≈ 不解锁
+                    if svc == "netflix":
+                        unlocks[svc] = "nf.originals" in (r2.text[:32000] if r2.status_code == 200 else "")
+                    elif svc == "youtube":
+                        unlocks[svc] = r2.status_code == 200 and "youtube" in (r2.url or "").lower()
+                    else:
+                        unlocks[svc] = r2.status_code == 200
+                except Exception:
+                    unlocks[svc] = False
+
         result = {
             "raw": raw,
             "server": server,
@@ -1335,6 +1377,7 @@ def test_single_node(item, keep_alive_check=True):
             "is_warp": is_warp,
             "speed_bps": speed_bps,
             "is_stalled": is_stalled,
+            "unlocks": unlocks,
         }
         return result
     except Exception:
@@ -2030,6 +2073,7 @@ def classify_and_export(test_results: list):
             "speed_bps": r["speed_bps"],
             "mitm_risk": r["mitm_risk"],
             "is_stalled": r["is_stalled"],
+            "unlocks": r.get("unlocks", {}),
         })
 
     if country_reader:
@@ -2044,6 +2088,27 @@ def classify_and_export(test_results: list):
     # 断流节点已无 (在 liveness 阶段淘汰), 但 double-check
     safe_nodes = [n for n in safe_nodes if not n["is_stalled"]]
     print(f"[*] MITM 劫持高风险节点已剔除: {mitm_dropped}")
+
+    # ── 延迟阈值过滤 (太慢的节点直接丢掉) ──
+    before_lat = len(safe_nodes)
+    safe_nodes = [n for n in safe_nodes if n["latency_ms"] <= LATENCY_MAX_GLOBAL]
+    safe_nodes = [n for n in safe_nodes if not (n["net_type"] in ("residential", "mobile")
+                                                and n["latency_ms"] > LATENCY_MAX_RESIDENTIAL)]
+    if before_lat - len(safe_nodes):
+        print(f"[*] 延迟超阈值剔除: {before_lat - len(safe_nodes)} 个 (全局>{LATENCY_MAX_GLOBAL}ms / 家宽>{LATENCY_MAX_RESIDENTIAL}ms)")
+
+    # ── 流媒体解锁过滤 (全不解锁的节点降权, 标记在节点名上) ──
+    if STREAMING_UNLOCK_CHECK:
+        for n in safe_nodes:
+            unlocks = n.get("unlocks", {})
+            n["unlock_count"] = sum(1 for v in unlocks.values() if v)
+        unlocked = [n for n in safe_nodes if n.get("unlock_count", 0) > 0]
+        locked = len(safe_nodes) - len(unlocked)
+        if locked:
+            print(f"[*] 流媒体解锁: {len(unlocked)} 个解锁 | {locked} 个全锁 (保留但标注)")
+    else:
+        for n in safe_nodes:
+            n["unlock_count"] = 0
 
     # ── Scamalytics 风控评分 (免费 HTML, 逐个; 只查家宽候选 + 抽样普通节点) ──
     # 家宽候选: 全查 (宁缺毋滥); 普通节点: 每 IP 查一次 (通常 <= 出口 IP 数)
@@ -2177,7 +2242,10 @@ def make_node_name(item, idx, force_residential=False):
     # Scamalytics 风控分: 高风险节点名内标注 (R分数), 低危不标 (保持简洁)
     fraud = item.get("fraud_score", -1)
     risk_tag = f" R{fraud}" if 0 <= fraud < 75 and fraud >= 40 else (" ⚠R" if fraud >= 75 else "")
-    return f"{flag} {cname} {idx:02d}{tag}{risk_tag} - sub"
+    # 解锁标签: 标注解锁服务数
+    uc = item.get("unlock_count", 0)
+    unlock_tag = f" 🔓{uc}" if uc > 0 else (" 🔒" if STREAMING_UNLOCK_CHECK else "")
+    return f"{flag} {cname} {idx:02d}{tag}{risk_tag}{unlock_tag} - sub"
 
 
 def export_all(unique_nodes, residential, non_residential):
@@ -2243,7 +2311,11 @@ def export_all(unique_nodes, residential, non_residential):
         export_clash_yaml(p, os.path.join(RESIDENTIAL_COUNTRY_DIR, f"clash-{cc}.yaml"))
         export_singbox_json(s, os.path.join(RESIDENTIAL_COUNTRY_DIR, f"singbox-{cc}.json"))
 
-    print(f"[*] 导出完毕: 全量 {len(all_links)} | 家宽 {len(res_links)}")
+    if STREAMING_UNLOCK_CHECK:
+        unlocked_all = sum(1 for n in unique_nodes if n.get("unlock_count", 0) > 0)
+        print(f"[*] 导出完毕: 全量 {len(all_links)} | 家宽 {len(res_links)} | 解锁 {unlocked_all}/{len(unique_nodes)}")
+    else:
+        print(f"[*] 导出完毕: 全量 {len(all_links)} | 家宽 {len(res_links)}")
     return len(all_links), len(res_links)
 
 
