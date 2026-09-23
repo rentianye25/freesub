@@ -25,35 +25,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 03 🔓2 - sub
-  server: 172.105.169.70
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: 172.105.169.70
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 04 🔓2 - sub
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 05 🔓2 - sub
-  server: 34.87.244.111
-  port: 443
-  udp: true
-  type: vless
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
-  tls: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-    short-id: d725f0dd8cce210f
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 06 🔓2 - sub
   server: 51.161.204.244
   port: 443
   udp: true
@@ -65,13 +36,25 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇦🇺 澳大利亚 (Australia) 07 🔓2 - sub
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 04 🔓2 - sub
+  server: 34.87.244.111
+  port: 443
+  udp: true
+  type: vless
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  tls: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    short-id: d725f0dd8cce210f
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 05 🔓2 - sub
   server: au1.gsafevpnapi.com
   port: 20270
   udp: true
   type: vless
-  uuid: 38b8e2fb-b9a0-40a6-b42c-335def2765cf
+  uuid: 8f2774ba-73fe-404d-a01b-7c01812ff75b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -89,8 +72,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 🔓2 - sub
   - 🇦🇺 澳大利亚 (Australia) 04 🔓2 - sub
   - 🇦🇺 澳大利亚 (Australia) 05 🔓2 - sub
-  - 🇦🇺 澳大利亚 (Australia) 06 🔓2 - sub
-  - 🇦🇺 澳大利亚 (Australia) 07 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -101,7 +82,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 🔓2 - sub
   - 🇦🇺 澳大利亚 (Australia) 04 🔓2 - sub
   - 🇦🇺 澳大利亚 (Australia) 05 🔓2 - sub
-  - 🇦🇺 澳大利亚 (Australia) 06 🔓2 - sub
-  - 🇦🇺 澳大利亚 (Australia) 07 🔓2 - sub
 rules:
 - MATCH,PROXIES

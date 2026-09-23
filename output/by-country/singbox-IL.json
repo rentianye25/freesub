@@ -5,21 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 01 🔓1 - sub",
-      "server": "160.153.1.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime61.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 02 🔓2 - sub",
+      "tag": "🇮🇱 以色列 (Israel) 01 🔓2 - sub",
       "server": "185.95.231.156",
       "server_port": 443,
       "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
@@ -29,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -40,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 03 🔓2 - sub",
+      "tag": "🇮🇱 以色列 (Israel) 02 🔓2 - sub",
       "server": "185.95.231.233",
       "server_port": 443,
       "uuid": "1ffa8e68-3378-4cf4-b8f6-44bf3d46d106",
@@ -61,8 +47,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 04 🔓2 - sub",
-      "server": "arcturus.yokkastars.com",
+      "tag": "🇮🇱 以色列 (Israel) 03 🔓2 - sub",
+      "server": "193.202.10.2",
       "server_port": 40443,
       "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
       "flow": "xtls-rprx-vision",
@@ -71,7 +57,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -85,20 +71,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 🔓1 - sub",
+        "🇮🇱 以色列 (Israel) 01 🔓2 - sub",
         "🇮🇱 以色列 (Israel) 02 🔓2 - sub",
-        "🇮🇱 以色列 (Israel) 03 🔓2 - sub",
-        "🇮🇱 以色列 (Israel) 04 🔓2 - sub"
+        "🇮🇱 以色列 (Israel) 03 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 🔓1 - sub",
+        "🇮🇱 以色列 (Israel) 01 🔓2 - sub",
         "🇮🇱 以色列 (Israel) 02 🔓2 - sub",
-        "🇮🇱 以色列 (Israel) 03 🔓2 - sub",
-        "🇮🇱 以色列 (Israel) 04 🔓2 - sub"
+        "🇮🇱 以色列 (Israel) 03 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,87 +5,76 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "uuid": "b9ede7a5-5b4b-4aee-ac37-2c307e587e47",
-      "tls": {
-        "enabled": true,
-        "server_name": "courses.mftplus.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 🔓1 - sub",
+      "server": "172.64.32.108",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "path": "?ed=2560security=tls",
         "headers": {
-          "Host": "courses.mftplus.qzz.io"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
+      "server": "104.18.34.14",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
+      "server": "108.162.198.178",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
-      "server": "94.249.187.46",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IXa3ylzS_jBOAsQy071tIQ"
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
+      "server": "195.133.23.200",
+      "server_port": 10081,
+      "method": "aes-256-gcm",
+      "password": "81a20429165df87e"
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
-      "server": "94.228.171.159",
-      "server_port": 8443,
-      "uuid": "5b754a1a-11aa-4df9-a8ba-44af9a579fe1",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub",
+      "server": "91.196.32.163",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
       "tls": {
         "enabled": true,
-        "server_name": "de.b2ai.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "hcjZwWlIplwEKT-Ea-vTM2n4jwiTCeL9wTUZG0WgCj0",
-          "short_id": ""
-        }
+        "server_name": "91.196.32.163",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "off",
+        "server_name": "hy.quattro-tech.ru",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 🔓1 - sub",
-      "server": "46.173.17.19",
-      "server_port": 443,
-      "uuid": "fc47db0c-c6f2-4665-bdb2-8f717822ce9d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "9f8hqeju.datahubfiles.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Hhp-DQNkUYOkbWR64BHWc7gGYfeqU8yYAwX6sTsqf3A",
-          "short_id": "4d5163ec7a1bf048"
-        }
       }
     },
     {
@@ -93,22 +82,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub",
+        "🇷🇺 俄罗斯 (Russia) 01 🔓1 - sub",
         "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
         "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
         "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 05 🔓1 - sub"
+        "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub",
+        "🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub",
+        "🇷🇺 俄罗斯 (Russia) 01 🔓1 - sub",
         "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
         "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
         "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 05 🔓1 - sub"
+        "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub",
+        "🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
