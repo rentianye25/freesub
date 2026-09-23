@@ -8,14 +8,14 @@
       "tag": "🇦🇪 阿联酋 (UAE) 01 🔓2 - sub",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "17e85193-a95c-4430-9b05-d8f303a34ac3",
+      "uuid": "f6329ba3-3326-4f25-95f0-91d48fd45fcf",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "tradingview.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -52,7 +52,7 @@
         "server_name": "www.booking.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

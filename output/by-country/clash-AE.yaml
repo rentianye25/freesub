@@ -9,13 +9,13 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 17e85193-a95c-4430-9b05-d8f303a34ac3
+  uuid: f6329ba3-3326-4f25-95f0-91d48fd45fcf
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
-  client-fingerprint: edge
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 02 🔓2 - sub
   server: 130.49.161.70
   port: 443
@@ -38,7 +38,7 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 04 🔓2 - sub
   server: 94.183.224.45
   port: 443
