@@ -4,16 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇲🇺 MU 01 🔓1 - sub",
-      "server": "185.162.229.50",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔒 - sub",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/vmess/",
         "headers": {
-          "Host": "vms.lifetime61.workers.dev"
+          "Host": "3h-kazakhstan1.09vpn.com"
         }
       }
     },
@@ -22,14 +23,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇺 MU 01 🔓1 - sub"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔒 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇺 MU 01 🔓1 - sub"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔒 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
