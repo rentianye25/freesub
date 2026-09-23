@@ -13,28 +13,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇦🇺 澳大利亚 (Australia) 02 🔓2 - sub
-  server: 172.105.169.70
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: 172.105.169.70
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 03 🔓2 - sub
-  server: 51.161.204.244
-  port: 443
-  udp: true
-  type: vless
-  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
-    short-id: 0ad08b47f498efd2
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇦🇺 澳大利亚 (Australia) 04 🔓2 - sub
   server: 34.87.229.148
   port: 443
   udp: true
@@ -46,6 +24,23 @@ proxies:
     short-id: 8a7d5e0248cdb1b1
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 03 🔓2 - sub
+  server: 172.105.169.70
+  port: 443
+  udp: true
+  type: vless
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: 172.105.169.70
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 04 🔓2 - sub
+  server: vpn-au-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: whatsapp.com
+  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 05 🔓2 - sub
   server: 34.87.244.111
   port: 443
@@ -58,6 +53,32 @@ proxies:
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 06 🔓2 - sub
+  server: 51.161.204.244
+  port: 443
+  udp: true
+  type: vless
+  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
+    short-id: 0ad08b47f498efd2
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇦🇺 澳大利亚 (Australia) 07 🔓2 - sub
+  server: au1.gsafevpnapi.com
+  port: 20270
+  udp: true
+  type: vless
+  uuid: 38b8e2fb-b9a0-40a6-b42c-335def2765cf
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
+    short-id: e6a5a4a9115456de
+  servername: www.yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +89,8 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 🔓2 - sub
   - 🇦🇺 澳大利亚 (Australia) 04 🔓2 - sub
   - 🇦🇺 澳大利亚 (Australia) 05 🔓2 - sub
+  - 🇦🇺 澳大利亚 (Australia) 06 🔓2 - sub
+  - 🇦🇺 澳大利亚 (Australia) 07 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,5 +101,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 🔓2 - sub
   - 🇦🇺 澳大利亚 (Australia) 04 🔓2 - sub
   - 🇦🇺 澳大利亚 (Australia) 05 🔓2 - sub
+  - 🇦🇺 澳大利亚 (Australia) 06 🔓2 - sub
+  - 🇦🇺 澳大利亚 (Australia) 07 🔓2 - sub
 rules:
 - MATCH,PROXIES
