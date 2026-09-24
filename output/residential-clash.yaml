@@ -4,74 +4,37 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽) 🔓2 - sub
-  server: 146.190.174.67
-  port: 386
+- name: 🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub
+  server: 162.159.0.53
+  port: 2086
   udp: true
   type: vless
-  uuid: b59f13d6-5e51-4fc4-864d-c6a942b39c86
-  tls: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
-  server: 36.224.141.124
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓1 - sub
+  server: r3mrcg001286ek2.cybervena.com
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇯🇵 日本 (Japan) 03 (家宽) 🔓2 - sub
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 8e6709d7-5e17-4f9c-87db-afa184f513cf
-  tls: true
-  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
-- name: 🇺🇸 美国 (United States) 04 (家宽) 🔓2 - sub
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-44890b90d17e
-  tls: true
-  servername: afzoybehu2ws.vtzv4xe1un6s.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/44890b90d17e/loc-0
-    headers:
-      Host: afzoybehu2ws.vtzv4xe1un6s.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽) 🔓2 - sub
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
-  - 🇯🇵 日本 (Japan) 03 (家宽) 🔓2 - sub
-  - 🇺🇸 美国 (United States) 04 (家宽) 🔓2 - sub
+  - 🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓1 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽) 🔓2 - sub
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
-  - 🇯🇵 日本 (Japan) 03 (家宽) 🔓2 - sub
-  - 🇺🇸 美国 (United States) 04 (家宽) 🔓2 - sub
+  - 🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓1 - sub
 rules:
 - MATCH,PROXIES

@@ -7,17 +7,17 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 🔓2 - sub",
       "server": "213.183.63.60",
-      "server_port": 9049,
+      "server_port": 9085,
       "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
+      "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 🔓2 - sub",
       "server": "213.183.63.60",
-      "server_port": 9054,
+      "server_port": 9066,
       "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
+      "password": "2KUaE2a8NWTvuCZ3"
     },
     {
       "type": "shadowsocks",
@@ -31,25 +31,25 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 04 🔓2 - sub",
       "server": "213.183.63.60",
-      "server_port": 9085,
+      "server_port": 9029,
       "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
+      "password": "dU3DSNS8wYPXzEKw"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 05 🔓2 - sub",
       "server": "213.183.63.60",
-      "server_port": 9066,
+      "server_port": 9098,
       "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
+      "password": "aLpQtfEZe445QyHk"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 06 🔓2 - sub",
       "server": "213.183.63.60",
-      "server_port": 9098,
+      "server_port": 9049,
       "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
+      "password": "PRBf4BS2HvJqtWxY"
     },
     {
       "type": "shadowsocks",
@@ -63,9 +63,9 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 08 🔓2 - sub",
       "server": "213.183.63.60",
-      "server_port": 9064,
+      "server_port": 9054,
       "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
+      "password": "VcFuyXvND2yQWSFY"
     },
     {
       "type": "shadowsocks",
@@ -87,7 +87,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -97,19 +97,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 11 🔓2 - sub",
-      "server": "131.123.37.199",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
+      "server": "213.183.63.60",
+      "server_port": 9064,
+      "method": "aes-256-cfb",
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 12 🔓1 - sub",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 12 🔓2 - sub",
       "server": "136.175.82.85",
       "server_port": 18775,
       "uuid": "9ae5940b-0278-403d-a1e1-9dddc47bdcf6",
@@ -119,7 +116,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -131,7 +128,7 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 13 🔓2 - sub",
-      "server": "131.123.41.18",
+      "server": "131.123.37.199",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
@@ -153,7 +150,7 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 15 🔓2 - sub",
-      "server": "131.123.41.31",
+      "server": "131.123.41.18",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
@@ -173,7 +170,7 @@
         "server_name": "sheetpeek.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -185,24 +182,12 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 17 🔓2 - sub",
-      "server": "108.165.233.223",
-      "server_port": 443,
-      "uuid": "2388e166-3890-33ae-f77e-efac00000001",
-      "tls": {
-        "enabled": true,
-        "server_name": "netlivpn4813.ddhshhshs.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "131.123.41.31",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "netlivpn4813.ddhshhshs.workers.dev"
-        }
+        "path": "/vless-test"
       }
     },
     {
@@ -221,7 +206,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 09 🔓2 - sub",
         "🇧🇬 保加利亚 (Bulgaria) 10 🔓2 - sub",
         "🇧🇬 保加利亚 (Bulgaria) 11 🔓2 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 12 🔓1 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 12 🔓2 - sub",
         "🇧🇬 保加利亚 (Bulgaria) 13 🔓2 - sub",
         "🇧🇬 保加利亚 (Bulgaria) 14 🔓2 - sub",
         "🇧🇬 保加利亚 (Bulgaria) 15 🔓2 - sub",
@@ -244,7 +229,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 09 🔓2 - sub",
         "🇧🇬 保加利亚 (Bulgaria) 10 🔓2 - sub",
         "🇧🇬 保加利亚 (Bulgaria) 11 🔓2 - sub",
-        "🇧🇬 保加利亚 (Bulgaria) 12 🔓1 - sub",
+        "🇧🇬 保加利亚 (Bulgaria) 12 🔓2 - sub",
         "🇧🇬 保加利亚 (Bulgaria) 13 🔓2 - sub",
         "🇧🇬 保加利亚 (Bulgaria) 14 🔓2 - sub",
         "🇧🇬 保加利亚 (Bulgaria) 15 🔓2 - sub",

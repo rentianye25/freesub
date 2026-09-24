@@ -5,18 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 🔓2 - sub
-  server: 188.114.97.6
-  port: 8080
+  server: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
+  port: 2053
   udp: true
   type: vless
-  uuid: b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9
+  uuid: dc1e9f00-c064-4870-9bfc-463db50257d7
+  tls: true
+  servername: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv
-- name: 🇮🇶 IQ 02 🔓1 - sub
-  server: 193.56.135.137
+    path: /eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+- name: 🇮🇶 IQ 02 🔓2 - sub
+  server: 193.56.135.212
   port: 9543
   udp: true
   type: vless
@@ -27,20 +28,20 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcde
   servername: storage.yandexcloud.net
-  client-fingerprint: safari
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 🔓2 - sub
-  - 🇮🇶 IQ 02 🔓1 - sub
+  - 🇮🇶 IQ 02 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 🔓2 - sub
-  - 🇮🇶 IQ 02 🔓1 - sub
+  - 🇮🇶 IQ 02 🔓2 - sub
 rules:
 - MATCH,PROXIES
