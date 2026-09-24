@@ -42,8 +42,17 @@ proxies:
     public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
     short-id: db46e2946fc466fd
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 以色列 (Israel) 04 🔓2 - sub
+  server: platform118.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform118
+- name: 🇮🇱 以色列 (Israel) 05 🔓2 - sub
   server: platform113.golnamakcert.top
   port: 80
   udp: true
@@ -54,7 +63,7 @@ proxies:
     path: /platform113
     headers:
       Host: platform113.halalkhor.info
-- name: 🇮🇱 以色列 (Israel) 05 🔓2 - sub
+- name: 🇮🇱 以色列 (Israel) 06 🔓2 - sub
   server: platform117.golnamakcert.top
   port: 80
   udp: true
@@ -65,15 +74,6 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
-- name: 🇮🇱 以色列 (Israel) 06 🔓2 - sub
-  server: platform118.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform118
 proxy-groups:
 - name: PROXIES
   type: select
