@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
+      "type": "vmess",
+      "tag": "🇹🇭 泰国 (Thailand) 01 🔓2 - sub",
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 01 🔒 - sub",
+      "tag": "🇹🇭 泰国 (Thailand) 02 🔓2 - sub",
       "server": "103.86.49.57",
       "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
@@ -13,27 +21,7 @@
         "type": "ws",
         "path": "/ws",
         "headers": {
-          "Host": "aIs.SpEeDtEsT.nEt"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 🔓2 - sub",
-      "server": "34.15.176.240",
-      "server_port": 443,
-      "uuid": "742dc674-a491-4a42-a551-b3ea6dd2f447",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U",
-          "short_id": "856c0a3cd1426a5c"
+          "Host": "ais.speedtest.net"
         }
       }
     },
@@ -48,7 +36,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -60,7 +48,27 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 04 🔓2 - sub",
-      "server": "104.19.32.166",
+      "server": "34.15.176.240",
+      "server_port": 443,
+      "uuid": "742dc674-a491-4a42-a551-b3ea6dd2f447",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U",
+          "short_id": "856c0a3cd1426a5c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 05 🔓2 - sub",
+      "server": "104.16.10.2",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
@@ -81,20 +89,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01 🔒 - sub",
+        "🇹🇭 泰国 (Thailand) 01 🔓2 - sub",
         "🇹🇭 泰国 (Thailand) 02 🔓2 - sub",
         "🇹🇭 泰国 (Thailand) 03 🔓2 - sub",
-        "🇹🇭 泰国 (Thailand) 04 🔓2 - sub"
+        "🇹🇭 泰国 (Thailand) 04 🔓2 - sub",
+        "🇹🇭 泰国 (Thailand) 05 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01 🔒 - sub",
+        "🇹🇭 泰国 (Thailand) 01 🔓2 - sub",
         "🇹🇭 泰国 (Thailand) 02 🔓2 - sub",
         "🇹🇭 泰国 (Thailand) 03 🔓2 - sub",
-        "🇹🇭 泰国 (Thailand) 04 🔓2 - sub"
+        "🇹🇭 泰国 (Thailand) 04 🔓2 - sub",
+        "🇹🇭 泰国 (Thailand) 05 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

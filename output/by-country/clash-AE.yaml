@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: f6329ba3-3326-4f25-95f0-91d48fd45fcf
+  uuid: 97912cdc-d523-4121-a0d6-52285f8a6898
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -17,16 +17,6 @@ proxies:
   servername: tradingview.com
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 02 🔓2 - sub
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 🔓2 - sub
   server: 78.40.195.140
   port: 443
   udp: true
@@ -38,7 +28,17 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 (UAE) 03 🔓2 - sub
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 🔓2 - sub
   server: 94.183.224.45
   port: 443
@@ -53,14 +53,29 @@ proxies:
   servername: dzen.ru
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 05 🔓2 - sub
-  server: 85.204.107.178
+  server: 104.21.108.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: fa45096d-bed0-ad80-c773-23c300000018
+  tls: true
+  servername: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: '/sync '
+    headers:
+      Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
+- name: 🇦🇪 阿联酋 (UAE) 06 🔓2 - sub
+  server: 85.204.107.171
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 06 🔓2 - sub
+- name: 🇦🇪 阿联酋 (UAE) 07 🔓2 - sub
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -71,19 +86,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 07 🔓2 - sub
-  server: 146.70.102.82
-  port: 443
-  udp: true
-  type: vless
-  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
-    short-id: 002fb4ec7b3088cc
-  servername: www.datadoghq.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

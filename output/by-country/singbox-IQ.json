@@ -5,8 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 🔓1 - sub",
-      "server": "193.56.135.233",
+      "tag": "🇮🇶 IQ 01 🔓2 - sub",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "b69b43d1-091d-4d7c-90b2-7a8bbad9d6a9",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiY0U2T212Y21yeEhUZHRKYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
+        "headers": {
+          "Host": "BItter-CreDIT-61b8.b76EbA0aBb.wORkerS.dEv"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 02 🔓1 - sub",
+      "server": "193.56.135.137",
       "server_port": 9543,
       "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
       "flow": "xtls-rprx-vision",
@@ -15,7 +29,7 @@
         "server_name": "storage.yandexcloud.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +43,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 🔓1 - sub"
+        "🇮🇶 IQ 01 🔓2 - sub",
+        "🇮🇶 IQ 02 🔓1 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 🔓1 - sub"
+        "🇮🇶 IQ 01 🔓2 - sub",
+        "🇮🇶 IQ 02 🔓1 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
