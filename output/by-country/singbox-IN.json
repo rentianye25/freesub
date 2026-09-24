@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 01 🔓2 - sub",
-      "server": "35.244.28.130",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "tttyder.wsone.icu",
-        "insecure": true
-      }
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "vless",
@@ -26,7 +22,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -36,8 +32,29 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 🔓2 - sub",
+      "server": "148.113.5.44",
+      "server_port": 443,
+      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
+          "short_id": "221873918e0bb74d"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇮🇳 印度 (India) 04 🔓2 - sub",
       "server": "35.154.58.87",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -49,14 +66,26 @@
     },
     {
       "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 04 🔓2 - sub",
-      "server": "34.131.228.210",
+      "tag": "🇮🇳 印度 (India) 05 🔓2 - sub",
+      "server": "35.244.28.130",
+      "server_port": 443,
+      "password": "M7v%w11Se*",
+      "tls": {
+        "enabled": true,
+        "server_name": "tttyder.wsone.icu",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 06 🔓2 - sub",
+      "server": "hyfuuf6.wsone.icu",
       "server_port": 443,
       "password": "M7v%w11Se*",
       "tls": {
         "enabled": true,
         "server_name": "hyfuuf6.wsone.icu",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -67,7 +96,9 @@
         "🇮🇳 印度 (India) 01 🔓2 - sub",
         "🇮🇳 印度 (India) 02 🔓2 - sub",
         "🇮🇳 印度 (India) 03 🔓2 - sub",
-        "🇮🇳 印度 (India) 04 🔓2 - sub"
+        "🇮🇳 印度 (India) 04 🔓2 - sub",
+        "🇮🇳 印度 (India) 05 🔓2 - sub",
+        "🇮🇳 印度 (India) 06 🔓2 - sub"
       ]
     },
     {
@@ -77,7 +108,9 @@
         "🇮🇳 印度 (India) 01 🔓2 - sub",
         "🇮🇳 印度 (India) 02 🔓2 - sub",
         "🇮🇳 印度 (India) 03 🔓2 - sub",
-        "🇮🇳 印度 (India) 04 🔓2 - sub"
+        "🇮🇳 印度 (India) 04 🔓2 - sub",
+        "🇮🇳 印度 (India) 05 🔓2 - sub",
+        "🇮🇳 印度 (India) 06 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
