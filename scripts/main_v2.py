@@ -54,31 +54,25 @@ except ImportError as e:
 
 SOURCE_URLS = [
     # ══════════════════════════════════════════════════════════
-    # 原始主力源（14 个，全部保留 — 它们仍被 CI 正常抓取）
+    # 2026-09 全部换血 — 旧 14 源节点质量崩盘 (测活通过率 17%),
+    # 以下均为实测可访问、节点数据已验证的活跃源 (按节点量排序)
     # ══════════════════════════════════════════════════════════
-    "https://wild-cloud-9893.heleimail.workers.dev",
-    "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt",
-    "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt",
-    "https://raw.githubusercontent.com/10ium/HiN-VPN/main/subscription/base64/mix",
-    "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/protocols/hysteria",
-    "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/security/tls",
-    "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
-    "https://raw.githubusercontent.com/freefq/free/master/v2",
-    "https://open.heleimail.workers.dev/",
-    "https://www.ermao.net/sub/v2ray/ermao.net",
-    "https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt",
-    "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
-    "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml",
-    "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
-    # ══════════════════════════════════════════════════════════
-    # 新增源（2026-09 实测可访问，节点数据已验证）
-    # ══════════════════════════════════════════════════════════
-    # 1) cbusifabcap/daily_free_vpn — 280 star, Z.txt 直接含 4338 行节点
+    # 1) Epodonios/v2ray-configs 全量池 — 7587 节点, 5 分钟自动更新
+    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt",
+    # 2) cbusifabcap/daily_free_vpn — 1224 节点, 每日更新
     "https://raw.githubusercontent.com/cbusifabcap/daily_free_vpn/main/Z.txt",
-    # 2) sunmiao4458/free-proxy-airport — 386 star, 自愈型 Clash 订阅
+    # 3) Epodonios/v2ray-configs Sub1 分片 — 985 节点
+    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Sub1.txt",
+    # 4) Epodonios/v2ray-configs Sub3 分片 — 1000 节点
+    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/Sub3.txt",
+    # 5) 0xRadikal/Free-v2ray-Configs top100 精选 — 100 节点, 测活精选
+    "https://raw.githubusercontent.com/0xRadikal/Free-v2ray-Configs/main/top100.txt",
+    # 6) sunmiao4458/free-proxy-airport — 自愈型 Clash 订阅
     "https://raw.githubusercontent.com/sunmiao4458/free-proxy-airport/main/output/clash.yaml",
-    # 3) zhuhaiuk/free-nodes — 262 star, 每小时更新, Clash 配置
-    "https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/clash_config.yaml",
+    # 7) PuddinCat/BestClash — 1962 star, 稳定维护
+    "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml",
+    # 8) twj0/subseek — 大聚合, 6.7MB 数据
+    "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
 ]
 
 OUTPUT_DIR = "output"
