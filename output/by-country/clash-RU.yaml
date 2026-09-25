@@ -5,160 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub
-  server: 172.64.32.103
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
-  server: 188.114.98.134
-  port: 443
-  udp: true
-  type: vless
-  uuid: ba49d874-fe02-465d-82d3-ed981dc7694f
-  tls: true
-  servername: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /yraL4HRbwB8cMc0F?ed=2560
-    headers:
-      Host: o94yv7lif0-anxisd9efehvvs7mxn6bh.z-ule-ika-d-e-ne-k-e.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
-  server: 172.66.44.211
-  port: 2083
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: wk1.f1w.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wk1.f1w.de5.net
-- name: 🇷🇺 俄罗斯 (Russia) 04 🔓1 - sub
-  server: 162.159.130.234
-  port: 2083
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: newwk1.f1w.de5.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub
-  server: 104.18.46.46
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub
-  server: 104.21.8.176
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7da33b25-cdd6-e481-afcf-c5d532361a70
-  tls: true
-  servername: ez-1bc8ab.sekiro-c18.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: ez-1bc8ab.sekiro-c18.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 07 🔓2 - sub
   server: 94.249.187.46
   port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: IXa3ylzS_jBOAsQy071tIQ
-- name: 🇷🇺 俄罗斯 (Russia) 08 🔓1 - sub
-  server: restless-boat-ebf2.moha102030.workers.dev
-  port: 80
+- name: 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
+  server: 91.196.32.163
+  port: 443
   udp: true
-  type: vless
-  uuid: 95de071f-747c-dc07-36ac-5c0854a9e50e
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: restless-boat-ebf2.moha102030.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 09 🔓2 - sub
+  type: hysteria2
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  sni: 91.196.32.163
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
   server: 176.32.35.2
   port: 10090
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 895b4b796a357570
-- name: 🇷🇺 俄罗斯 (Russia) 10 🔓2 - sub
-  server: 138.124.121.231
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8e826a69-63f6-0001-a67d-4a1958e8b2d2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 11 🔓2 - sub
-  server: 91.196.32.216
-  port: 9543
-  udp: true
-  type: vless
-  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 12 🔓2 - sub
-  server: 138.124.121.233
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8e826a69-63f6-0001-a67d-4a1958e8b2d2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 13 🔓2 - sub
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: itsallproxy.quattro-tech.ru
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 14 🔓2 - sub
+- name: 🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub
   server: 5.129.238.144
   port: 8443
   udp: true
@@ -173,8 +41,8 @@ proxies:
     path: /wsnl
     headers:
       Host: xinnusvpn.duckdns.org
-- name: 🇷🇺 俄罗斯 (Russia) 15 🔓2 - sub
-  server: 83.222.26.101
+- name: 🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub
+  server: 138.124.121.231
   port: 443
   udp: true
   type: vless
@@ -185,7 +53,30 @@ proxies:
     public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
     short-id: a696de84963656de
   servername: amd.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: 91.240.86.70
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 07 🔓2 - sub
+  server: fbsv6.guardora.pro
+  port: 443
+  udp: true
+  type: vless
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  tls: true
+  servername: fbsv6.guardora.pro
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
 proxy-groups:
 - name: PROXIES
   type: select
@@ -194,18 +85,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 04 🔓1 - sub
+  - 🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 07 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 08 🔓1 - sub
-  - 🇷🇺 俄罗斯 (Russia) 09 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 10 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 11 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 12 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 13 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 14 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 15 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -214,17 +97,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 04 🔓1 - sub
+  - 🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 07 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 08 🔓1 - sub
-  - 🇷🇺 俄罗斯 (Russia) 09 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 10 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 11 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 12 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 13 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 14 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 15 🔓2 - sub
 rules:
 - MATCH,PROXIES

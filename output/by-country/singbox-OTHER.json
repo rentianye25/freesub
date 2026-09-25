@@ -6,37 +6,19 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 🔓1 - sub",
-      "server": "104.24.34.193",
+      "server": "us7-2.998998.best",
       "server_port": 443,
-      "uuid": "d042a74a-c305-4eec-a89f-39a348022c92",
+      "uuid": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
       "tls": {
         "enabled": true,
-        "server_name": "dry-butterfly-8eb9.tmpgnacio83.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "server9.9966338.xyz",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "ws ",
+        "path": "/imnotarealherox",
         "headers": {
-          "Host": "dry-butterfly-8eb9.tmpgnacio83.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 02 🔓1 - sub",
-      "server": "104.27.2.172",
-      "server_port": 80,
-      "uuid": "234c52f2-0d7b-dc4a-0d6b-b0b300000025",
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "billowing-surf-d251.netizo06.workers.dev"
+          "Host": "server9.9966338.xyz"
         }
       }
     },
@@ -45,16 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 🔓1 - sub",
-        "🌐 其他地区 (Other) 02 🔓1 - sub"
+        "🌐 其他地区 (Other) 01 🔓1 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 🔓1 - sub",
-        "🌐 其他地区 (Other) 02 🔓1 - sub"
+        "🌐 其他地区 (Other) 01 🔓1 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

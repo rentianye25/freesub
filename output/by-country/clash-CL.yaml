@@ -20,6 +20,8 @@ proxies:
   network: ws
   ws-opts:
     path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 03 🔓2 - sub
   server: platform108.golnamakcert.top
   port: 80
