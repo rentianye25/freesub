@@ -4,27 +4,50 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub
-  server: 155.117.19.17
+- name: 🇯🇵 日本 (Japan) 01 (家宽) 🔓2 - sub
+  server: 128.241.25.3
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 1de9611b-1861-4ebb-b281-cb2a383cdf19
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔒 - sub
+  server: 36.224.141.124
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) 🔓2 - sub
+  server: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
+  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  sni: 311648fa-tm3mo0-0-1rfon.hk3.hyhuawei.com
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub
+  - 🇯🇵 日本 (Japan) 01 (家宽) 🔓2 - sub
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔒 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub
+  - 🇯🇵 日本 (Japan) 01 (家宽) 🔓2 - sub
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔒 - sub
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) 🔓2 - sub
 rules:
 - MATCH,PROXIES

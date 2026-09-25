@@ -57,7 +57,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -69,12 +69,15 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 04 🔓2 - sub",
-      "server": "platform113.golnamakcert.top",
+      "server": "platform115.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform113"
+        "path": "/platform115",
+        "headers": {
+          "Host": "platform115.halalkhor.info"
+        }
       }
     },
     {
@@ -94,12 +97,29 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 06 🔓2 - sub",
+      "server": "platform113.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform113",
+        "headers": {
+          "Host": "platform113.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 07 🔓2 - sub",
       "server": "platform118.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform118"
+        "path": "/platform118",
+        "headers": {
+          "Host": "platform118.halalkhor.info"
+        }
       }
     },
     {
@@ -112,7 +132,8 @@
         "🇮🇱 以色列 (Israel) 03 🔓2 - sub",
         "🇮🇱 以色列 (Israel) 04 🔓2 - sub",
         "🇮🇱 以色列 (Israel) 05 🔓2 - sub",
-        "🇮🇱 以色列 (Israel) 06 🔓2 - sub"
+        "🇮🇱 以色列 (Israel) 06 🔓2 - sub",
+        "🇮🇱 以色列 (Israel) 07 🔓2 - sub"
       ]
     },
     {
@@ -124,7 +145,8 @@
         "🇮🇱 以色列 (Israel) 03 🔓2 - sub",
         "🇮🇱 以色列 (Israel) 04 🔓2 - sub",
         "🇮🇱 以色列 (Israel) 05 🔓2 - sub",
-        "🇮🇱 以色列 (Israel) 06 🔓2 - sub"
+        "🇮🇱 以色列 (Israel) 06 🔓2 - sub",
+        "🇮🇱 以色列 (Israel) 07 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
