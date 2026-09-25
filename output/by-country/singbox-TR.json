@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
+      "type": "vmess",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 🔒 - sub",
+      "server": "103.215.218.158",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 🔓2 - sub",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -15,7 +23,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -26,7 +34,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -45,32 +53,11 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub",
-      "server": "153.56.210.210",
-      "server_port": 443,
-      "uuid": "8e826a69-63f6-0001-a67d-4a1958e8b2d2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
-          "short_id": "a696de84963656de"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 🔓2 - sub",
+        "🇹🇷 土耳其 (Turkey) 01 🔒 - sub",
         "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
         "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub"
       ]
@@ -79,7 +66,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 🔓2 - sub",
+        "🇹🇷 土耳其 (Turkey) 01 🔒 - sub",
         "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
         "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub"
       ],

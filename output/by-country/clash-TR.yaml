@@ -4,7 +4,15 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
+- name: 🇹🇷 土耳其 (Turkey) 01 🔒 - sub
+  server: 103.215.218.158
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
   server: 78.135.73.47
   port: 443
   udp: true
@@ -16,8 +24,8 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: qq
-- name: 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -29,25 +37,12 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
-  server: 153.56.210.210
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8e826a69-63f6-0001-a67d-4a1958e8b2d2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 01 🔒 - sub
   - 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
 - name: AUTO
@@ -55,7 +50,7 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 01 🔒 - sub
   - 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
 rules:

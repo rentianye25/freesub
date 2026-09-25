@@ -28,16 +28,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 🔓1 - sub",
-      "server": "154.46.31.106",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 🔓2 - sub",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 🔓2 - sub",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -47,7 +39,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -58,7 +50,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 🔓2 - sub",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 🔓1 - sub",
       "server": "146.70.124.85",
       "server_port": 443,
       "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
@@ -68,7 +60,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -84,9 +76,8 @@
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01 🔓2 - sub",
         "🇷🇴 罗马尼亚 (Romania) 02 🔓2 - sub",
-        "🇷🇴 罗马尼亚 (Romania) 03 🔓1 - sub",
-        "🇷🇴 罗马尼亚 (Romania) 04 🔓2 - sub",
-        "🇷🇴 罗马尼亚 (Romania) 05 🔓2 - sub"
+        "🇷🇴 罗马尼亚 (Romania) 03 🔓2 - sub",
+        "🇷🇴 罗马尼亚 (Romania) 04 🔓1 - sub"
       ]
     },
     {
@@ -95,9 +86,8 @@
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01 🔓2 - sub",
         "🇷🇴 罗马尼亚 (Romania) 02 🔓2 - sub",
-        "🇷🇴 罗马尼亚 (Romania) 03 🔓1 - sub",
-        "🇷🇴 罗马尼亚 (Romania) 04 🔓2 - sub",
-        "🇷🇴 罗马尼亚 (Romania) 05 🔓2 - sub"
+        "🇷🇴 罗马尼亚 (Romania) 03 🔓2 - sub",
+        "🇷🇴 罗马尼亚 (Romania) 04 🔓1 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

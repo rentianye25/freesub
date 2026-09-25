@@ -5,20 +5,15 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 🔓1 - sub",
-      "server": "us7-2.998998.best",
-      "server_port": 443,
-      "uuid": "3c6d1933-b22a-484b-ac8a-63e24f5fba75",
-      "tls": {
-        "enabled": true,
-        "server_name": "server9.9966338.xyz",
-        "insecure": false
-      },
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub",
+      "server": "104.18.39.218",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/imnotarealherox",
+        "path": "/?ed=2560security=tls",
         "headers": {
-          "Host": "server9.9966338.xyz"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
@@ -27,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 🔓1 - sub"
+        "🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 🔓1 - sub"
+        "🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
