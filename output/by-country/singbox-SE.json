@@ -5,63 +5,15 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 01 🔓1 - sub",
-      "server": "13.48.104.64",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 🔓2 - sub",
-      "server": "51.20.143.248",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 🔓2 - sub",
-      "server": "16.170.221.224",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 🔓1 - sub",
-      "server": "16.170.163.124",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 🔓2 - sub",
-      "server": "70.34.212.124",
-      "server_port": 8388,
+      "tag": "🇸🇪 瑞典 (Sweden) 01 🔓2 - sub",
+      "server": "172.238.244.13",
+      "server_port": 17000,
       "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 🔓2 - sub",
-      "server": "13.49.76.55",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 🔓2 - sub",
-      "server": "13.62.228.76",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 🔓2 - sub",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 🔓1 - sub",
       "server": "13.51.242.39",
       "server_port": 443,
       "method": "aes-256-cfb",
@@ -69,23 +21,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 🔓2 - sub",
-      "server": "13.60.213.145",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 🔓2 - sub",
+      "server": "13.48.104.64",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 10 🔓2 - sub",
-      "server": "51.20.72.15",
-      "server_port": 443,
-      "method": "aes-256-cfb",
-      "password": "amazonskr05"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 11 🔓2 - sub",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub",
       "server": "13.49.64.122",
       "server_port": 443,
       "method": "aes-256-cfb",
@@ -93,8 +37,64 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 12 🔓1 - sub",
-      "server": "51.20.122.188",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 🔓2 - sub",
+      "server": "16.171.55.2",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 🔓1 - sub",
+      "server": "16.170.163.124",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 🔓2 - sub",
+      "server": "51.20.96.231",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 🔓2 - sub",
+      "server": "16.170.221.224",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 🔓2 - sub",
+      "server": "51.20.72.15",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 10 🔓1 - sub",
+      "server": "13.49.76.55",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 11 🔓2 - sub",
+      "server": "45.138.103.4",
+      "server_port": 1443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "N2YzM"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 12 🔓2 - sub",
+      "server": "51.20.86.152",
       "server_port": 443,
       "method": "aes-256-cfb",
       "password": "amazonskr05"
@@ -108,8 +108,16 @@
       "password": "amazonskr05"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 14 🔓2 - sub",
+      "server": "51.20.122.188",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 15 🔓2 - sub",
       "server": "5.157.10.148",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -119,7 +127,7 @@
         "server_name": "surstreming.vvzzkontaktezzvv.garden",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -130,60 +138,39 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 15 🔓2 - sub",
-      "server": "191.44.114.66",
-      "server_port": 443,
-      "uuid": "718b9643-20e3-4f9e-9f8d-87ce6801d55e",
+      "tag": "🇸🇪 瑞典 (Sweden) 16 🔓2 - sub",
+      "server": "se5-node.rumedia-cdn.com",
+      "server_port": 2096,
+      "uuid": "11d826ce-d6e5-4154-8658-6829bb17dca2",
       "tls": {
         "enabled": true,
-        "server_name": "ai.android",
+        "server_name": "stf7697.rumedia-cdn.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uE1WBdW9se1rQnx8Vh-a1jjaehzK-iUmCVrPui5KU3g",
-          "short_id": "53499a662395"
+          "fingerprint": "qq"
         }
       },
       "transport": {
-        "type": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 16 🔓2 - sub",
-      "server": "143.246.193.215",
-      "server_port": 443,
-      "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.blocket.se",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
-          "short_id": ""
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "stf7697.rumedia-cdn.com"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 17 🔓2 - sub",
-      "server": "193.42.39.10",
-      "server_port": 33743,
+      "server": "91.193.17.156",
+      "server_port": 9458,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
         "enabled": true,
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -199,6 +186,30 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 18 🔓2 - sub",
+      "server": "79.141.174.147",
+      "server_port": 33743,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 19 🔓2 - sub",
       "server": "143.246.195.98",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
@@ -209,7 +220,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 19 🔓2 - sub",
+      "tag": "🇸🇪 瑞典 (Sweden) 20 🔓2 - sub",
       "server": "143.246.195.138",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
@@ -220,8 +231,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 20 🔓2 - sub",
-      "server": "143.246.194.60",
+      "tag": "🇸🇪 瑞典 (Sweden) 21 🔓2 - sub",
+      "server": "143.246.196.152",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
@@ -234,18 +245,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 🔓1 - sub",
-        "🇸🇪 瑞典 (Sweden) 02 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 01 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 02 🔓1 - sub",
         "🇸🇪 瑞典 (Sweden) 03 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 04 🔓1 - sub",
+        "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 05 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 06 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 06 🔓1 - sub",
         "🇸🇪 瑞典 (Sweden) 07 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 08 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 09 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 10 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 10 🔓1 - sub",
         "🇸🇪 瑞典 (Sweden) 11 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 12 🔓1 - sub",
+        "🇸🇪 瑞典 (Sweden) 12 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 13 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 14 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 15 🔓2 - sub",
@@ -253,25 +264,26 @@
         "🇸🇪 瑞典 (Sweden) 17 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 18 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 19 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 20 🔓2 - sub"
+        "🇸🇪 瑞典 (Sweden) 20 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 21 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 🔓1 - sub",
-        "🇸🇪 瑞典 (Sweden) 02 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 01 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 02 🔓1 - sub",
         "🇸🇪 瑞典 (Sweden) 03 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 04 🔓1 - sub",
+        "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 05 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 06 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 06 🔓1 - sub",
         "🇸🇪 瑞典 (Sweden) 07 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 08 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 09 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 10 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 10 🔓1 - sub",
         "🇸🇪 瑞典 (Sweden) 11 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 12 🔓1 - sub",
+        "🇸🇪 瑞典 (Sweden) 12 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 13 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 14 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 15 🔓2 - sub",
@@ -279,7 +291,8 @@
         "🇸🇪 瑞典 (Sweden) 17 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 18 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 19 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 20 🔓2 - sub"
+        "🇸🇪 瑞典 (Sweden) 20 🔓2 - sub",
+        "🇸🇪 瑞典 (Sweden) 21 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

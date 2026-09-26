@@ -5,28 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 🔓2 - sub
-  server: 46.29.163.78
-  port: 30210
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 6b39ae3234dfd68b
-- name: 🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub
   server: 185.22.154.239
   port: 10301
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
-- name: 🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub
-  server: 47.240.80.220
-  port: 2052
-  udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: vpn.12169.top
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub
+- name: 🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub
   server: 119.246.1.143
   port: 443
   udp: true
@@ -34,46 +19,41 @@ proxies:
   password: BxceQaOe
   sni: t.me/ripaojiedian
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: speedtest.tinkoff.ru
+  sni: https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub
-  server: 202.146.222.89
-  port: 443
+  server: champion.xn--kivt58h.lol
+  port: 80
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub
-  server: 47.76.137.85
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: i2psm3knof5qjjix.v.3dns.vip
-  skip-cert-verify: false
+  type: vless
+  uuid: b5af4a3d-f525-43aa-9cc3-de1ba437e4ed
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /
     headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
+      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,8 +65,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub
   - 🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub
   - 🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub
-  - 🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub
-  - 🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,7 +76,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub
   - 🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub
   - 🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub
-  - 🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub
-  - 🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub
 rules:
 - MATCH,PROXIES
