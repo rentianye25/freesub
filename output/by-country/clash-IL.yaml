@@ -31,7 +31,14 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 03 🔓2 - sub
-  server: 193.202.10.2
+  server: 31.57.185.82
+  port: 58212
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: feMXjpw5CFoxqX7VFCJdBYYAAYW5Sim9mBIe9/4G8vI=:0ZoLngUwAUCuVkNuCJgY8xImum67ESzti6TP0fUx7/4=
+- name: 🇮🇱 以色列 (Israel) 04 🔓2 - sub
+  server: arcturus.yokkastars.com
   port: 40443
   udp: true
   type: vless
@@ -42,47 +49,7 @@ proxies:
     public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
     short-id: db46e2946fc466fd
   servername: deepl.com
-  client-fingerprint: ''
-- name: 🇮🇱 以色列 (Israel) 04 🔓2 - sub
-  server: platform118.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
-- name: 🇮🇱 以色列 (Israel) 05 🔓2 - sub
-  server: platform113.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform113
-    headers:
-      Host: platform113.halalkhor.info
-- name: 🇮🇱 以色列 (Israel) 06 🔓2 - sub
-  server: platform117.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform117
-- name: 🇮🇱 以色列 (Israel) 07 🔓2 - sub
-  server: platform115.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform115
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,9 +59,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 02 🔓2 - sub
   - 🇮🇱 以色列 (Israel) 03 🔓2 - sub
   - 🇮🇱 以色列 (Israel) 04 🔓2 - sub
-  - 🇮🇱 以色列 (Israel) 05 🔓2 - sub
-  - 🇮🇱 以色列 (Israel) 06 🔓2 - sub
-  - 🇮🇱 以色列 (Israel) 07 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,8 +68,5 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 02 🔓2 - sub
   - 🇮🇱 以色列 (Israel) 03 🔓2 - sub
   - 🇮🇱 以色列 (Israel) 04 🔓2 - sub
-  - 🇮🇱 以色列 (Israel) 05 🔓2 - sub
-  - 🇮🇱 以色列 (Israel) 06 🔓2 - sub
-  - 🇮🇱 以色列 (Israel) 07 🔓2 - sub
 rules:
 - MATCH,PROXIES

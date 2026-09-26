@@ -4,15 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 🔒 - sub
-  server: 103.215.218.158
-  port: 22324
+- name: 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
+  server: 104.20.6.153
+  port: 8880
   udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.harmonica02.workers.dev
 - name: 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
+  server: 82.47.63.156
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
+  server: 93.114.98.221
+  port: 443
+  udp: true
+  type: vless
+  uuid: 552ca1e2-d1d4-4d9d-b0ea-9fabd287ad14
+  tls: true
+  servername: 00iwuafi1019.dopgangster.com
+  skip-cert-verify: false
+- name: 🇹🇷 土耳其 (Turkey) 04 🔓2 - sub
   server: 78.135.73.47
   port: 443
   udp: true
@@ -24,8 +42,8 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
+  client-fingerprint: qq
+- name: 🇹🇷 土耳其 (Turkey) 05 🔓2 - sub
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -42,16 +60,20 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 🔒 - sub
+  - 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 04 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 05 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 🔒 - sub
+  - 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 04 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 05 🔓2 - sub
 rules:
 - MATCH,PROXIES
