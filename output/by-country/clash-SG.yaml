@@ -5,66 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 🔓2 - sub
-  server: 172.67.194.138
-  port: 443
+  server: 162.159.43.187
+  port: 8080
   udp: true
   type: vless
-  uuid: 4908acbe-485f-4e1c-bb11-5dd04b9f7e88
-  tls: true
-  servername: restless-base-fe24.alirezahabibi20009.workers.dev
-  skip-cert-verify: false
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiRjhycEV5WUpJTGZpQSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: '/?ed=2560security=tls '
     headers:
-      Host: restless-base-fe24.alirezahabibi20009.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇬 新加坡 (Singapore) 02 🔓2 - sub
-  server: 63.141.128.22
-  port: 443
+  server: 172.64.229.2
+  port: 2086
   udp: true
   type: vless
-  uuid: b8b01773-36b1-4b49-9bd0-6249f52345b4
-  tls: true
-  servername: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
-  skip-cert-verify: false
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiTkNUaFg0ZnJNUjhhcyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /?ed=2560security=tls
     headers:
-      Host: MiSty-tooth-78cA.FoboGAH414-e7B.WoRKERs.DEv
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇬 新加坡 (Singapore) 03 🔓2 - sub
-  server: 104.17.3.81
-  port: 443
+  server: 172.64.32.108
+  port: 8080
   udp: true
   type: vless
-  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
-  tls: true
-  servername: nautica-cff.kloningstrife002.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /138.2.74.219-28616
+    path: /?ed=2560security=tls
     headers:
-      Host: nautica-cff.kloningstrife002.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇬 新加坡 (Singapore) 04 🔓2 - sub
-  server: www.speedtest.net
-  port: 443
+  server: 172.64.158.146
+  port: 8880
   udp: true
   type: vless
-  uuid: 709b1cf4-a386-4cbf-bcf4-46f03c4788a8
-  tls: true
-  servername: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /vl/1mwugQaZADT6PqPOiKcsn?ed=2560
+    path: /?ed=2560security=tls
     headers:
-      Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇬 新加坡 (Singapore) 05 🔓2 - sub
-  server: 172.64.229.170
-  port: 2082
+  server: 104.18.46.46
+  port: 8880
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -74,34 +60,24 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇬 新加坡 (Singapore) 06 🔓2 - sub
-  server: 129.153.71.28
-  port: 28863
+  server: 104.18.46.234
+  port: 2082
   udp: true
   type: vless
-  uuid: 0d5489ad-db99-43a3-bc58-3648386fc7e7
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /?ed=2560security=tls
     headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇸🇬 新加坡 (Singapore) 07 🔓2 - sub
-  server: www.speedtest.net
-  port: 443
+  server: 172.237.70.226
+  port: 22324
   udp: true
-  type: vless
-  uuid: b19419fa-8009-455b-b059-765e2856883a
-  tls: true
-  servername: akbarian34.j9z65ce2uyks.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/3Qe9Fv1V2cqEtXyBQApZYi?ed=2560
-    headers:
-      Host: akbarian34.j9z65ce2uyks.workers.dev
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 08 🔓2 - sub
   server: 68.183.227.4
   port: 8080
@@ -110,14 +86,20 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 09 🔓2 - sub
-  server: 149.88.23.207
-  port: 18000
+  server: 128.199.172.224
+  port: 8080
   udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 10 🔓2 - sub
+  server: 68.183.235.122
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 11 🔓2 - sub
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -125,29 +107,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 11 🔓2 - sub
-  server: 172.237.70.226
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 12 🔓2 - sub
-  server: 210.152.85.154
-  port: 19364
-  udp: true
-  type: vless
-  uuid: d5f8cb9f-0fde-45a9-8c2f-52a03207f26b
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 13 🔓2 - sub
   server: 5.223.74.174
   port: 2053
   udp: true
@@ -160,28 +120,7 @@ proxies:
     short-id: 36151c48e28cfb65
   servername: 5.223.74.174
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 14 🔓2 - sub
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 15 🔓2 - sub
-  server: 206.206.76.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
-    short-id: 9930177816ab09da
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 16 🔓2 - sub
+- name: 🇸🇬 新加坡 (Singapore) 13 🔓2 - sub
   server: 163.128.99.14
   port: 443
   udp: true
@@ -194,21 +133,43 @@ proxies:
     short-id: e3a4bdfe3d6fd8ec
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 17 🔓2 - sub
-  server: 54.169.200.246
-  port: 41688
+- name: 🇸🇬 新加坡 (Singapore) 14 🔓2 - sub
+  server: 138.2.73.238
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 15 🔓2 - sub
+  server: 68.183.227.45
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 16 🔓2 - sub
+  server: 206.206.76.75
+  port: 443
   udp: true
   type: vless
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  servername: www.intel.com
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
+  servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 17 🔓2 - sub
+  server: 68.183.227.236
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 18 🔓2 - sub
-  server: sg2-8sb.6121999.dpdns.org
+  server: 146.235.16.130
   port: 19825
   udp: true
   type: vless
@@ -219,7 +180,7 @@ proxies:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
     short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇸🇬 新加坡 (Singapore) 19 🔓2 - sub
   server: 163.128.99.57
   port: 443
@@ -234,18 +195,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: safari
 - name: 🇸🇬 新加坡 (Singapore) 20 🔓2 - sub
-  server: 217.217.254.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  tls: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 21 🔓2 - sub
   server: 138.2.89.249
   port: 443
   udp: true
@@ -255,33 +204,27 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 309502c4a8df10b46fb976d4a8c43f42
+- name: 🇸🇬 新加坡 (Singapore) 21 🔓2 - sub
+  server: ww11.levikogjgfdd.ir
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 22 🔓2 - sub
-  server: 54.251.9.130
-  port: 24146
+  server: 54.169.200.246
+  port: 41688
   udp: true
   type: vless
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
+    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
+    short-id: 7f342137c20387
   servername: www.intel.com
-  client-fingerprint: edge
-- name: 🇸🇬 新加坡 (Singapore) 23 🔓2 - sub
-  server: 2.26.91.98
-  port: 1443
-  udp: true
-  type: vless
-  uuid: 9ba09caf-da90-48ef-9dac-1a4611bc88d1
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -309,7 +252,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 20 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 21 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 22 🔓2 - sub
-  - 🇸🇬 新加坡 (Singapore) 23 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -337,6 +279,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 20 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 21 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 22 🔓2 - sub
-  - 🇸🇬 新加坡 (Singapore) 23 🔓2 - sub
 rules:
 - MATCH,PROXIES

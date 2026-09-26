@@ -4,14 +4,19 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 爱尔兰 (Ireland) 01 🔓2 - sub
-  server: 18.169.126.60
-  port: 22223
+- name: 🇮🇪 爱尔兰 (Ireland) 01 🔓1 - sub
+  server: 185.148.107.30
+  port: 8880
   udp: true
   type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime55.workers.dev
 - name: 🇮🇪 爱尔兰 (Ireland) 02 🔓2 - sub
-  server: 35.176.47.30
+  server: 52.56.136.35
   port: 22222
   udp: true
   type: vless
@@ -28,7 +33,7 @@ proxies:
     public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
     short-id: 0eec442e7b34d2f2
   servername: www.tesla.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇪 爱尔兰 (Ireland) 04 🔓2 - sub
   server: ireland-new-ded1.failspace.top
   port: 443
@@ -44,7 +49,7 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 爱尔兰 (Ireland) 01 🔓2 - sub
+  - 🇮🇪 爱尔兰 (Ireland) 01 🔓1 - sub
   - 🇮🇪 爱尔兰 (Ireland) 02 🔓2 - sub
   - 🇮🇪 爱尔兰 (Ireland) 03 🔓2 - sub
   - 🇮🇪 爱尔兰 (Ireland) 04 🔓2 - sub
@@ -53,7 +58,7 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 爱尔兰 (Ireland) 01 🔓2 - sub
+  - 🇮🇪 爱尔兰 (Ireland) 01 🔓1 - sub
   - 🇮🇪 爱尔兰 (Ireland) 02 🔓2 - sub
   - 🇮🇪 爱尔兰 (Ireland) 03 🔓2 - sub
   - 🇮🇪 爱尔兰 (Ireland) 04 🔓2 - sub

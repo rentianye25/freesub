@@ -6,28 +6,14 @@
     {
       "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 🔓2 - sub",
-      "server": "82.198.246.9",
+      "server": "82.198.246.37",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 🔓1 - sub",
-      "server": "188.114.97.6",
-      "server_port": 80,
-      "uuid": "6faeb6a0-5055-4e4b-8fb1-ffd77e57aefa",
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "somersby.pt.r3xxe.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 🔓2 - sub",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 🔓2 - sub",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -37,7 +23,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -47,12 +33,24 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 🔓2 - sub",
+      "server": "vpn-au-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 🔓2 - sub",
-        "🇦🇺 澳大利亚 (Australia) 02 🔓1 - sub",
+        "🇦🇺 澳大利亚 (Australia) 02 🔓2 - sub",
         "🇦🇺 澳大利亚 (Australia) 03 🔓2 - sub"
       ]
     },
@@ -61,7 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 🔓2 - sub",
-        "🇦🇺 澳大利亚 (Australia) 02 🔓1 - sub",
+        "🇦🇺 澳大利亚 (Australia) 02 🔓2 - sub",
         "🇦🇺 澳大利亚 (Australia) 03 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
