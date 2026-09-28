@@ -4,7 +4,18 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔓2 - sub
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔓1 - sub
+  server: 23.227.39.30
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime17.workers.dev
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 🔓2 - sub
   server: 87.199.130.119
   port: 443
   udp: true
@@ -16,18 +27,37 @@ proxies:
     public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
     short-id: 7cf408996c82639f
   servername: kazartip.thewalkingded.life
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 🔓2 - sub
+  server: 89.218.15.90
+  port: 10002
+  udp: true
+  type: vless
+  uuid: 392fcc7e-b995-11f1-a6b7-1b2272a86bd5
+  tls: true
+  servername: kz1.vpnjantit.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+    headers:
+      Host: kz1.vpnjantit.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔓2 - sub
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔓1 - sub
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 🔓2 - sub
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔓2 - sub
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔓1 - sub
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 🔓2 - sub
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 🔓2 - sub
 rules:
 - MATCH,PROXIES

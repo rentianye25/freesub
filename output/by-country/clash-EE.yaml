@@ -5,13 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 🔓2 - sub
-  server: 109.206.241.10
-  port: 449
+  server: 94.183.170.147
+  port: 8443
   udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
+  type: vless
+  uuid: 66ac188b-bd8d-4218-b9ba-0bad0e152cd0
+  tls: true
+  reality-opts:
+    public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
+    short-id: 72ccd4a7563c2953
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 9d30d49278
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 🔓2 - sub
   server: 94.183.170.135
   port: 443
@@ -21,9 +28,17 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 94.183.170.135
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 🔓2 - sub
+  server: 94.183.170.135
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  tls: true
+  servername: estproxy4.lockdwn.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 🔓2 - sub
   server: 94.183.170.65
   port: 8081
   udp: true
@@ -34,22 +49,7 @@ proxies:
     path: /ws/generate
     headers:
       Host: hys2.arkonsoft.top
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 🔓2 - sub
-  server: 94.183.170.147
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
-  tls: true
-  reality-opts:
-    public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
-    short-id: 72ccd4a7563c2953
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 9d30d49278
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 🔓2 - sub
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 🔓1 - sub
   server: 93.89.220.7
   port: 8443
   udp: true
@@ -60,7 +60,7 @@ proxies:
     public-key: GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4
     short-id: b3a1cc510a2001c6
   servername: eh.vk.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
 - name: 🇪🇪 爱沙尼亚 (Estonia) 06 🔓2 - sub
   server: 94.183.170.65
   port: 443
@@ -70,6 +70,31 @@ proxies:
   sni: hys2.arkonsoft.top
   skip-cert-verify: false
 - name: 🇪🇪 爱沙尼亚 (Estonia) 07 🔓2 - sub
+  server: www.speedtest.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
+  tls: true
+  servername: netlivpn5002.whwbbb.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn5002.whwbbb.workers.dev
+- name: 🇪🇪 爱沙尼亚 (Estonia) 08 🔓2 - sub
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: a88e61a0-2b38-f6df-c5c7-d20600000000
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn5002.whwbbb.workers.dev
+- name: 🇪🇪 爱沙尼亚 (Estonia) 09 🔓2 - sub
   server: 5.181.201.44
   port: 443
   udp: true
@@ -81,7 +106,14 @@ proxies:
     public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
     short-id: 38018dde3e27335e
   servername: bababoy.karp1pdd.life
-  client-fingerprint: safari
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 10 🔓2 - sub
+  server: 80.97.27.106
+  port: 114
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj
 proxy-groups:
 - name: PROXIES
   type: select
@@ -91,9 +123,12 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 🔓2 - sub
   - 🇪🇪 爱沙尼亚 (Estonia) 03 🔓2 - sub
   - 🇪🇪 爱沙尼亚 (Estonia) 04 🔓2 - sub
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 🔓2 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 🔓1 - sub
   - 🇪🇪 爱沙尼亚 (Estonia) 06 🔓2 - sub
   - 🇪🇪 爱沙尼亚 (Estonia) 07 🔓2 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 🔓2 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 09 🔓2 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 10 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -103,8 +138,11 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 🔓2 - sub
   - 🇪🇪 爱沙尼亚 (Estonia) 03 🔓2 - sub
   - 🇪🇪 爱沙尼亚 (Estonia) 04 🔓2 - sub
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 🔓2 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 🔓1 - sub
   - 🇪🇪 爱沙尼亚 (Estonia) 06 🔓2 - sub
   - 🇪🇪 爱沙尼亚 (Estonia) 07 🔓2 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 🔓2 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 09 🔓2 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 10 🔓2 - sub
 rules:
 - MATCH,PROXIES

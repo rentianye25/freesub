@@ -5,6 +5,79 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
+  server: 172.67.192.84
+  port: 2095
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: '/juvsrnmgdu8i0179k5 '
+    headers:
+      Host: index.harmonica02.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
+  server: 188.114.98.16
+  port: 2082
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /rry8le3tt8f3g5j7kr
+    headers:
+      Host: index.harmonica02.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 03 🔓1 - sub
+  server: 104.20.6.153
+  port: 8880
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /j100sy9wn073cxbvir
+    headers:
+      Host: index.harmonica02.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 04 🔓2 - sub
+  server: 104.17.169.13
+  port: 2053
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  tls: true
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
+- name: 🇹🇷 土耳其 (Turkey) 05 🔓1 - sub
+  server: 104.21.70.21
+  port: 443
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  tls: true
+  servername: index.harmonica01.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: index.harmonica01.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 06 🔓2 - sub
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: index.harmonica01.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 07 🔓2 - sub
   server: 78.135.73.47
   port: 443
   udp: true
@@ -16,8 +89,8 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: qq
-- name: 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 08 🔓2 - sub
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -28,23 +101,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 土耳其 (Turkey) 04 🔓2 - sub
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,8 +109,12 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
-  - 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 03 🔓1 - sub
   - 🇹🇷 土耳其 (Turkey) 04 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 05 🔓1 - sub
+  - 🇹🇷 土耳其 (Turkey) 06 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 07 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 08 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,7 +122,11 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
-  - 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 03 🔓1 - sub
   - 🇹🇷 土耳其 (Turkey) 04 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 05 🔓1 - sub
+  - 🇹🇷 土耳其 (Turkey) 06 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 07 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 08 🔓2 - sub
 rules:
 - MATCH,PROXIES

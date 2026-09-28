@@ -5,65 +5,47 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) 🔓1 - sub",
-      "server": "162.159.0.169",
-      "server_port": 2095,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub",
-      "server": "104.18.46.234",
-      "server_port": 2052,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) 🔓2 - sub",
-      "server": "r3mrcg001286ek2.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) 🔓2 - sub",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21018,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) 🔓2 - sub",
-      "server": "118.167.230.191",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tag": "🇨🇦 加拿大 (Canada) 01 (家宽) 🔓2 - sub",
+      "server": "peekconfigg.vipserver1-39d.workers.dev",
+      "server_port": 2096,
+      "uuid": "7c6a566b-4c4a-b8f2-1719-a3096b424141",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "peekconfigg.vipserver1-39d.workers.dev",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/sync",
+        "headers": {
+          "Host": "peekconfigg.vipserver1-39d.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 02 (家宽) 🔓2 - sub",
+      "server": "116.204.164.5",
+      "server_port": 7443,
+      "uuid": "0f2765c2-1845-4545-987e-337c7cfb4e52",
+      "tls": {
+        "enabled": true,
+        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
+        "insecure": false,
+        "utls": {
           "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
         }
       }
     },
@@ -72,22 +54,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (移动家宽) 🔓1 - sub",
-        "🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) 🔓2 - sub",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) 🔓2 - sub"
+        "🇨🇦 加拿大 (Canada) 01 (家宽) 🔓2 - sub",
+        "🇯🇵 日本 (Japan) 02 (家宽) 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (移动家宽) 🔓1 - sub",
-        "🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) 🔓2 - sub",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) 🔓2 - sub"
+        "🇨🇦 加拿大 (Canada) 01 (家宽) 🔓2 - sub",
+        "🇯🇵 日本 (Japan) 02 (家宽) 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
