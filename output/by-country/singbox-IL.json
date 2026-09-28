@@ -36,7 +36,7 @@
         "server_name": "store.steampowered.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -46,16 +46,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇱 以色列 (Israel) 03 🔓2 - sub",
-      "server": "31.57.185.82",
-      "server_port": 23114,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "vS/2+E2vOG1C68QgmugNLDAxJqtGQeIJVI8lUu20n9Y=:+aFx+Fbhiw1966yMNaxGEn+FTlrtEac0R/CoKvqxyWo="
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 04 🔓2 - sub",
+      "tag": "🇮🇱 以色列 (Israel) 03 🔓2 - sub",
       "server": "193.202.10.137",
       "server_port": 2291,
       "uuid": "25284368-40d5-4abe-9f56-54a07e88a7af",
@@ -75,36 +67,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 05 🔓2 - sub",
-      "server": "193.169.229.145",
-      "server_port": 443,
-      "uuid": "46b3a70b-b99f-4c6e-aa83-df6d842bb954",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "isr.vpnskyline.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "2CwgJn1lc23uxQjAdGphQl4SSRmd1amunSpYXxgCgCM",
-          "short_id": "7e13fde9"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇱 以色列 (Israel) 01 🔓2 - sub",
         "🇮🇱 以色列 (Israel) 02 🔓2 - sub",
-        "🇮🇱 以色列 (Israel) 03 🔓2 - sub",
-        "🇮🇱 以色列 (Israel) 04 🔓2 - sub",
-        "🇮🇱 以色列 (Israel) 05 🔓2 - sub"
+        "🇮🇱 以色列 (Israel) 03 🔓2 - sub"
       ]
     },
     {
@@ -113,9 +82,7 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 🔓2 - sub",
         "🇮🇱 以色列 (Israel) 02 🔓2 - sub",
-        "🇮🇱 以色列 (Israel) 03 🔓2 - sub",
-        "🇮🇱 以色列 (Israel) 04 🔓2 - sub",
-        "🇮🇱 以色列 (Israel) 05 🔓2 - sub"
+        "🇮🇱 以色列 (Israel) 03 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
