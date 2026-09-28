@@ -5,43 +5,50 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub
-  server: 8.6.112.9
-  port: 443
+  server: 104.18.34.14
+  port: 2086
   udp: true
   type: vless
-  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
-  tls: true
-  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    path: /?ed=2560security=tls
     headers:
-      Host: ancient-heart-60c5.dpccgizieb.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
-  server: go.inmobi.com
-  port: 8443
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 02 🔓1 - sub
+  server: 172.64.32.108
+  port: 80
   udp: true
   type: vless
-  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
-  tls: true
-  servername: socks5.revil-time3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /socks5://128.140.46.169:13482
+    path: /?ed=2560security=tls
     headers:
-      Host: socks5.revil-time3.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 03 🔓1 - sub
-  server: 94.249.187.46
-  port: 1080
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
+  server: 130.49.189.158
+  port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: IXa3ylzS_jBOAsQy071tIQ
-- name: 🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub
+  password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
+- name: 🇷🇺 俄罗斯 (Russia) 04 🔓1 - sub
+  server: 176.32.35.2
+  port: 10090
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+- name: 🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: itsallproxy.quattro-tech.ru
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub
   server: 147.45.46.3
   port: 443
   udp: true
@@ -53,81 +60,27 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: sellflow.org
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub
-  server: 176.32.35.2
-  port: 10090
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 895b4b796a357570
-- name: 🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
-- name: 🇷🇺 俄罗斯 (Russia) 07 🔓2 - sub
-  server: 130.49.190.43
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 25284368-40d5-4abe-9f56-54a07e88a7af
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wJgBZNx487TIQivnqGuyDyyN6iKcFTy64khGSOFbeyo
-    short-id: 4d123bebfae16562
-  servername: yandex.ru
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 08 🔓2 - sub
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 09 🔒 - sub
-  server: du-rov.secureservice.top
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 03 🔓1 - sub
-  - 🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 02 🔓1 - sub
+  - 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 04 🔓1 - sub
   - 🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 07 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 08 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 09 🔒 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 03 🔓1 - sub
-  - 🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 02 🔓1 - sub
+  - 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 04 🔓1 - sub
   - 🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 07 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 08 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 09 🔒 - sub
 rules:
 - MATCH,PROXIES

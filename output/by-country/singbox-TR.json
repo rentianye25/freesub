@@ -6,104 +6,37 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 🔓2 - sub",
-      "server": "172.67.192.84",
-      "server_port": 2095,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "server": "185.87.24.168",
+      "server_port": 2085,
+      "uuid": "ea53420b-e8ad-4e9d-ab21-ddd546231e92",
       "transport": {
-        "type": "ws",
-        "path": "/juvsrnmgdu8i0179k5 ",
-        "headers": {
-          "Host": "index.harmonica02.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
-      "server": "188.114.98.16",
-      "server_port": 2082,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
-      "transport": {
-        "type": "ws",
-        "path": "/rry8le3tt8f3g5j7kr",
-        "headers": {
-          "Host": "index.harmonica02.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 🔓1 - sub",
-      "server": "104.20.6.153",
-      "server_port": 8880,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
-      "transport": {
-        "type": "ws",
-        "path": "/j100sy9wn073cxbvir",
-        "headers": {
-          "Host": "index.harmonica02.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub",
-      "server": "104.17.169.13",
+      "server": "151.241.226.201",
       "server_port": 2053,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
       "tls": {
         "enabled": true,
-        "server_name": "inDeX.HaRMONiCA01.WORkers.DeV",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/axch1mttbxz2k55y01",
-        "headers": {
-          "Host": "inDeX.HaRMONiCA01.WORkers.DeV"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 🔓1 - sub",
-      "server": "104.21.70.21",
-      "server_port": 443,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
-      "tls": {
-        "enabled": true,
-        "server_name": "index.harmonica01.workers.dev",
-        "insecure": false,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/axch1mttbxz2k55y01",
-        "headers": {
-          "Host": "index.harmonica01.workers.dev"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
+          "short_id": "9e419c0759b54d6f"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 🔓2 - sub",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
-      "transport": {
-        "type": "ws",
-        "path": "/axch1mttbxz2k55y01",
-        "headers": {
-          "Host": "index.harmonica01.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 07 🔓2 - sub",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -113,32 +46,12 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
           "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
           "short_id": "f46cd3ea3d1eb72d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 08 🔓2 - sub",
-      "server": "151.241.226.201",
-      "server_port": 2053,
-      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-          "short_id": "9e419c0759b54d6f"
         }
       }
     },
@@ -149,12 +62,7 @@
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 🔓2 - sub",
         "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 03 🔓1 - sub",
-        "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 05 🔓1 - sub",
-        "🇹🇷 土耳其 (Turkey) 06 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 07 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 08 🔓2 - sub"
+        "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub"
       ]
     },
     {
@@ -163,12 +71,7 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 🔓2 - sub",
         "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 03 🔓1 - sub",
-        "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 05 🔓1 - sub",
-        "🇹🇷 土耳其 (Turkey) 06 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 07 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 08 🔓2 - sub"
+        "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
