@@ -5,26 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01 🔓2 - sub
-  server: platform101.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform101
-    headers:
-      Host: platform101.halalkhor.info
-- name: 🇲🇾 马来西亚 (Malaysia) 02 🔓2 - sub
-  server: platform103.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform103
-- name: 🇲🇾 马来西亚 (Malaysia) 03 🔓2 - sub
   server: platform128.golnamakcert.top
   port: 80
   udp: true
@@ -35,47 +15,17 @@ proxies:
     path: /platform128
     headers:
       Host: platform128.halalkhor.info
-- name: 🇲🇾 马来西亚 (Malaysia) 04 🔓2 - sub
-  server: platform107.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform107
-    headers:
-      Host: platform107.golnamakcert.top
-- name: 🇲🇾 马来西亚 (Malaysia) 05 🔓2 - sub
-  server: platform118.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇲🇾 马来西亚 (Malaysia) 01 🔓2 - sub
-  - 🇲🇾 马来西亚 (Malaysia) 02 🔓2 - sub
-  - 🇲🇾 马来西亚 (Malaysia) 03 🔓2 - sub
-  - 🇲🇾 马来西亚 (Malaysia) 04 🔓2 - sub
-  - 🇲🇾 马来西亚 (Malaysia) 05 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 马来西亚 (Malaysia) 01 🔓2 - sub
-  - 🇲🇾 马来西亚 (Malaysia) 02 🔓2 - sub
-  - 🇲🇾 马来西亚 (Malaysia) 03 🔓2 - sub
-  - 🇲🇾 马来西亚 (Malaysia) 04 🔓2 - sub
-  - 🇲🇾 马来西亚 (Malaysia) 05 🔓2 - sub
 rules:
 - MATCH,PROXIES

@@ -5,16 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 🔓2 - sub
-  server: 130.49.161.70
+  server: novantunnel.tech
   port: 443
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
+  type: vless
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  tls: true
+  servername: novantunnel.tech
   skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /Novan-AE9
+    headers:
+      Host: novantunnel.tech
 - name: 🇦🇪 阿联酋 (UAE) 02 🔓2 - sub
+  server: 104.143.223.82
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 86f50dfb-b153-4aef-a723-d77bc4cf8ee3
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 03 🔓2 - sub
   server: 78.40.195.140
   port: 443
   udp: true
@@ -26,8 +40,18 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 03 🔓1 - sub
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 04 🔓2 - sub
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 05 🔓1 - sub
   server: 94.183.224.45
   port: 443
   udp: true
@@ -40,15 +64,26 @@ proxies:
     short-id: a1b2c3d4e5f67890
   servername: dzen.ru
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 04 🔓2 - sub
-  server: 85.204.107.178
+- name: 🇦🇪 阿联酋 (UAE) 06 🔓2 - sub
+  server: 85.204.107.183
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 05 🔓2 - sub
+- name: 🇦🇪 阿联酋 (UAE) 07 🔓2 - sub
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 08 🔓2 - sub
   server: 146.70.102.82
   port: 443
   udp: true
@@ -60,7 +95,7 @@ proxies:
     public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,9 +103,12 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 🔓2 - sub
   - 🇦🇪 阿联酋 (UAE) 02 🔓2 - sub
-  - 🇦🇪 阿联酋 (UAE) 03 🔓1 - sub
+  - 🇦🇪 阿联酋 (UAE) 03 🔓2 - sub
   - 🇦🇪 阿联酋 (UAE) 04 🔓2 - sub
-  - 🇦🇪 阿联酋 (UAE) 05 🔓2 - sub
+  - 🇦🇪 阿联酋 (UAE) 05 🔓1 - sub
+  - 🇦🇪 阿联酋 (UAE) 06 🔓2 - sub
+  - 🇦🇪 阿联酋 (UAE) 07 🔓2 - sub
+  - 🇦🇪 阿联酋 (UAE) 08 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,8 +116,11 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 🔓2 - sub
   - 🇦🇪 阿联酋 (UAE) 02 🔓2 - sub
-  - 🇦🇪 阿联酋 (UAE) 03 🔓1 - sub
+  - 🇦🇪 阿联酋 (UAE) 03 🔓2 - sub
   - 🇦🇪 阿联酋 (UAE) 04 🔓2 - sub
-  - 🇦🇪 阿联酋 (UAE) 05 🔓2 - sub
+  - 🇦🇪 阿联酋 (UAE) 05 🔓1 - sub
+  - 🇦🇪 阿联酋 (UAE) 06 🔓2 - sub
+  - 🇦🇪 阿联酋 (UAE) 07 🔓2 - sub
+  - 🇦🇪 阿联酋 (UAE) 08 🔓2 - sub
 rules:
 - MATCH,PROXIES

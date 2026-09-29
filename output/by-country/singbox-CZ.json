@@ -5,15 +5,15 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub",
-      "server": "free.sahanwickramasinghe.me",
-      "server_port": 80,
-      "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
+      "tag": "🇨🇿 捷克 (Czech) 01 🔓2 - sub",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "93fa8bdb-9cca-4a3e-8355-b7c12e4f595e",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/vl/yLWNcuUuw1jlJpkDhGy?ed=2560",
         "headers": {
-          "Host": "free.sahanwickramasinghe.me"
+          "Host": "fornewiran.ade-1000.workers.dev"
         }
       }
     },
@@ -22,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub"
+        "🇨🇿 捷克 (Czech) 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub"
+        "🇨🇿 捷克 (Czech) 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

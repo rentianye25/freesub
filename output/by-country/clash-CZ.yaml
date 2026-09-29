@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub
-  server: free.sahanwickramasinghe.me
-  port: 80
+- name: 🇨🇿 捷克 (Czech) 01 🔓2 - sub
+  server: 188.114.97.6
+  port: 8080
   udp: true
   type: vless
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
   network: ws
   ws-opts:
-    path: /
+    path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
     headers:
-      Host: free.sahanwickramasinghe.me
+      Host: fornewiran.ade-1000.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub
+  - 🇨🇿 捷克 (Czech) 01 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub
+  - 🇨🇿 捷克 (Czech) 01 🔓2 - sub
 rules:
 - MATCH,PROXIES

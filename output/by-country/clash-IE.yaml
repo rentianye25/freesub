@@ -4,7 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇪 爱尔兰 (Ireland) 01 🔓2 - sub
+- name: 🇮🇪 爱尔兰 (Ireland) 01 🔓1 - sub
+  server: 45.131.209.30
+  port: 8880
+  udp: true
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime04.workers.dev
+- name: 🇮🇪 爱尔兰 (Ireland) 02 🔓1 - sub
+  server: 104.25.178.92
+  port: 443
+  udp: true
+  type: vless
+  uuid: d9abc6e3-83bf-4c28-ae68-72465e2abe39
+  tls: true
+  servername: ikT-KKC25F27k-3Tehr8MC.ADE-1007.WOrKErS.DEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/xQhNe7rLrdM0emZlaW5LMsNwcoIgnT?ed=2560
+    headers:
+      Host: ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev
+- name: 🇮🇪 爱尔兰 (Ireland) 03 🔓2 - sub
   server: 3.9.135.156
   port: 51847
   udp: true
@@ -16,18 +42,39 @@ proxies:
     public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
     short-id: 0eec442e7b34d2f2
   servername: www.tesla.com
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇮🇪 爱尔兰 (Ireland) 04 🔓2 - sub
+  server: 104.21.22.180
+  port: 443
+  udp: true
+  type: vless
+  uuid: 33918b20-9e02-4dc6-8b30-79b2d4b2e0e6
+  tls: true
+  servername: aUTo-sCALe-238B2B.infRa-CorE-1630dd.wORKerS.DEv
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiUjJBU3JkVlRwSWtnciIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0
+    headers:
+      Host: aUto-scaLe-238B2B.inFra-coRE-1630dD.WorKerS.DeV
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇪 爱尔兰 (Ireland) 01 🔓2 - sub
+  - 🇮🇪 爱尔兰 (Ireland) 01 🔓1 - sub
+  - 🇮🇪 爱尔兰 (Ireland) 02 🔓1 - sub
+  - 🇮🇪 爱尔兰 (Ireland) 03 🔓2 - sub
+  - 🇮🇪 爱尔兰 (Ireland) 04 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇪 爱尔兰 (Ireland) 01 🔓2 - sub
+  - 🇮🇪 爱尔兰 (Ireland) 01 🔓1 - sub
+  - 🇮🇪 爱尔兰 (Ireland) 02 🔓1 - sub
+  - 🇮🇪 爱尔兰 (Ireland) 03 🔓2 - sub
+  - 🇮🇪 爱尔兰 (Ireland) 04 🔓2 - sub
 rules:
 - MATCH,PROXIES

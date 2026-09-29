@@ -5,42 +5,70 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 🔓2 - sub
-  server: 51.20.86.152
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 02 🔓2 - sub
-  server: 172.238.244.13
-  port: 17000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-- name: 🇸🇪 瑞典 (Sweden) 03 🔓1 - sub
-  server: 51.20.96.231
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 04 🔓2 - sub
   server: 70.34.212.124
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
-- name: 🇸🇪 瑞典 (Sweden) 05 🔓1 - sub
-  server: 13.60.213.145
+- name: 🇸🇪 瑞典 (Sweden) 02 🔓2 - sub
+  server: 70.34.212.124
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+- name: 🇸🇪 瑞典 (Sweden) 03 🔓2 - sub
+  server: 13.62.228.76
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 04 🔓2 - sub
+  server: 13.49.76.55
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 05 🔓2 - sub
+  server: 172.238.244.13
+  port: 17000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
 - name: 🇸🇪 瑞典 (Sweden) 06 🔓2 - sub
-  server: 193.42.39.10
+  server: 51.20.96.231
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 07 🔓1 - sub
+  server: 51.20.122.188
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 08 🔓2 - sub
+  server: 51.20.143.248
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 09 🔓2 - sub
+  server: 51.20.86.152
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 10 🔓2 - sub
+  server: 79.141.174.147
   port: 33743
   udp: true
   type: vless
@@ -49,33 +77,12 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 07 🔓2 - sub
-  server: 13.62.228.76
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 08 🔓1 - sub
-  server: 13.48.104.64
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 09 🔓2 - sub
-  server: 51.20.122.188
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 10 🔓2 - sub
-  server: 5.157.10.148
+- name: 🇸🇪 瑞典 (Sweden) 11 🔓2 - sub
+  server: surstreming.vvzzkontaktezzvv.garden
   port: 443
   udp: true
   type: vless
@@ -86,8 +93,8 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 11 🔓2 - sub
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 12 🔓2 - sub
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -98,32 +105,10 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 12 🔓2 - sub
-  server: 2.27.14.218
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
-  tls: true
-  servername: stf7697.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: stf7697.rumedia-cdn.com
-- name: 🇸🇪 瑞典 (Sweden) 13 🔓2 - sub
-  server: 13.49.76.55
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
 proxy-groups:
 - name: PROXIES
   type: select
@@ -131,17 +116,16 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 02 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 03 🔓1 - sub
+  - 🇸🇪 瑞典 (Sweden) 03 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 04 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 05 🔓1 - sub
+  - 🇸🇪 瑞典 (Sweden) 05 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 06 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 07 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 08 🔓1 - sub
+  - 🇸🇪 瑞典 (Sweden) 07 🔓1 - sub
+  - 🇸🇪 瑞典 (Sweden) 08 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 09 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 10 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 11 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 12 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 13 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -149,16 +133,15 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 02 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 03 🔓1 - sub
+  - 🇸🇪 瑞典 (Sweden) 03 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 04 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 05 🔓1 - sub
+  - 🇸🇪 瑞典 (Sweden) 05 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 06 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 07 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 08 🔓1 - sub
+  - 🇸🇪 瑞典 (Sweden) 07 🔓1 - sub
+  - 🇸🇪 瑞典 (Sweden) 08 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 09 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 10 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 11 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 12 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 13 🔓2 - sub
 rules:
 - MATCH,PROXIES

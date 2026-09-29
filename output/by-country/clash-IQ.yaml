@@ -5,6 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 🔓2 - sub
+  server: 66.81.247.155
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
+  tls: true
+  servername: testmikonim.hydrymhmdamyn7.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /OAZko425kNFF0PpQ
+    headers:
+      Host: testmikonim.hydrymhmdamyn7.workers.dev
+- name: 🇮🇶 IQ 02 🔓2 - sub
+  server: 104.17.147.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0432902e-6604-40cd-bbd0-57ab4e5d909f
+  tls: true
+  servername: bPB-4dc4958B.hXjkcgHcHv.woRkeRs.deV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiOENNZnB6WTgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    headers:
+      Host: bpb-4dc4958b.hxjkcghchv.workers.dev
+- name: 🇮🇶 IQ 03 🔓2 - sub
   server: 178.17.57.34
   port: 40443
   udp: true
@@ -23,11 +53,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 🔓2 - sub
+  - 🇮🇶 IQ 02 🔓2 - sub
+  - 🇮🇶 IQ 03 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 🔓2 - sub
+  - 🇮🇶 IQ 02 🔓2 - sub
+  - 🇮🇶 IQ 03 🔓2 - sub
 rules:
 - MATCH,PROXIES
