@@ -4,36 +4,38 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub
-  server: 104.18.46.234
-  port: 80
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) 🔓2 - sub
-  server: 145.239.30.17
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) 🔓2 - sub
+  server: 178.83.46.216
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
+  server: tw3.dexlos.com
+  port: 8080
+  udp: true
+  type: tuic
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: tw3.dexlos.com
+  skip-cert-verify: false
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) 🔓2 - sub
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) 🔓2 - sub
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) 🔓2 - sub
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
 rules:
 - MATCH,PROXIES

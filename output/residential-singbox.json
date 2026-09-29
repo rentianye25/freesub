@@ -5,39 +5,44 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub",
-      "server": "104.18.46.234",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) 🔓2 - sub",
-      "server": "145.239.30.17",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) 🔓2 - sub",
+      "server": "178.83.46.216",
       "server_port": 2053,
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+    },
+    {
+      "type": "tuic",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub",
+      "server": "tw3.dexlos.com",
+      "server_port": 8080,
+      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw3.dexlos.com",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ]
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) 🔓2 - sub"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) 🔓2 - sub",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) 🔓2 - sub"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) 🔓2 - sub",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
