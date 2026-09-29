@@ -5,47 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 01 🔓1 - sub",
-      "server": "45.131.209.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime04.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 02 🔓1 - sub",
-      "server": "104.25.178.92",
-      "server_port": 443,
-      "uuid": "d9abc6e3-83bf-4c28-ae68-72465e2abe39",
-      "tls": {
-        "enabled": true,
-        "server_name": "ikT-KKC25F27k-3Tehr8MC.ADE-1007.WOrKErS.DEV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/xQhNe7rLrdM0emZlaW5LMsNwcoIgnT?ed=2560",
-        "headers": {
-          "Host": "ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 03 🔓2 - sub",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 01 🔓2 - sub",
       "server": "3.9.135.156",
       "server_port": 51847,
       "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
@@ -55,7 +15,7 @@
         "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -65,50 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 04 🔓2 - sub",
-      "server": "104.21.22.180",
-      "server_port": 443,
-      "uuid": "33918b20-9e02-4dc6-8b30-79b2d4b2e0e6",
-      "tls": {
-        "enabled": true,
-        "server_name": "aUTo-sCALe-238B2B.infRa-CorE-1630dd.wORKerS.DEv",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiUjJBU3JkVlRwSWtnciIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0",
-        "headers": {
-          "Host": "aUto-scaLe-238B2B.inFra-coRE-1630dD.WorKerS.DeV"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 🔓1 - sub",
-        "🇮🇪 爱尔兰 (Ireland) 02 🔓1 - sub",
-        "🇮🇪 爱尔兰 (Ireland) 03 🔓2 - sub",
-        "🇮🇪 爱尔兰 (Ireland) 04 🔓2 - sub"
+        "🇮🇪 爱尔兰 (Ireland) 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 🔓1 - sub",
-        "🇮🇪 爱尔兰 (Ireland) 02 🔓1 - sub",
-        "🇮🇪 爱尔兰 (Ireland) 03 🔓2 - sub",
-        "🇮🇪 爱尔兰 (Ireland) 04 🔓2 - sub"
+        "🇮🇪 爱尔兰 (Ireland) 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

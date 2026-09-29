@@ -6,15 +6,12 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 🔓2 - sub",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "93fa8bdb-9cca-4a3e-8355-b7c12e4f595e",
+      "server": "153.76.185.100",
+      "server_port": 3090,
+      "uuid": "e8b3f952-cd1b-4881-872e-b8d03399a6df",
       "transport": {
-        "type": "ws",
-        "path": "/vl/yLWNcuUuw1jlJpkDhGy?ed=2560",
-        "headers": {
-          "Host": "fornewiran.ade-1000.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {

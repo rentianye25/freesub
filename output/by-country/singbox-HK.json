@@ -6,42 +6,14 @@
     {
       "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 🔓2 - sub",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16112,
+      "server": "zfd-hkv1.kunlun01dns.com",
+      "server_port": 16116,
       "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
       "security": "auto"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub",
-      "server": "212.192.13.143",
-      "server_port": 10090,
-      "method": "aes-256-gcm",
-      "password": "72553320ae6bcc8f"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
-      "server": "46.29.163.78",
-      "server_port": 40440,
-      "method": "aes-256-gcm",
-      "password": "6b39ae3234dfd68b"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub",
-      "server": "47.240.80.220",
-      "server_port": 2052,
-      "password": "tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz",
-      "tls": {
-        "enabled": true,
-        "server_name": "47.240.80.220",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub",
       "server": "hk-1.gsafevpnapi.com",
       "server_port": 20270,
       "uuid": "e3a14b3d-8995-4031-a207-32ba5707c1ba",
@@ -62,49 +34,25 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/clashv8",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
       "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2��",
+        "server_name": "speedtest.tinkoff.ru",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 🔓2 - sub",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub",
       "server": "nas.aizhzo.com",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "nas.aizhzo.com",
         "insecure": true
       },
       "obfs": {
@@ -113,43 +61,58 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 🔓2 - sub",
-      "server": "47.238.210.5",
-      "server_port": 13779,
-      "uuid": "928e6cce-8ced-4243-9a48-a6642edd09b0",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "tesla.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg",
-          "short_id": "af1bdd293097b664"
+        "server_name": "https://t.me/WangCai2🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub",
+      "server": "champion.xn--kivt58h.lol",
+      "server_port": 80,
+      "uuid": "ed2864f9-37b3-4222-8c54-014aedc400a2",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ak.mcdonaldshamburgergoodgoodgood.xyz"
         }
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 11 🔓2 - sub",
-      "server": "aksai.org",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub",
+      "server": "202.146.222.89",
       "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.89",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub",
+      "server": "i2psm3knof5qjjix.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "aksai.org",
+        "server_name": "i2psm3knof5qjjix.v.3dns.vip",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "aksai.org"
-        }
+        "path": "/ws-vmess"
       }
     },
     {
@@ -164,10 +127,7 @@
         "🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub",
         "🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub",
         "🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 09 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 10 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 11 🔓2 - sub"
+        "🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub"
       ]
     },
     {
@@ -181,10 +141,7 @@
         "🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub",
         "🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub",
         "🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 09 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 10 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 11 🔓2 - sub"
+        "🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

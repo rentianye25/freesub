@@ -5,16 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 🔓2 - sub
-  server: 188.114.97.6
-  port: 8080
+  server: 153.76.185.100
+  port: 3090
   udp: true
   type: vless
-  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
-  network: ws
-  ws-opts:
-    path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
-    headers:
-      Host: fornewiran.ade-1000.workers.dev
+  uuid: e8b3f952-cd1b-4881-872e-b8d03399a6df
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
