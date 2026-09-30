@@ -35,7 +35,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -46,7 +46,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 🔓1 - sub",
+      "server": "19990ed1bb252449.IROnlY4l.Ir",
+      "server_port": 443,
+      "uuid": "bc4c0c9f-ab46-4f2c-8305-ab8b3d019fd7",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage-p2.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew",
+          "short_id": "37d86205006fe1fb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -56,7 +76,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -72,7 +92,8 @@
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 🔓2 - sub",
         "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub"
+        "🇹🇷 土耳其 (Turkey) 03 🔓1 - sub",
+        "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub"
       ]
     },
     {
@@ -81,7 +102,8 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 🔓2 - sub",
         "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub"
+        "🇹🇷 土耳其 (Turkey) 03 🔓1 - sub",
+        "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

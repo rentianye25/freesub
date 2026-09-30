@@ -5,24 +5,31 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) 🔓2 - sub",
-      "server": "178.83.46.216",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "tag": "🇧🇪 比利时 (Belgium) 01 🔓2 - sub",
+      "server": "104.21.64.198",
+      "server_port": 2095,
+      "uuid": "73796e63-0000-4000-8000-000000000008",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev"
+        }
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) 🔓2 - sub"
+        "🇧🇪 比利时 (Belgium) 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) 🔓2 - sub"
+        "🇧🇪 比利时 (Belgium) 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

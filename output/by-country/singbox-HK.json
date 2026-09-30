@@ -12,14 +12,42 @@
       "password": "bdb313adf74c2ede"
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21021,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
+      "server": "zfd-hkv2.kunlun01dns.com",
+      "server_port": 16115,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub",
       "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2",
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
         "insecure": true
       }
     },
@@ -29,7 +57,10 @@
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub"
+        "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub"
       ]
     },
     {
@@ -37,7 +68,10 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub"
+        "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

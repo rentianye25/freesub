@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 01 🔓2 - sub",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 🔓2 - sub",
+      "tag": "🇦🇪 阿联酋 (UAE) 01 🔓2 - sub",
       "server": "78.40.195.140",
       "server_port": 443,
       "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
@@ -41,8 +25,45 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 🔓2 - sub",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 🔓1 - sub",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 🔓2 - sub",
+      "server": "151.241.166.181",
+      "server_port": 443,
+      "uuid": "e9844617-e393-4876-afa7-11859695f4ee",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.gazladder.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 🔓2 - sub",
       "server": "94.183.224.45",
       "server_port": 443,
       "uuid": "d72f05b0-b182-4783-a6f2-21cecc7d841a",
@@ -52,7 +73,7 @@
         "server_name": "dzen.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -63,40 +84,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 🔓2 - sub",
-      "server": "85.204.107.178",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 🔓2 - sub",
+      "server": "85.204.107.177",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
         "enabled": true,
         "server_name": "hopp-romania-new.roxa.org",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 🔒 - sub",
-      "server": "pl-2.omuvpn.tech",
-      "server_port": 443,
-      "uuid": "6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ozone.nl",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM",
-          "short_id": "76309429d55d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 🔓2 - sub",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 🔓1 - sub",
       "server": "pl-3.omuvpn.tech",
       "server_port": 443,
       "uuid": "6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5",
@@ -111,7 +111,7 @@
         "reality": {
           "enabled": true,
           "public_key": "Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM",
-          "short_id": "e7"
+          "short_id": "76309429d55d"
         }
       }
     },
@@ -141,7 +141,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -157,10 +157,10 @@
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 🔓2 - sub",
         "🇦🇪 阿联酋 (UAE) 02 🔓2 - sub",
-        "🇦🇪 阿联酋 (UAE) 03 🔓1 - sub",
+        "🇦🇪 阿联酋 (UAE) 03 🔓2 - sub",
         "🇦🇪 阿联酋 (UAE) 04 🔓2 - sub",
-        "🇦🇪 阿联酋 (UAE) 05 🔒 - sub",
-        "🇦🇪 阿联酋 (UAE) 06 🔓2 - sub",
+        "🇦🇪 阿联酋 (UAE) 05 🔓2 - sub",
+        "🇦🇪 阿联酋 (UAE) 06 🔓1 - sub",
         "🇦🇪 阿联酋 (UAE) 07 🔓2 - sub",
         "🇦🇪 阿联酋 (UAE) 08 🔓2 - sub"
       ]
@@ -171,10 +171,10 @@
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 🔓2 - sub",
         "🇦🇪 阿联酋 (UAE) 02 🔓2 - sub",
-        "🇦🇪 阿联酋 (UAE) 03 🔓1 - sub",
+        "🇦🇪 阿联酋 (UAE) 03 🔓2 - sub",
         "🇦🇪 阿联酋 (UAE) 04 🔓2 - sub",
-        "🇦🇪 阿联酋 (UAE) 05 🔒 - sub",
-        "🇦🇪 阿联酋 (UAE) 06 🔓2 - sub",
+        "🇦🇪 阿联酋 (UAE) 05 🔓2 - sub",
+        "🇦🇪 阿联酋 (UAE) 06 🔓1 - sub",
         "🇦🇪 阿联酋 (UAE) 07 🔓2 - sub",
         "🇦🇪 阿联酋 (UAE) 08 🔓2 - sub"
       ],
