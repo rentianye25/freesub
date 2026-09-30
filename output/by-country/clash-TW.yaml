@@ -13,14 +13,35 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇼 中国台湾 (Taiwan) 02 🔓2 - sub
+  server: tw3.dexlos.com
+  port: 8080
+  udp: true
+  type: tuic
+  uuid: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  password: 8A9905B7-801B-41AF-BFC9-2034212770F6
+  sni: tw3.dexlos.com
+  skip-cert-verify: false
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
+- name: 🇹🇼 中国台湾 (Taiwan) 03 🔓2 - sub
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'https:'
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 🔓2 - sub
+- name: 🇹🇼 中国台湾 (Taiwan) 04 🔓2 - sub
+  server: 160.187.100.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 🔓2 - sub
   server: 35.201.181.122
   port: 443
   udp: true
@@ -32,14 +53,6 @@ proxies:
     short-id: 32f66f37df3f58d2
   servername: www.cloudflare.com
   client-fingerprint: ios
-- name: 🇹🇼 中国台湾 (Taiwan) 04 🔓2 - sub
-  server: vpn-tw-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: google.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,6 +62,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 🔓2 - sub
   - 🇹🇼 中国台湾 (Taiwan) 03 🔓2 - sub
   - 🇹🇼 中国台湾 (Taiwan) 04 🔓2 - sub
+  - 🇹🇼 中国台湾 (Taiwan) 05 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +72,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 02 🔓2 - sub
   - 🇹🇼 中国台湾 (Taiwan) 03 🔓2 - sub
   - 🇹🇼 中国台湾 (Taiwan) 04 🔓2 - sub
+  - 🇹🇼 中国台湾 (Taiwan) 05 🔓2 - sub
 rules:
 - MATCH,PROXIES
