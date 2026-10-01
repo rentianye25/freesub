@@ -5,9 +5,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub",
-      "server": "104.18.46.46",
-      "server_port": 80,
+      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub",
+      "server": "162.159.0.169",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tlssecurity=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub",
+      "server": "162.159.0.169",
+      "server_port": 2082,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -18,19 +32,88 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub",
-      "server": "155.117.19.17",
-      "server_port": 443,
-      "password": "5fa748137b6d822308eea4611f474ad5",
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 03 (家宽) 🔓2 - sub",
+      "server": "172.64.32.103",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) 🔓2 - sub",
+      "server": "tw3.dexlos.com",
+      "server_port": 8080,
+      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "tw3.dexlos.com",
+        "insecure": false,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱 荷兰 (Netherlands) 05 (移动家宽) 🔓2 - sub",
+      "server": "31.77.114.212",
+      "server_port": 443,
+      "uuid": "af2bf319-ba88-4fec-8317-2b6a8cee96d1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aken.nightfall.best",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Zli2oz4Y11pvkrGK71XDcbp1OWIPzK2FYhUXQvl1yiI",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽) 🔓2 - sub",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (移动家宽) 🔓2 - sub",
+      "server": "jp-02-hdja-kido.younai-ytl.shop",
+      "server_port": 37236,
+      "password": "3fc0f254-54c3-4cf3-896b-5999a2b4c757",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw16.swiftrelay.cc",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
       }
     },
     {
@@ -38,16 +121,26 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub",
-        "🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub"
+        "🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub",
+        "🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub",
+        "🇺🇸 美国 (United States) 03 (家宽) 🔓2 - sub",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) 🔓2 - sub",
+        "🇳🇱 荷兰 (Netherlands) 05 (移动家宽) 🔓2 - sub",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) 🔓2 - sub",
+        "🇹🇼 中国台湾 (Taiwan) 07 (移动家宽) 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub",
-        "🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub"
+        "🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub",
+        "🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub",
+        "🇺🇸 美国 (United States) 03 (家宽) 🔓2 - sub",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) 🔓2 - sub",
+        "🇳🇱 荷兰 (Netherlands) 05 (移动家宽) 🔓2 - sub",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽) 🔓2 - sub",
+        "🇹🇼 中国台湾 (Taiwan) 07 (移动家宽) 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -15,7 +15,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,18 +25,45 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇮🇩 印尼 (Indonesia) 02 🔓2 - sub",
+      "server": "az-1.linkaa.xyz",
+      "server_port": 55386,
+      "uuid": "6E571484-4166-4699-8F58-B34A1823691F",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/game/resources",
+        "headers": {
+          "Host": "az-1.linkaa.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇩 印尼 (Indonesia) 03 🔓2 - sub",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16298,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 印尼 (Indonesia) 01 🔓2 - sub"
+        "🇮🇩 印尼 (Indonesia) 01 🔓2 - sub",
+        "🇮🇩 印尼 (Indonesia) 02 🔓2 - sub",
+        "🇮🇩 印尼 (Indonesia) 03 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 印尼 (Indonesia) 01 🔓2 - sub"
+        "🇮🇩 印尼 (Indonesia) 01 🔓2 - sub",
+        "🇮🇩 印尼 (Indonesia) 02 🔓2 - sub",
+        "🇮🇩 印尼 (Indonesia) 03 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
