@@ -5,6 +5,63 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 🔓2 - sub
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: ffa431ab-a59b-4092-a418-905fcb1e4d5f
+  network: ws
+  ws-opts:
+    path: /vl/rYScQPG1EEjxXdswdMEU2b3rM4?ed=2560
+    headers:
+      Host: s0p42f8wwpdde5tf7m4l6l.ab1x-sn9o4y3n7ondkrd.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 🔓2 - sub
+  server: 188.114.97.8
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 9c63fd59-f9ee-446e-97ec-0bf2de21ed7b
+  tls: true
+  servername: dry-glitter-ef10.gfryubcdryujvrth.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiVVhGU1pOZ1oxaTFUUldyVCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: dry-glitter-ef10.gfryubcdryujvrth.workers.dev
+- name: 🇨🇿 捷克 (Czech) 03 🔓2 - sub
+  server: 153.76.185.162
+  port: 3090
+  udp: true
+  type: vless
+  uuid: ea723504-e8df-4f23-b35f-c93961d5128a
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 04 🔓2 - sub
+  server: 153.76.185.163
+  port: 3090
+  udp: true
+  type: vless
+  uuid: ea723504-e8df-4f23-b35f-c93961d5128a
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 05 🔓2 - sub
+  server: 195.133.66.229
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4abdfe42-aec7-4b66-974d-3f891e2e8184
+  tls: true
+  reality-opts:
+    public-key: Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc
+  servername: nlll.gaz-service.shop
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇨🇿 捷克 (Czech) 06 🔓2 - sub
   server: 195.133.66.229
   port: 8443
   udp: true
@@ -16,21 +73,7 @@ proxies:
     public-key: j97RCvxVfMu5XWcXuAc4s8TnBTdl8PQrNFrZDQpAkng
     short-id: b415b8d7a6106ace
   servername: nlll.gaz-service.shop
-  client-fingerprint: random
-- name: 🇨🇿 捷克 (Czech) 02 🔓2 - sub
-  server: 195.133.66.229
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4abdfe42-aec7-4b66-974d-3f891e2e8184
-  tls: true
-  reality-opts:
-    public-key: Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc
-  servername: nlll.gaz-service.shop
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +81,10 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 🔓2 - sub
   - 🇨🇿 捷克 (Czech) 02 🔓2 - sub
+  - 🇨🇿 捷克 (Czech) 03 🔓2 - sub
+  - 🇨🇿 捷克 (Czech) 04 🔓2 - sub
+  - 🇨🇿 捷克 (Czech) 05 🔓2 - sub
+  - 🇨🇿 捷克 (Czech) 06 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,5 +92,9 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 🔓2 - sub
   - 🇨🇿 捷克 (Czech) 02 🔓2 - sub
+  - 🇨🇿 捷克 (Czech) 03 🔓2 - sub
+  - 🇨🇿 捷克 (Czech) 04 🔓2 - sub
+  - 🇨🇿 捷克 (Czech) 05 🔓2 - sub
+  - 🇨🇿 捷克 (Czech) 06 🔓2 - sub
 rules:
 - MATCH,PROXIES

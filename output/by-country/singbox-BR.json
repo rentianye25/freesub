@@ -5,14 +5,16 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub",
-      "server": "51.75.67.209",
-      "server_port": 443,
-      "uuid": "3d08ed67-5a47-42d3-a948-ebc7d2eb21f7",
-      "tls": {
-        "enabled": true,
-        "server_name": "free.sahanwickramasinghe.me",
-        "insecure": false
+      "tag": "🇧🇷 巴西 (Brazil) 01 🔓2 - sub",
+      "server": "154.197.75.40",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime37.workers.dev"
+        }
       }
     },
     {
@@ -20,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub"
+        "🇧🇷 巴西 (Brazil) 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub"
+        "🇧🇷 巴西 (Brazil) 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
