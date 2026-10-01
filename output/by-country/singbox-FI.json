@@ -41,29 +41,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 04 🔓2 - sub",
-      "server": "37.143.129.161",
-      "server_port": 8443,
-      "uuid": "e3e9805a-6c8b-4edd-8ee8-621df79806eb",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi.aksay.pro",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "B5-zPBBAI-UATY7rSvoggM1T65h9CfVw7yBluBNd-yI",
-          "short_id": "4a5f04a5ea205fc3"
-        }
-      },
-      "transport": {
-        "type": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 🔓2 - sub",
       "server": "65.109.28.164",
       "server_port": 443,
       "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
@@ -83,6 +60,18 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 05 🔓2 - sub",
+      "server": "87.251.17.10",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 06 🔓2 - sub",
       "server": "95.216.27.15",
@@ -93,7 +82,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -105,18 +94,39 @@
     {
       "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 07 🔓2 - sub",
-      "server": "144.31.212.253",
-      "server_port": 443,
-      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
+      "server": "87.251.17.11",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
       "tls": {
         "enabled": true,
-        "server_name": "vps155-edge.kermemehori.ru",
-        "insecure": false
+        "server_name": "onecloudstream.com",
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 08 🔓2 - sub",
+      "server": "212.147.245.198",
+      "server_port": 443,
+      "uuid": "042d2d08-2973-5d10-97ad-3b75f16bbe54",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "online.1c.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI",
+          "short_id": "330a464a00000000"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 09 🔓2 - sub",
       "server": "144.31.27.215",
       "server_port": 43000,
       "uuid": "47f79fc1-0646-40e8-8a58-73e85d183d5a",
@@ -136,24 +146,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 09 🔓2 - sub",
-      "server": "31.77.199.147",
-      "server_port": 4443,
-      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 10 🔓1 - sub",
+      "server": "144.31.212.253",
+      "server_port": 443,
+      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
       "tls": {
         "enabled": true,
-        "server_name": "images.unsplash.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A",
-          "short_id": "7da2eae792187ab9"
-        }
+        "server_name": "vps155-edge.kermemehori.ru",
+        "insecure": true
       }
     },
     {
@@ -169,7 +170,8 @@
         "🇫🇮 芬兰 (Finland) 06 🔓2 - sub",
         "🇫🇮 芬兰 (Finland) 07 🔓2 - sub",
         "🇫🇮 芬兰 (Finland) 08 🔓2 - sub",
-        "🇫🇮 芬兰 (Finland) 09 🔓2 - sub"
+        "🇫🇮 芬兰 (Finland) 09 🔓2 - sub",
+        "🇫🇮 芬兰 (Finland) 10 🔓1 - sub"
       ]
     },
     {
@@ -184,7 +186,8 @@
         "🇫🇮 芬兰 (Finland) 06 🔓2 - sub",
         "🇫🇮 芬兰 (Finland) 07 🔓2 - sub",
         "🇫🇮 芬兰 (Finland) 08 🔓2 - sub",
-        "🇫🇮 芬兰 (Finland) 09 🔓2 - sub"
+        "🇫🇮 芬兰 (Finland) 09 🔓2 - sub",
+        "🇫🇮 芬兰 (Finland) 10 🔓1 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
