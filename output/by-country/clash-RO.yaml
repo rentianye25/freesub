@@ -13,34 +13,31 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 🔓2 - sub
-  server: 162.249.127.130
+  server: 162.249.127.134
   port: 8443
   udp: true
   type: hysteria2
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 03 🔓2 - sub
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
+  sni: speedtest.tinkoff.ru
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 🔓2 - sub
-  server: 146.70.124.85
+  server: 162.249.125.133
   port: 443
   udp: true
-  type: vless
-  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
-    short-id: fe24f8a0a560056e
-  servername: www.datadoghq.com
-  client-fingerprint: random
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 05 🔓2 - sub
   server: 46.28.67.55
   port: 443
@@ -55,25 +52,18 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 06 🔓2 - sub
-  server: hy2-new.aspidnet.xyz
+  server: 146.70.124.85
   port: 443
   udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 07 🔓2 - sub
-  server: 162.249.125.133
-  port: 443
-  udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
+  type: vless
+  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
+    short-id: fe24f8a0a560056e
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,7 +75,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 04 🔓2 - sub
   - 🇷🇴 罗马尼亚 (Romania) 05 🔓2 - sub
   - 🇷🇴 罗马尼亚 (Romania) 06 🔓2 - sub
-  - 🇷🇴 罗马尼亚 (Romania) 07 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,6 +86,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 04 🔓2 - sub
   - 🇷🇴 罗马尼亚 (Romania) 05 🔓2 - sub
   - 🇷🇴 罗马尼亚 (Romania) 06 🔓2 - sub
-  - 🇷🇴 罗马尼亚 (Romania) 07 🔓2 - sub
 rules:
 - MATCH,PROXIES
