@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇨🇱 智利 (Chile) 01 🔒 - sub",
+      "server": "64.176.2.21",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "xBStBEVqvGwHPocc"
+    },
+    {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 01 🔓2 - sub",
+      "tag": "🇨🇱 智利 (Chile) 02 🔓2 - sub",
       "server": "34.176.187.219",
       "server_port": 443,
       "uuid": "ad5325f8-f0b3-41c4-a561-113529b60e70",
@@ -14,7 +22,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -28,14 +36,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 智利 (Chile) 01 🔓2 - sub"
+        "🇨🇱 智利 (Chile) 01 🔒 - sub",
+        "🇨🇱 智利 (Chile) 02 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 智利 (Chile) 01 🔓2 - sub"
+        "🇨🇱 智利 (Chile) 01 🔒 - sub",
+        "🇨🇱 智利 (Chile) 02 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
