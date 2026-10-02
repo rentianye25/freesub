@@ -5,52 +5,47 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub",
-      "server": "172.64.158.146",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+      "tag": "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) 🔓2 - sub",
+      "server": "31.77.114.212",
+      "server_port": 443,
+      "uuid": "af2bf319-ba88-4fec-8317-2b6a8cee96d1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aken.nightfall.best",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Zli2oz4Y11pvkrGK71XDcbp1OWIPzK2FYhUXQvl1yiI",
+          "short_id": ""
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 02 (家宽) 🔓2 - sub",
-      "server": "54.178.110.17",
-      "server_port": 4443,
-      "uuid": "ca4f25f2-e3ff-47ed-ba35-ce0d02b6333d",
-      "tls": {
-        "enabled": true,
-        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
-        }
-      }
+      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) 🔓1 - sub",
+      "server": "145.239.30.17",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub",
-        "🇯🇵 日本 (Japan) 02 (家宽) 🔓2 - sub"
+        "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) 🔓2 - sub",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) 🔓1 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub",
-        "🇯🇵 日本 (Japan) 02 (家宽) 🔓2 - sub"
+        "🇳🇱 荷兰 (Netherlands) 01 (移动家宽) 🔓2 - sub",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) 🔓1 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

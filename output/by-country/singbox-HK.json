@@ -4,64 +4,90 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 🔓2 - sub",
-      "server": "47.240.80.220",
-      "server_port": 2052,
-      "password": "tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.12169.top",
-        "insecure": true
+      "server": "104.18.47.113",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub",
-      "server": "202.146.222.29",
+      "server": "bff4b219-tmkao0-tnnrly-g43g.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "password": "6ddb6a68-d5f5-ca30-3943-cf0c9876d50c",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2����",
+        "server_name": "bff4b219-tmkao0-tnnrly-g43g.hk3.hyhuawei.com",
         "insecure": true
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16113,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub",
-      "server": "202.146.222.89",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
+      "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fclashv8",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub",
+      "server": "xg1.mangshe.xyz",
+      "server_port": 2060,
+      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "tls": {
+        "enabled": true,
+        "server_name": "xg1.mangshe.xyz",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub",
-      "server": "202.146.222.174",
+      "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.174",
+        "server_name": "t.me",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.29",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub",
+      "server": "telegram.khp25.com",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "pno0e2keji2gsfea"
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub",
       "server": "195.58.144.56",
       "server_port": 11907,
       "uuid": "07cb07b9-0c4d-46c1-a15a-b147511b6b07",
@@ -69,31 +95,49 @@
         "enabled": true,
         "server_name": "195.58.144.56",
         "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ]
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub",
-      "server": "goldcnmltyljgfwgov.vip52.wogcnmnnagfwgov.com",
-      "server_port": 11252,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
+      "type": "shadowsocks",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 🔓2 - sub",
+      "server": "telegramx.khp25.com",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "m5nsedvdczx6x06e"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub",
-      "server": "hk2.xiaoliyu.cyou",
-      "server_port": 4433,
-      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 10 🔓2 - sub",
+      "server": "194.99.79.26",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "hk2.xiaoliyu.cyou",
-        "insecure": true
+        "server_name": "aksai.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 11 🔓2 - sub",
+      "server": "champion.xn--kivt58h.lol",
+      "server_port": 80,
+      "uuid": "ed2864f9-37b3-4222-8c54-014aedc400a2",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ak.mcdonaldshamburgergoodgoodgood.xyz"
+        }
       }
     },
     {
@@ -108,7 +152,10 @@
         "🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub",
         "🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub",
         "🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub"
+        "🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 09 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 10 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 11 🔓2 - sub"
       ]
     },
     {
@@ -122,7 +169,10 @@
         "🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub",
         "🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub",
         "🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub"
+        "🇭🇰 中国香港 (Hong Kong) 08 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 09 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 10 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 11 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

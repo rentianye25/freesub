@@ -5,18 +5,14 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 🔓2 - sub",
-      "server": "89.125.96.74",
-      "server_port": 2053,
-      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub",
+      "server": "51.75.67.209",
+      "server_port": 443,
+      "uuid": "3d08ed67-5a47-42d3-a948-ebc7d2eb21f7",
       "tls": {
         "enabled": true,
-        "server_name": "wss.zazazuza.ru",
+        "server_name": "free.sahanwickramasinghe.me",
         "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vpn-wss/fluxor/59011/"
       }
     },
     {
@@ -24,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 白俄罗斯 (Belarus) 01 🔓2 - sub"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 白俄罗斯 (Belarus) 01 🔓2 - sub"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

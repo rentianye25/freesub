@@ -5,27 +5,46 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 🔓2 - sub
-  server: 188.114.97.6
-  port: 8080
+  server: 188.114.97.3
+  port: 443
   udp: true
   type: vless
-  uuid: 2db92da9-8ffb-491b-81d6-6e8d50876020
+  uuid: 3423809a-08e5-4b93-bd76-c6cdcbfd9b52
+  tls: true
+  servername: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiWlFRWlMwRDdLakVqMyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /vl/nw8XNxNaLw6JVF1rAbo7z
     headers:
-      Host: bpb-01c11365.hjdbcvdbkv.workers.dev
+      Host: bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 🔓2 - sub
+  server: 85.117.235.50
+  port: 443
+  udp: true
+  type: vless
+  uuid: f4d71fd6-1c25-4748-836b-1dbda9268039
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
+    short-id: 232b1b09e45325a4
+  servername: cz1.animeteka.info
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 🔓2 - sub
+  - 🇨🇿 捷克 (Czech) 02 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 🔓2 - sub
+  - 🇨🇿 捷克 (Czech) 02 🔓2 - sub
 rules:
 - MATCH,PROXIES
