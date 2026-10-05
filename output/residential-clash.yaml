@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub
-  server: 162.159.38.127
-  port: 8880
+  server: 188.114.97.6
+  port: 8080
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -14,54 +14,43 @@ proxies:
   ws-opts:
     path: /?ed=2560security=tls
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
-  server: tw1.dexlos.com
-  port: 8080
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
+- name: 🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub
+  server: 155.117.19.17
+  port: 443
   udp: true
-  type: tuic
-  uuid: D7286728-678E-443B-B76B-B699654C66DD
-  password: D7286728-678E-443B-B76B-B699654C66DD
-  sni: tw1.dexlos.com
-  skip-cert-verify: false
-  congestion-controller: bbr
-  udp-relay-mode: native
-  alpn:
-  - h3
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) 🔓2 - sub
-  server: 178.83.46.216
-  port: 2053
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+- name: 🇦🇹 奥地利 (Austria) 03 (家宽) 🔓2 - sub
+  server: 31.77.227.6
+  port: 52006
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) 🔓2 - sub
-  server: 118.167.235.241
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: random
+  servername: bigdick.gamegrow.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) 🔓2 - sub
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) 🔓2 - sub
+  - 🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub
+  - 🇦🇹 奥地利 (Austria) 03 (家宽) 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) 🔓2 - sub
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) 🔓2 - sub
+  - 🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub
+  - 🇦🇹 奥地利 (Austria) 03 (家宽) 🔓2 - sub
 rules:
 - MATCH,PROXIES

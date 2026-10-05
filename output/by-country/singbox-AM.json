@@ -4,15 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔓1 - sub",
-      "server": "3h-kazakhstan1.09vpn.com",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/"
+      "type": "hysteria2",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 🔓2 - sub",
+      "server": "us3.xiaoliyu.cyou",
+      "server_port": 18333,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "tls": {
+        "enabled": true,
+        "server_name": "us3.xiaoliyu.cyou",
+        "insecure": true
       }
     },
     {
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔓1 - sub"
+        "🇦🇲 亚美尼亚 (Armenia) 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔓1 - sub"
+        "🇦🇲 亚美尼亚 (Armenia) 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

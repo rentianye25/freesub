@@ -4,26 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇭 菲律宾 (Philippines) 01 🔓2 - sub",
-      "server": "149.104.109.252",
-      "server_port": 8882,
-      "method": "aes-256-gcm",
-      "password": "kDWvXYZoTBcGkC4"
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 01 🔓2 - sub",
+      "server": "150.95.109.109",
+      "server_port": 2086,
+      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 菲律宾 (Philippines) 01 🔓2 - sub"
+        "🇻🇳 越南 (Vietnam) 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 菲律宾 (Philippines) 01 🔓2 - sub"
+        "🇻🇳 越南 (Vietnam) 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

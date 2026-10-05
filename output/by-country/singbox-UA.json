@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇶🇦 卡塔尔 (Qatar) 01 🔓2 - sub",
-      "server": "34.18.212.19",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01 🔓2 - sub",
+      "server": "83.147.18.75",
       "server_port": 443,
-      "uuid": "b6f775c2-70fd-4247-8d12-82cac46fdd50",
+      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "tT6wEOh8ASizQYNRb51QdDlxAksSJbEaBnbQBajc6SQ",
-          "short_id": "c5426331173ca15c"
+          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
+          "short_id": "7f1e29593aa94ad1"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇶🇦 卡塔尔 (Qatar) 01 🔓2 - sub"
+        "🇺🇦 乌克兰 (Ukraine) 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇶🇦 卡塔尔 (Qatar) 01 🔓2 - sub"
+        "🇺🇦 乌克兰 (Ukraine) 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
