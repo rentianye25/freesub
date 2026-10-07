@@ -6,25 +6,25 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 🔓2 - sub
   server: 195.238.126.20
+  port: 9002
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: b8KkNDjEd5QqFyRm
+- name: 🇱🇹 立陶宛 (Lithuania) 02 🔓2 - sub
+  server: 195.238.126.84
+  port: 9039
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qYEN5HX4JKeVCdEC
+- name: 🇱🇹 立陶宛 (Lithuania) 03 🔓2 - sub
+  server: 195.238.126.20
   port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 02 🔓2 - sub
-  server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 03 🔓2 - sub
-  server: 195.238.126.20
-  port: 9078
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 04 🔓2 - sub
   server: 195.238.126.20
   port: 9086
@@ -34,26 +34,40 @@ proxies:
   password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇹 立陶宛 (Lithuania) 05 🔓2 - sub
   server: 195.238.126.20
-  port: 9001
+  port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
+  password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 06 🔓2 - sub
-  server: 195.238.126.20
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 07 🔓2 - sub
   server: 195.238.126.20
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 08 🔒 - sub
+- name: 🇱🇹 立陶宛 (Lithuania) 07 🔓2 - sub
+  server: 195.238.126.20
+  port: 9045
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
+- name: 🇱🇹 立陶宛 (Lithuania) 08 🔓2 - sub
+  server: 195.238.126.20
+  port: 9001
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
+- name: 🇱🇹 立陶宛 (Lithuania) 09 🔓2 - sub
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
+- name: 🇱🇹 立陶宛 (Lithuania) 10 🔓2 - sub
   server: 62.77.158.1
   port: 443
   udp: true
@@ -65,7 +79,7 @@ proxies:
     public-key: sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs
     short-id: 6a
   servername: online.1c.ru
-  client-fingerprint: ios
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,7 +92,9 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05 🔓2 - sub
   - 🇱🇹 立陶宛 (Lithuania) 06 🔓2 - sub
   - 🇱🇹 立陶宛 (Lithuania) 07 🔓2 - sub
-  - 🇱🇹 立陶宛 (Lithuania) 08 🔒 - sub
+  - 🇱🇹 立陶宛 (Lithuania) 08 🔓2 - sub
+  - 🇱🇹 立陶宛 (Lithuania) 09 🔓2 - sub
+  - 🇱🇹 立陶宛 (Lithuania) 10 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,6 +107,8 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05 🔓2 - sub
   - 🇱🇹 立陶宛 (Lithuania) 06 🔓2 - sub
   - 🇱🇹 立陶宛 (Lithuania) 07 🔓2 - sub
-  - 🇱🇹 立陶宛 (Lithuania) 08 🔒 - sub
+  - 🇱🇹 立陶宛 (Lithuania) 08 🔓2 - sub
+  - 🇱🇹 立陶宛 (Lithuania) 09 🔓2 - sub
+  - 🇱🇹 立陶宛 (Lithuania) 10 🔓2 - sub
 rules:
 - MATCH,PROXIES

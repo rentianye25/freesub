@@ -4,53 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub
-  server: 188.114.97.6
-  port: 8080
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) 🔓2 - sub
+  server: p141.panda001.net
+  port: 4652
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub
-  server: 155.117.19.17
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇦🇹 奥地利 (Austria) 03 (家宽) 🔓2 - sub
-  server: 31.77.227.6
-  port: 52006
-  udp: true
-  type: vless
-  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
-  flow: xtls-rprx-vision
-  tls: true
-  servername: bigdick.gamegrow.ru
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub
-  - 🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub
-  - 🇦🇹 奥地利 (Austria) 03 (家宽) 🔓2 - sub
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) 🔓2 - sub
-  - 🇺🇸 美国 (United States) 02 (家宽) 🔓2 - sub
-  - 🇦🇹 奥地利 (Austria) 03 (家宽) 🔓2 - sub
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) 🔓2 - sub
 rules:
 - MATCH,PROXIES
