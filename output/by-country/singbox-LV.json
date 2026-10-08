@@ -7,13 +7,21 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 🔓2 - sub",
       "server": "185.135.86.175",
-      "server_port": 9034,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "Yg4MbdXFQ9HFFVY6"
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 🔓2 - sub",
+      "server": "185.135.86.175",
+      "server_port": 9082,
+      "method": "aes-256-cfb",
+      "password": "45xgMgm386pjWjTx"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 🔓2 - sub",
       "server": "185.135.86.175",
       "server_port": 9094,
       "method": "aes-256-cfb",
@@ -21,19 +29,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 🔓2 - sub",
-      "server": "185.135.86.175",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 04 🔓2 - sub",
       "server": "185.135.86.175",
-      "server_port": 9082,
+      "server_port": 9034,
       "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
+      "password": "Yg4MbdXFQ9HFFVY6"
     },
     {
       "type": "shadowsocks",
@@ -47,25 +47,25 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 06 🔓2 - sub",
       "server": "185.135.86.175",
-      "server_port": 9068,
+      "server_port": 9017,
       "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "password": "HAVAdE3nXhqA5nHp"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 07 🔓2 - sub",
       "server": "185.135.86.175",
-      "server_port": 9033,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 08 🔓2 - sub",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9033,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "shadowsocks",
@@ -76,8 +76,41 @@
       "password": "kSPmvwdFzGMMW5pY"
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 10 🔓2 - sub",
+      "server": "104.165.205.142",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 🔓2 - sub",
+      "server": "195.123.213.28",
+      "server_port": 443,
+      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+          "short_id": "5c256336e3b673fa"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 12 🔓2 - sub",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -87,7 +120,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -110,7 +143,9 @@
         "🇱🇻 拉脱维亚 (Latvia) 07 🔓2 - sub",
         "🇱🇻 拉脱维亚 (Latvia) 08 🔓2 - sub",
         "🇱🇻 拉脱维亚 (Latvia) 09 🔓2 - sub",
-        "🇱🇻 拉脱维亚 (Latvia) 10 🔓2 - sub"
+        "🇱🇻 拉脱维亚 (Latvia) 10 🔓2 - sub",
+        "🇱🇻 拉脱维亚 (Latvia) 11 🔓2 - sub",
+        "🇱🇻 拉脱维亚 (Latvia) 12 🔓2 - sub"
       ]
     },
     {
@@ -126,7 +161,9 @@
         "🇱🇻 拉脱维亚 (Latvia) 07 🔓2 - sub",
         "🇱🇻 拉脱维亚 (Latvia) 08 🔓2 - sub",
         "🇱🇻 拉脱维亚 (Latvia) 09 🔓2 - sub",
-        "🇱🇻 拉脱维亚 (Latvia) 10 🔓2 - sub"
+        "🇱🇻 拉脱维亚 (Latvia) 10 🔓2 - sub",
+        "🇱🇻 拉脱维亚 (Latvia) 11 🔓2 - sub",
+        "🇱🇻 拉脱维亚 (Latvia) 12 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
