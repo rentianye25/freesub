@@ -6,6 +6,37 @@
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 🔓2 - sub",
+      "server": "128.241.25.3",
+      "server_port": 30021,
+      "uuid": "1de9611b-1861-4ebb-b281-cb2a383cdf19",
+      "tls": {
+        "enabled": true,
+        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub",
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub",
       "server": "208.69.78.217",
       "server_port": 2053,
       "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
@@ -14,7 +45,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,19 +56,184 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub",
-      "server": "82.38.64.235",
-      "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub",
+      "server": "208.69.78.217",
+      "server_port": 21054,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 🔓2 - sub",
+      "server": "208.69.78.217",
+      "server_port": 33042,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 🔓2 - sub",
+      "server": "208.69.78.217",
+      "server_port": 33171,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 07 🔓2 - sub",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "140.238.213.114",
         "insecure": true
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 08 🔓2 - sub",
+      "server": "208.69.78.217",
+      "server_port": 21046,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 09 🔓2 - sub",
+      "server": "208.69.78.217",
+      "server_port": 21016,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 10 🔓2 - sub",
+      "server": "208.69.78.217",
+      "server_port": 33133,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 11 🔓2 - sub",
+      "server": "208.69.78.217",
+      "server_port": 21113,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 12 🔓2 - sub",
+      "server": "208.69.78.217",
+      "server_port": 21086,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub",
+      "tag": "🇨🇭 瑞士 (Switzerland) 13 🔓2 - sub",
+      "server": "179.255.191.86",
+      "server_port": 443,
+      "uuid": "12e95f93-443c-45f0-9a2a-5b318b9124cf",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dobro.ali-bard.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 14 🔓2 - sub",
+      "server": "208.69.78.217",
+      "server_port": 33013,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 15 🔓2 - sub",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -47,7 +243,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -58,14 +254,117 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub",
-      "server": "104.165.205.42",
-      "server_port": 8443,
-      "password": "52e3dd44-ed23-4030-b0cc-5b5a953f2d4d",
+      "tag": "🇨🇭 瑞士 (Switzerland) 16 🔓2 - sub",
+      "server": "208.69.78.217",
+      "server_port": 33141,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
-        "server_name": "speedtestmark.com",
-        "insecure": false
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 17 🔓2 - sub",
+      "server": "138.124.63.224",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 18 🔓2 - sub",
+      "server": "82.38.64.235",
+      "server_port": 8443,
+      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "tls": {
+        "enabled": true,
+        "server_name": "hopp-swizland-new.mysynology.net",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 19 🔓2 - sub",
+      "server": "208.69.78.217",
+      "server_port": 21147,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 20 🔓2 - sub",
+      "server": "147.45.42.73",
+      "server_port": 20443,
+      "uuid": "f293db4d-7ab1-4faf-bb15-89540d8709cb",
+      "tls": {
+        "enabled": true,
+        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 21 🔓2 - sub",
+      "server": "153.76.161.57",
+      "server_port": 2096,
+      "uuid": "3fcec4e4-a674-44d2-8cae-c253cec43b9c",
+      "tls": {
+        "enabled": true,
+        "server_name": "id.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc-reality"
       }
     },
     {
@@ -76,7 +375,24 @@
         "🇨🇭 瑞士 (Switzerland) 01 🔓2 - sub",
         "🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub",
         "🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub",
-        "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub"
+        "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 05 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 06 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 07 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 08 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 09 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 10 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 11 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 12 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 13 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 14 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 15 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 16 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 17 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 18 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 19 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 20 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 21 🔓2 - sub"
       ]
     },
     {
@@ -86,7 +402,24 @@
         "🇨🇭 瑞士 (Switzerland) 01 🔓2 - sub",
         "🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub",
         "🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub",
-        "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub"
+        "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 05 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 06 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 07 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 08 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 09 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 10 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 11 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 12 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 13 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 14 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 15 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 16 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 17 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 18 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 19 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 20 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 21 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,6 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 🔓2 - sub
+  server: 128.241.25.3
+  port: 30021
+  udp: true
+  type: vless
+  uuid: 1de9611b-1861-4ebb-b281-cb2a383cdf19
+  tls: true
+  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub
+  server: 132.243.175.144
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+- name: 🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub
   server: 208.69.78.217
   port: 2053
   udp: true
@@ -15,16 +37,118 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
-  client-fingerprint: ''
-- name: 🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub
-  server: 82.38.64.235
-  port: 8443
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub
+  server: 208.69.78.217
+  port: 21054
   udp: true
   type: hysteria2
-  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
-  sni: hopp-swizland-new.mysynology.net
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
   skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 05 🔓2 - sub
+  server: 208.69.78.217
+  port: 33042
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 06 🔓2 - sub
+  server: 208.69.78.217
+  port: 33171
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 07 🔓2 - sub
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 140.238.213.114
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 08 🔓2 - sub
+  server: 208.69.78.217
+  port: 21046
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 09 🔓2 - sub
+  server: 208.69.78.217
+  port: 21016
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 10 🔓2 - sub
+  server: 208.69.78.217
+  port: 33133
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 11 🔓2 - sub
+  server: 208.69.78.217
+  port: 21113
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 12 🔓2 - sub
+  server: 208.69.78.217
+  port: 21086
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 13 🔓2 - sub
+  server: 179.255.191.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12e95f93-443c-45f0-9a2a-5b318b9124cf
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: dobro.ali-bard.online
+  client-fingerprint: firefox
+- name: 🇨🇭 瑞士 (Switzerland) 14 🔓2 - sub
+  server: 208.69.78.217
+  port: 33013
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 15 🔓2 - sub
   server: 45.90.59.15
   port: 443
   udp: true
@@ -36,15 +160,79 @@ proxies:
     public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
     short-id: 19253fae84102271
   servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇭 瑞士 (Switzerland) 16 🔓2 - sub
+  server: 208.69.78.217
+  port: 33141
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 17 🔓2 - sub
+  server: 138.124.63.224
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  servername: github.com
   client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub
-  server: 104.165.205.42
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇨🇭 瑞士 (Switzerland) 18 🔓2 - sub
+  server: 82.38.64.235
   port: 8443
   udp: true
   type: hysteria2
-  password: 52e3dd44-ed23-4030-b0cc-5b5a953f2d4d
-  sni: speedtestmark.com
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  sni: hopp-swizland-new.mysynology.net
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 19 🔓2 - sub
+  server: 208.69.78.217
+  port: 21147
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 20 🔓2 - sub
+  server: 147.45.42.73
+  port: 20443
+  udp: true
+  type: vless
+  uuid: f293db4d-7ab1-4faf-bb15-89540d8709cb
+  tls: true
+  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 21 🔓2 - sub
+  server: 153.76.161.57
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 3fcec4e4-a674-44d2-8cae-c253cec43b9c
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: id.vk.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,6 +242,23 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub
   - 🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub
   - 🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 05 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 06 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 07 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 08 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 09 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 10 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 11 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 12 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 13 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 14 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 15 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 16 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 17 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 18 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 19 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 20 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 21 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +268,22 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub
   - 🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub
   - 🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 05 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 06 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 07 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 08 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 09 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 10 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 11 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 12 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 13 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 14 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 15 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 16 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 17 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 18 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 19 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 20 🔓2 - sub
+  - 🇨🇭 瑞士 (Switzerland) 21 🔓2 - sub
 rules:
 - MATCH,PROXIES

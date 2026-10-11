@@ -12,18 +12,64 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 02 🔓2 - sub",
+      "server": "at-3.wizard.select",
+      "server_port": 443,
+      "uuid": "074b00de-c4d0-11f1-9902-a337233c6cda",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "at-3.wizard.select",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "S9OR9-SQHGl717N9AV_LoouRgSd-M4Yz7os10Mj8XxI",
+          "short_id": "cee953f6"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 03 🔓2 - sub",
+      "server": "kozyavka.yandex-api.com",
+      "server_port": 443,
+      "uuid": "1b7ee703-fa08-4305-8469-ae3e30e61e44",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "kozyavka.yandex-api.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ",
+          "short_id": "a9dc98a7dc87a7dc"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01 🔓2 - sub"
+        "🇦🇹 奥地利 (Austria) 01 🔓2 - sub",
+        "🇦🇹 奥地利 (Austria) 02 🔓2 - sub",
+        "🇦🇹 奥地利 (Austria) 03 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01 🔓2 - sub"
+        "🇦🇹 奥地利 (Austria) 01 🔓2 - sub",
+        "🇦🇹 奥地利 (Austria) 02 🔓2 - sub",
+        "🇦🇹 奥地利 (Austria) 03 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

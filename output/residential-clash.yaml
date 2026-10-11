@@ -1,0 +1,44 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub
+  server: app-q0zc4t.user-4gfyh5.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07f9bc85-613f-4a33-8da1-191973c43c0a
+  tls: true
+  servername: app-q0zc4t.user-4gfyh5.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: app-q0zc4t.user-4gfyh5.workers.dev
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) 🔓2 - sub
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) 🔓2 - sub
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) 🔓2 - sub
+rules:
+- MATCH,PROXIES
