@@ -4,51 +4,43 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 01 🔓2 - sub",
-      "server": "pretty-rat.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "pretty-rat.rooster465.autos",
-        "insecure": true
-      }
+      "server": "141.164.45.187",
+      "server_port": 8091,
+      "method": "aes-256-gcm",
+      "password": "PCnnH6SQSnfoS27"
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 02 🔓2 - sub",
-      "server": "52.78.42.192",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "working-tomcat.rooster465.autos",
-        "insecure": true
-      }
+      "server": "141.164.45.187",
+      "server_port": 5001,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 03 🔓2 - sub",
-      "server": "inviting-rabbit.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "inviting-rabbit.rooster465.autos",
-        "insecure": true
-      }
+      "server": "141.164.45.187",
+      "server_port": 8888,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 04 🔓2 - sub",
-      "server": "engaging-toucan.rooster465.autos",
+      "server": "3.36.50.213",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "engaging-toucan.rooster465.autos",
-        "insecure": true
+        "server_name": "pure-kodiak.rooster465.autos",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -64,65 +56,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 06 🔓2 - sub",
-      "server": "3.39.4.109",
-      "server_port": 18967,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
+      "server": "132.226.226.189",
+      "server_port": 50160,
+      "password": "1671a252e2a97dc2bda4e515475931da",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
+        "server_name": "132.226.226.189",
+        "insecure": true
       }
     },
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 07 🔓2 - sub",
-      "server": "pure-kodiak.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "pure-kodiak.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 08 🔓2 - sub",
-      "server": "cunning-grub.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "cunning-grub.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 09 🔓2 - sub",
-      "server": "43.203.202.217",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "43.203.202.217",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 10 🔓2 - sub",
       "server": "fancy-skink.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -133,20 +80,193 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 08 🔓2 - sub",
+      "server": "52.78.42.192",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "working-tomcat.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 11 🔓2 - sub",
-      "server": "3.38.251.233",
+      "tag": "🇰🇷 韩国 (South Korea) 09 🔓2 - sub",
+      "server": "43.203.225.50",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "3.38.251.233",
+        "server_name": "43.203.225.50",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 10 🔓2 - sub",
+      "server": "132.145.80.230",
+      "server_port": 80,
+      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8",
+        "headers": {
+          "Host": "null"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 11 🔓2 - sub",
+      "server": "152.70.237.123",
+      "server_port": 2053,
+      "password": "maintell",
+      "tls": {
+        "enabled": true,
+        "server_name": "152.70.237.123",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 12 🔓2 - sub",
+      "server": "3.34.95.215",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-kr-002.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 13 🔓2 - sub",
+      "server": "glorious-lark.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "glorious-lark.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 14 🔓2 - sub",
+      "server": "cunning-grub.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "cunning-grub.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 15 🔓2 - sub",
+      "server": "3.39.4.109",
+      "server_port": 13672,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 16 🔓2 - sub",
+      "server": "13.124.119.204",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "13.124.119.204",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 17 🔓2 - sub",
+      "server": "inviting-rabbit.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "inviting-rabbit.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 18 🔓2 - sub",
+      "server": "152.69.231.175",
+      "server_port": 50160,
+      "password": "1beb216e3f60aea9555dae60d219a5ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "152-69-231-175.liao.kdns.fr",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 19 🔓2 - sub",
+      "server": "152.67.200.82",
+      "server_port": 50160,
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "tls": {
+        "enabled": true,
+        "server_name": "css.rbxcdn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 20 🔒 - sub",
+      "server": "zfd-krv2.kunlun01dns.com",
+      "server_port": 16255,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 21 🔓2 - sub",
+      "server": "3.39.4.109",
+      "server_port": 18967,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 22 🔓2 - sub",
       "server": "64.176.231.183",
       "server_port": 443,
       "uuid": "583cc910-b57c-4dd0-a4a7-cea51a30b032",
@@ -167,8 +287,36 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 13 🔓2 - sub",
-      "server": "3.39.225.215",
+      "tag": "🇰🇷 韩国 (South Korea) 23 🔓2 - sub",
+      "server": "52.78.203.191",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "delicate-buck.rooster465.autos",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 24 🔓2 - sub",
+      "server": "154.90.62.70",
+      "server_port": 56127,
+      "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
+      "tls": {
+        "enabled": true,
+        "server_name": "154.90.62.70",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 25 🔓2 - sub",
+      "server": "kind-stork.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
@@ -178,8 +326,32 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 26 🔓2 - sub",
+      "server": "3.35.207.188",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "main-fawn.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 27 🔓2 - sub",
+      "server": "3.34.131.153",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "pretty-rat.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 14 🔓2 - sub",
+      "tag": "🇰🇷 韩国 (South Korea) 28 🔓2 - sub",
       "server": "34.22.111.30",
       "server_port": 443,
       "uuid": "cb2abff3-5fe6-4b5a-aa19-5739deb285b6",
@@ -188,7 +360,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -198,113 +370,26 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 15 🔓2 - sub",
-      "server": "152.67.200.82",
-      "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
-      "tls": {
-        "enabled": true,
-        "server_name": "152.67.200.82",
-        "insecure": true
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 16 🔓2 - sub",
-      "server": "glorious-lark.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "glorious-lark.rooster465.autos",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 17 🔓2 - sub",
-      "server": "delicate-buck.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "delicate-buck.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 18 🔓2 - sub",
-      "server": "151.245.106.49",
-      "server_port": 2053,
-      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
-          "short_id": "429499c03d4cc8a0"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 19 🔓2 - sub",
-      "server": "3.35.168.225",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "noted-cougar.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 20 🔓2 - sub",
+      "tag": "🇰🇷 韩国 (South Korea) 29 🔓2 - sub",
       "server": "43.201.100.203",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
         "server_name": "optimum-snapper.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 21 🔒 - sub",
-      "server": "132.145.80.230",
-      "server_port": 80,
-      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "kr02.a0a.xyz"
-        }
+        "insecure": false
       }
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 22 🔓2 - sub",
-      "server": "3.35.207.188",
+      "tag": "🇰🇷 韩国 (South Korea) 30 🔓2 - sub",
+      "server": "3.35.168.225",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "main-fawn.rooster465.autos",
+        "server_name": "noted-cougar.rooster465.autos",
         "insecure": false
       }
     },
@@ -332,9 +417,17 @@
         "🇰🇷 韩国 (South Korea) 17 🔓2 - sub",
         "🇰🇷 韩国 (South Korea) 18 🔓2 - sub",
         "🇰🇷 韩国 (South Korea) 19 🔓2 - sub",
-        "🇰🇷 韩国 (South Korea) 20 🔓2 - sub",
-        "🇰🇷 韩国 (South Korea) 21 🔒 - sub",
-        "🇰🇷 韩国 (South Korea) 22 🔓2 - sub"
+        "🇰🇷 韩国 (South Korea) 20 🔒 - sub",
+        "🇰🇷 韩国 (South Korea) 21 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 22 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 23 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 24 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 25 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 26 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 27 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 28 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 29 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 30 🔓2 - sub"
       ]
     },
     {
@@ -360,9 +453,17 @@
         "🇰🇷 韩国 (South Korea) 17 🔓2 - sub",
         "🇰🇷 韩国 (South Korea) 18 🔓2 - sub",
         "🇰🇷 韩国 (South Korea) 19 🔓2 - sub",
-        "🇰🇷 韩国 (South Korea) 20 🔓2 - sub",
-        "🇰🇷 韩国 (South Korea) 21 🔒 - sub",
-        "🇰🇷 韩国 (South Korea) 22 🔓2 - sub"
+        "🇰🇷 韩国 (South Korea) 20 🔒 - sub",
+        "🇰🇷 韩国 (South Korea) 21 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 22 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 23 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 24 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 25 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 26 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 27 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 28 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 29 🔓2 - sub",
+        "🇰🇷 韩国 (South Korea) 30 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -14,10 +14,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 02 🔓2 - sub",
-      "server": "51.79.49.116",
-      "server_port": 8882,
-      "method": "aes-256-gcm",
-      "password": "kDWvXYZoTBcGkC4"
+      "server": "138.197.141.58",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "shadowsocks",
@@ -30,14 +30,38 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 04 🔓2 - sub",
-      "server": "51.222.107.43",
-      "server_port": 2083,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs="
+      "server": "149.22.95.183",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 05 🔓2 - sub",
+      "server": "51.222.136.236",
+      "server_port": 8882,
+      "method": "aes-256-gcm",
+      "password": "kDWvXYZoTBcGkC4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 06 🔓2 - sub",
+      "server": "51.222.200.165",
+      "server_port": 5000,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 07 🔓2 - sub",
+      "server": "ca225.vpnbook.com",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e5c65ph"
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 05 🔓2 - sub",
+      "tag": "🇨🇦 加拿大 (Canada) 08 🔓2 - sub",
       "server": "66.70.179.198",
       "server_port": 2053,
       "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
@@ -46,7 +70,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -56,40 +80,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 06 🔓2 - sub",
-      "server": "138.197.141.58",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 07 🔓2 - sub",
-      "server": "51.222.136.236",
-      "server_port": 8882,
-      "method": "aes-256-gcm",
-      "password": "kDWvXYZoTBcGkC4"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 08 🔓2 - sub",
-      "server": "149.22.95.183",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 09 🔓2 - sub",
-      "server": "51.222.200.165",
-      "server_port": 5000,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 10 🔓2 - sub",
+      "tag": "🇨🇦 加拿大 (Canada) 09 🔓2 - sub",
       "server": "209.200.246.148",
       "server_port": 443,
       "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
@@ -99,7 +91,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -110,19 +102,34 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 10 🔓2 - sub",
+      "server": "51.79.64.198",
+      "server_port": 8119,
+      "method": "aes-256-gcm",
+      "password": "cdBIDV42DCwnfIN"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 11 🔓2 - sub",
+      "server": "51.222.155.113",
+      "server_port": 5601,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 12 🔓2 - sub",
       "server": "51.222.141.125",
       "server_port": 445,
       "method": "aes-256-gcm",
       "password": "zDNVedRFPQexG9v"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 12 🔓2 - sub",
-      "server": "51.79.85.185",
-      "server_port": 8118,
-      "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 13 🔓2 - sub",
+      "server": "milo.rubinaz.xyz",
+      "server_port": 8080,
+      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
     },
     {
       "type": "selector",
@@ -140,7 +147,8 @@
         "🇨🇦 加拿大 (Canada) 09 🔓2 - sub",
         "🇨🇦 加拿大 (Canada) 10 🔓2 - sub",
         "🇨🇦 加拿大 (Canada) 11 🔓2 - sub",
-        "🇨🇦 加拿大 (Canada) 12 🔓2 - sub"
+        "🇨🇦 加拿大 (Canada) 12 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 13 🔓2 - sub"
       ]
     },
     {
@@ -158,7 +166,8 @@
         "🇨🇦 加拿大 (Canada) 09 🔓2 - sub",
         "🇨🇦 加拿大 (Canada) 10 🔓2 - sub",
         "🇨🇦 加拿大 (Canada) 11 🔓2 - sub",
-        "🇨🇦 加拿大 (Canada) 12 🔓2 - sub"
+        "🇨🇦 加拿大 (Canada) 12 🔓2 - sub",
+        "🇨🇦 加拿大 (Canada) 13 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

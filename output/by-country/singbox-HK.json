@@ -4,37 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 🔓2 - sub",
-      "server": "46.29.166.27",
-      "server_port": 20221,
-      "method": "aes-256-gcm",
-      "password": "6b39ae3234dfd68b"
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub",
-      "server": "156.224.77.171",
-      "server_port": 9443,
-      "uuid": "fe0721ac-c577-4938-b7ca-8ab5f43bb8da",
-      "flow": "xtls-rprx-vision",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4",
-          "short_id": "b390142456517acc"
-        }
+        "server_name": "https://t.me/wangcai2",
+        "insecure": true
       }
     },
     {
       "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub",
       "server": "full-ox.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -42,6 +25,26 @@
         "enabled": true,
         "server_name": "full-ox.rooster465.autos",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
+      "server": "34.92.19.135",
+      "server_port": 443,
+      "uuid": "90153538-ef08-4942-b8e1-41e7c523e659",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM",
+          "short_id": "56d4e7ae4f86fa39"
+        }
       }
     },
     {
