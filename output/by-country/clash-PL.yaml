@@ -6,33 +6,62 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 🔓2 - sub
   server: 217.30.10.44
+  port: 9076
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S2zDyyPcmZN2h8EC
+- name: 🇵🇱 波兰 (Poland) 02 🔓2 - sub
+  server: 217.30.10.44
   port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: S7KwUu7yBy58S3Ga
-- name: 🇵🇱 波兰 (Poland) 02 🔓2 - sub
+- name: 🇵🇱 波兰 (Poland) 03 🔓2 - sub
+  server: 217.30.10.44
+  port: 9006
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: FAdUvMJUq5vDgKEq
+- name: 🇵🇱 波兰 (Poland) 04 🔓2 - sub
+  server: 217.30.10.44
+  port: 9052
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: jt2ekBNc9HuVtm2a
+- name: 🇵🇱 波兰 (Poland) 05 🔓2 - sub
   server: 217.30.10.44
   port: 9063
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aQqJbtwFGcCCaeL3
-- name: 🇵🇱 波兰 (Poland) 03 🔓2 - sub
-  server: 217.30.10.44
-  port: 9095
+- name: 🇵🇱 波兰 (Poland) 06 🔓2 - sub
+  server: 94.249.180.86
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 04 🔓2 - sub
-  server: 217.30.10.44
-  port: 9062
+  type: vless
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: qq
+- name: 🇵🇱 波兰 (Poland) 07 🔓2 - sub
+  server: 2.26.225.89
+  port: 8443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 05 🔓2 - sub
+  type: vless
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  tls: true
+  servername: pl.flen-vpn.xyz
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 08 🔓2 - sub
   server: 144.31.131.38
   port: 443
   udp: true
@@ -44,55 +73,32 @@ proxies:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
   servername: prod.pl-node-01.security-sbrf.ru
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 06 🔓2 - sub
-  server: 95.85.253.241
-  port: 2053
-  udp: true
-  type: vless
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  tls: true
-  servername: 95.85.253.241
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 07 🔓2 - sub
-  server: 95.85.253.241
-  port: 2083
-  udp: true
-  type: vless
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  tls: true
-  servername: 95.85.253.241
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 08 🔓2 - sub
-  server: 202.78.163.237
+  client-fingerprint: random
+- name: 🇵🇱 波兰 (Poland) 09 🔓2 - sub
+  server: pl.golangwikito.cfd
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 09 🔓1 - sub
-  server: admin.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg
+    short-id: f8b695e5c59d028c
+  servername: pl.golangwikito.cfd
+  client-fingerprint: random
 - name: 🇵🇱 波兰 (Poland) 10 🔓2 - sub
-  server: 95.85.253.241
-  port: 2087
+  server: pl9.aiage.work
+  port: 443
   udp: true
   type: vless
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
   tls: true
-  servername: 95.85.253.241
+  servername: pl9.aiage.work
   skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 11 🔓2 - sub
-  server: 31.77.13.19
+  server: 2.26.231.218
   port: 2063
   udp: true
   type: vless
@@ -104,14 +110,6 @@ proxies:
   servername: rusbid.de
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 12 🔓2 - sub
-  server: enabling-snipe.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: enabling-snipe.rooster465.autos
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 13 🔓2 - sub
   server: 177.1.192.74
   port: 443
   udp: true
@@ -123,73 +121,72 @@ proxies:
     public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
     short-id: 770618b6
   servername: addons.mozilla.org
-  client-fingerprint: randomized
-- name: 🇵🇱 波兰 (Poland) 14 🔓2 - sub
-  server: polandsixsebenrkn010.qcloud.surf
-  port: 21384
-  udp: true
-  type: hysteria2
-  password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
-  sni: polandsixsebenrkn010.qcloud.surf
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 15 🔓2 - sub
-  server: 91.215.43.248
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 13 🔓2 - sub
+  server: 177.1.192.81
   port: 443
   udp: true
   type: vless
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  tls: true
-  servername: my.kempekl.online
-  skip-cert-verify: false
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: 🇵🇱 波兰 (Poland) 16 🔓1 - sub
-  server: co-a.speedtec.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
+  uuid: 5ac49a12-f275-44b4-b11d-26505f3f268e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI
-    short-id: 226509f017e4c36d
-  servername: co-pl.speedtec.ru
+    public-key: JNr60Nnq_sdeAz5jd25bxNDx_c9CeYLu7DRbQH3P5xk
+    short-id: 85766a81
+  servername: addons.mozilla.org
   client-fingerprint: random
-- name: 🇵🇱 波兰 (Poland) 17 🔓2 - sub
-  server: 95.85.253.241
-  port: 8443
-  udp: true
-  type: vless
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  tls: true
-  servername: 95.85.253.241
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /ws-cdn1-vless
-    headers:
-      Host: pl.fastmirror-labs.xyz
-- name: 🇵🇱 波兰 (Poland) 18 🔓2 - sub
-  server: go.wwwinternetvideo.click
+- name: 🇵🇱 波兰 (Poland) 14 🔓2 - sub
+  server: 177.1.192.72
   port: 443
   udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 19 🔓2 - sub
-  server: 217.30.10.44
-  port: 9052
+  type: vless
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 15 🔓2 - sub
+  server: 144.31.101.196
+  port: 33891
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
+  type: vless
+  uuid: 1c794e75-bcd4-4a65-9f69-ed0a10f33d60
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw
+    short-id: 5bd7b68ca4c04443
+  servername: browser.yandex.com
+  client-fingerprint: ''
+- name: 🇵🇱 波兰 (Poland) 16 🔓2 - sub
+  server: 87.242.127.113
+  port: 4510
+  udp: true
+  type: vless
+  uuid: c3db7657-88ce-42a6-b998-1e0364b277ac
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM
+    short-id: 2d0c188798bae174
+  servername: 9c99da.usecache.net
+  client-fingerprint: random
+- name: 🇵🇱 波兰 (Poland) 17 🔓2 - sub
+  server: 54.37.131.126
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -203,17 +200,15 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 07 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 08 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 09 🔓1 - sub
+  - 🇵🇱 波兰 (Poland) 09 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 10 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 11 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 12 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 13 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 14 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 15 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 16 🔓1 - sub
+  - 🇵🇱 波兰 (Poland) 16 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 17 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 18 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 19 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -227,16 +222,14 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 07 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 08 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 09 🔓1 - sub
+  - 🇵🇱 波兰 (Poland) 09 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 10 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 11 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 12 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 13 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 14 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 15 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 16 🔓1 - sub
+  - 🇵🇱 波兰 (Poland) 16 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 17 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 18 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 19 🔓2 - sub
 rules:
 - MATCH,PROXIES

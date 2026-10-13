@@ -5,14 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 🔓2 - sub
-  server: 77.74.123.107
-  port: 8443
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 02 🔓2 - sub
+  server: 185.156.44.99
+  port: 443
   udp: true
   type: hysteria2
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: false
-- name: 🇷🇴 罗马尼亚 (Romania) 02 🔓2 - sub
+  password: gf1:gfhysteria2024
+  sni: whatsapp.com
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 03 🔓2 - sub
   server: 162.249.125.133
   port: 443
   udp: true
@@ -22,7 +29,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 03 🔓1 - sub
+- name: 🇷🇴 罗马尼亚 (Romania) 04 🔓2 - sub
   server: 46.28.67.55
   port: 443
   udp: true
@@ -34,8 +41,8 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇷🇴 罗马尼亚 (Romania) 04 🔓2 - sub
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 05 🔓2 - sub
   server: 146.70.124.85
   port: 443
   udp: true
@@ -47,6 +54,19 @@ proxies:
     public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 06 🔓2 - sub
+  server: 82.117.255.174
+  port: 443
+  udp: true
+  type: vless
+  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
+    short-id: 31e91d43e553bf32
+  servername: gateway.icloud.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -55,8 +75,10 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 🔓2 - sub
   - 🇷🇴 罗马尼亚 (Romania) 02 🔓2 - sub
-  - 🇷🇴 罗马尼亚 (Romania) 03 🔓1 - sub
+  - 🇷🇴 罗马尼亚 (Romania) 03 🔓2 - sub
   - 🇷🇴 罗马尼亚 (Romania) 04 🔓2 - sub
+  - 🇷🇴 罗马尼亚 (Romania) 05 🔓2 - sub
+  - 🇷🇴 罗马尼亚 (Romania) 06 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,7 +86,9 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 🔓2 - sub
   - 🇷🇴 罗马尼亚 (Romania) 02 🔓2 - sub
-  - 🇷🇴 罗马尼亚 (Romania) 03 🔓1 - sub
+  - 🇷🇴 罗马尼亚 (Romania) 03 🔓2 - sub
   - 🇷🇴 罗马尼亚 (Romania) 04 🔓2 - sub
+  - 🇷🇴 罗马尼亚 (Romania) 05 🔓2 - sub
+  - 🇷🇴 罗马尼亚 (Romania) 06 🔓2 - sub
 rules:
 - MATCH,PROXIES

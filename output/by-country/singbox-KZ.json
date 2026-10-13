@@ -4,21 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 🔓1 - sub",
-      "server": "ccs2g.pai50288.uk",
-      "server_port": 443,
-      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
-      "tls": {
-        "enabled": true,
-        "server_name": "ccs2g.pai50288.uk",
-        "insecure": false
-      },
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔒 - sub",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/pai50288",
+        "path": "/vmess/",
         "headers": {
-          "Host": "ccs2g.pai50288.uk"
+          "Host": "38.107.234.57"
         }
       }
     },
@@ -27,14 +23,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 🔓1 - sub"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔒 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 🔓1 - sub"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 🔒 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
