@@ -30,31 +30,47 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
-      "server": "193.233.74.6",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "server": "91.196.32.121",
+      "server_port": 2443,
+      "uuid": "c635b5f6-b5ea-4e57-927f-75860b0cb984",
       "tls": {
         "enabled": true,
-        "server_name": "github.com",
+        "server_name": "fonts.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
+          "public_key": "cnmFHIiPbBDSOiui-ZJw8JIWSa4UARyNrHhBp3p7sBc",
+          "short_id": "f1b2c3d4"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "GunService"
+        "service_name": "grpc-tunnel"
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
-      "server": "213.165.56.102",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 🔓1 - sub",
+      "server": "194.38.11.86",
+      "server_port": 65443,
+      "method": "aes-256-cfb",
+      "password": "7eadc6dbe2ae"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub",
+      "server": "freede.aiage.work",
       "server_port": 443,
       "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
       "flow": "xtls-rprx-vision",
@@ -63,87 +79,13 @@
         "server_name": "freede.aiage.work",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g",
           "short_id": "57e7977c9011061c"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
-      "server": "217.60.72.238",
-      "server_port": 443,
-      "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
-          "short_id": "a696de84963656de"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub",
-      "server": "194.38.11.86",
-      "server_port": 65443,
-      "method": "aes-256-cfb",
-      "password": "7eadc6dbe2ae"
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub",
-      "server": "159.194.240.128",
-      "server_port": 443,
-      "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
-          "short_id": "a696de84963656de"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 🔓2 - sub",
-      "server": "153.80.241.206",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
       }
     },
     {
@@ -154,10 +96,8 @@
         "🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub",
         "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
         "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 07 🔓2 - sub"
+        "🇷🇺 俄罗斯 (Russia) 04 🔓1 - sub",
+        "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub"
       ]
     },
     {
@@ -167,10 +107,8 @@
         "🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub",
         "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
         "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 06 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 07 🔓2 - sub"
+        "🇷🇺 俄罗斯 (Russia) 04 🔓1 - sub",
+        "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,25 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 墨西哥 (Mexico) 01 🔓2 - sub
-  server: 38.60.224.173
-  port: 32153
+- name: 🇨🇳 CN 01 🔒 - sub
+  server: 39.108.113.127
+  port: 10086
   udp: true
   type: vmess
-  uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
+  uuid: 2b910c43-51e3-4b15-9be8-b658106ba35e
   alterId: 0
   cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 墨西哥 (Mexico) 01 🔓2 - sub
+  - 🇨🇳 CN 01 🔒 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 墨西哥 (Mexico) 01 🔓2 - sub
+  - 🇨🇳 CN 01 🔒 - sub
 rules:
 - MATCH,PROXIES

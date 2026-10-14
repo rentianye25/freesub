@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇫🇮 芬兰 (Finland) 01 🔓1 - sub
+- name: 🇫🇮 芬兰 (Finland) 01 🔓2 - sub
   server: 185.103.110.68
   port: 18283
   udp: true
@@ -22,7 +22,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 🔓2 - sub
   server: 152.233.71.81
   port: 443
@@ -35,54 +35,39 @@ proxies:
     public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
     short-id: 1c3e8241a8743df9
   servername: brointelengence.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 04 🔓2 - sub
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇫🇮 芬兰 (Finland) 05 🔓2 - sub
   server: 185.103.110.66
   port: 18280
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 05 🔓2 - sub
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 06 🔓2 - sub
-  server: 217.60.72.238
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0de1d303-d7de-506f-8679-c4cb67e2e2cc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇫🇮 芬兰 (Finland) 01 🔓1 - sub
+  - 🇫🇮 芬兰 (Finland) 01 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 02 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 03 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 04 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 05 🔓2 - sub
-  - 🇫🇮 芬兰 (Finland) 06 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇫🇮 芬兰 (Finland) 01 🔓1 - sub
+  - 🇫🇮 芬兰 (Finland) 01 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 02 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 03 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 04 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 05 🔓2 - sub
-  - 🇫🇮 芬兰 (Finland) 06 🔓2 - sub
 rules:
 - MATCH,PROXIES

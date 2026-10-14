@@ -22,6 +22,20 @@ proxies:
   ws-opts:
     path: /
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 🔓2 - sub
+  server: ee-1-1.unturned-rust-dead.lol
+  port: 443
+  udp: true
+  type: vless
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  tls: true
+  reality-opts:
+    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
+  servername: ee-1-1.unturned-rust-dead.lol
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ee-grpc
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 🔓2 - sub
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -30,6 +44,7 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +53,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 🔓2 - sub
   - 🇪🇪 爱沙尼亚 (Estonia) 02 🔓2 - sub
   - 🇪🇪 爱沙尼亚 (Estonia) 03 🔓2 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +62,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 🔓2 - sub
   - 🇪🇪 爱沙尼亚 (Estonia) 02 🔓2 - sub
   - 🇪🇪 爱沙尼亚 (Estonia) 03 🔓2 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 🔓2 - sub
 rules:
 - MATCH,PROXIES
