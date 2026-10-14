@@ -15,6 +15,26 @@
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 🔓2 - sub",
       "server": "se1.h1cloud.net",
+      "server_port": 26100,
+      "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1uuvuG2Jl_o6yoVvOYm3hEboArh2Znu7zCy4Tqj36TI",
+          "short_id": "8045087bda646f1b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 🔓2 - sub",
+      "server": "se1.h1cloud.net",
       "server_port": 26128,
       "uuid": "68c3d665-b2b5-4ffb-9f37-9f3d8c47324d",
       "tls": {
@@ -37,135 +57,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 🔓2 - sub",
-      "server": "46.246.125.153",
-      "server_port": 443,
-      "uuid": "a16a3e32-8d63-4dec-8c67-1361388a64ca",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "res.cdn.office.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ftglT-Ghp2FPiPlwyEAldfiAE1IL_AJ9UCkfCj0zk2I",
-          "short_id": "a83b77e064761e3c"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub",
-      "server": "77.110.96.201",
-      "server_port": 36264,
-      "password": "Telegram-vpnjey",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.vpnjey2.dpdns.org",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Telegram@vpnjey"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 🔓2 - sub",
-      "server": "82.197.73.139",
-      "server_port": 26226,
-      "uuid": "ec572cf0-1337-4c51-b4ec-ff2f538c1f4c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.dn.se",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zsSr4H-YgykAOYdIYFaAnFQtIguRhP825FodeKSoxjA",
-          "short_id": "2ddf3f1151012c98"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "69effd3120f4"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 🔓2 - sub",
-      "server": "se3.h1cloud.net",
-      "server_port": 25119,
-      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4",
-          "short_id": "10f517"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 🔓2 - sub",
-      "server": "swerka.loknietotop.digital",
-      "server_port": 443,
-      "uuid": "ace33fb8-c593-4b17-8f72-f3359b6e9638",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "swerka.loknietotop.digital",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
-          "short_id": "fb442438e2223836"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 🔓2 - sub",
-      "server": "62.60.159.81",
-      "server_port": 2053,
-      "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw",
-          "short_id": "d0ea1847066af5a6"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpce5bb9e71"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 🔓2 - sub",
-      "server": "sub.merky.top",
+      "server": "94.143.231.146",
       "server_port": 443,
       "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
       "tls": {
@@ -186,27 +79,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 10 🔒 - sub",
-      "server": "swe.wizard.select",
-      "server_port": 443,
-      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "swe.wizard.select",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
-          "short_id": "3b20e438da99"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -214,13 +86,7 @@
         "🇸🇪 瑞典 (Sweden) 01 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 02 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 03 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 05 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 06 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 07 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 08 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 09 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 10 🔒 - sub"
+        "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub"
       ]
     },
     {
@@ -230,13 +96,7 @@
         "🇸🇪 瑞典 (Sweden) 01 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 02 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 03 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 05 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 06 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 07 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 08 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 09 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 10 🔒 - sub"
+        "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

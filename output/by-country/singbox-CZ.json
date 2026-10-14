@@ -6,29 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 🔓2 - sub",
-      "server": "chatgpt.com",
-      "server_port": 443,
-      "uuid": "a43a9a45-7387-4faf-ad06-24b1ae181fdc",
-      "tls": {
-        "enabled": true,
-        "server_name": "snowy-glade-85fa.arshiatakalloo88.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiVzg3NkFVRjZaUCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0= ",
-        "headers": {
-          "Host": "snowy-glade-85fa.arshiatakalloo88.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 🔓2 - sub",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -48,43 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 🔓1 - sub",
-      "server": "czekkk.loknietotop.digital",
-      "server_port": 443,
-      "uuid": "ace33fb8-c593-4b17-8f72-f3359b6e9638",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "czekkk.loknietotop.digital",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WU5baXUzRH9BceiYI8MPBmDMEloTFImx2vvE5uh1yjM",
-          "short_id": "f19e02a2fb573c18"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 🔓2 - sub",
-        "🇨🇿 捷克 (Czech) 02 🔓2 - sub",
-        "🇨🇿 捷克 (Czech) 03 🔓1 - sub"
+        "🇨🇿 捷克 (Czech) 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 🔓2 - sub",
-        "🇨🇿 捷克 (Czech) 02 🔓2 - sub",
-        "🇨🇿 捷克 (Czech) 03 🔓1 - sub"
+        "🇨🇿 捷克 (Czech) 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

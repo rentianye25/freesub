@@ -4,22 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🌐 其他地区 (Other) 01 🔒 - sub",
-      "server": "www.shopify.com",
-      "server_port": 443,
-      "uuid": "6a89a215-22bf-4bd7-9642-b95b2e09583a",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "guanwang.awsno.com",
-        "insecure": false
-      },
+      "type": "vless",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub",
+      "server": "support.zoom.us",
+      "server_port": 80,
+      "uuid": "fcdb24e3-5e66-4c45-b89e-ac9441f4dcda",
       "transport": {
         "type": "ws",
-        "path": "/hls/cctv5phd.m3u8",
+        "path": "/",
         "headers": {
-          "Host": "guanwang.awsno.com"
+          "Host": "free.sahanwickramasinghe.me"
         }
       }
     },
@@ -28,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 🔒 - sub"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 🔒 - sub"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
