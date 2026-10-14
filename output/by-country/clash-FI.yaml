@@ -11,7 +11,7 @@ proxies:
   type: ss
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 02 🔒 - sub
+- name: 🇫🇮 芬兰 (Finland) 02 🔓2 - sub
   server: 185.103.110.68
   port: 18283
   udp: true
@@ -19,6 +19,31 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 03 🔓2 - sub
+  server: freefl.aiage.work
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4
+    short-id: ff0ddf949624ef2a
+  servername: freefl.aiage.work
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 04 🔓2 - sub
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 05 🔓2 - sub
   server: 152.233.71.81
   port: 443
   udp: true
@@ -30,32 +55,7 @@ proxies:
     public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
     short-id: 1c3e8241a8743df9
   servername: brointelengence.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 🔓2 - sub
-  server: 87.58.149.117
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4
-    short-id: ff0ddf949624ef2a
-  servername: freefl.aiage.work
-  client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 05 🔓2 - sub
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 06 🔓2 - sub
   server: 196.196.206.36
   port: 443
@@ -70,39 +70,6 @@ proxies:
   servername: finaluty.loknietotop.digital
   client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 07 🔓2 - sub
-  server: 65.108.3.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 08 🔓2 - sub
-  server: 109.172.54.135
-  port: 8444
-  udp: true
-  type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: github.com
-  client-fingerprint: ''
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 🇫🇮 芬兰 (Finland) 09 🔓2 - sub
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 10 🔓2 - sub
   server: 45.147.28.146
   port: 443
   udp: true
@@ -115,48 +82,27 @@ proxies:
     short-id: a696de84963656de
   servername: amd.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 11 🔓2 - sub
-  server: 45.133.151.173
-  port: 25550
+- name: 🇫🇮 芬兰 (Finland) 08 🔓2 - sub
+  server: edge10.cyrionflare.com
+  port: 2052
   udp: true
   type: vless
-  uuid: 83383473-0d62-4089-ac4d-d7ecb413504a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 2NETEB242BYUAfGq2zfFjqI2XtnKGGA4O4RUdvCuSHM
-    short-id: 6f5c241c3a917c66
-  servername: cdn.jsdelivr.net
-  client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 12 🔓2 - sub
-  server: fi-p1.h1cloud.net
-  port: 25481
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇫🇮 芬兰 (Finland) 09 🔓2 - sub
+  server: 109.172.54.135
+  port: 8444
   udp: true
   type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
   tls: true
   reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  servername: www.bing.com
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
   client-fingerprint: random
   network: grpc
   grpc-opts:
-    grpc-service-name: 8cb5baa18cd7
-- name: 🇫🇮 芬兰 (Finland) 13 🔓2 - sub
-  server: 87.228.92.122
-  port: 25007
-  udp: true
-  type: vless
-  uuid: 83383473-0d62-4089-ac4d-d7ecb413504a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Xbn-qvyXocqL2KPA9ItDJ6PfKN-ubXgKnnP4YnKZDQE
-    short-id: 47572f6cd14ed898
-  servername: est-1.ardesnode.ru
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 14 🔓2 - sub
+    grpc-service-name: GunService
+- name: 🇫🇮 芬兰 (Finland) 10 🔓2 - sub
   server: 217.60.72.238
   port: 443
   udp: true
@@ -175,7 +121,7 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 🔓2 - sub
-  - 🇫🇮 芬兰 (Finland) 02 🔒 - sub
+  - 🇫🇮 芬兰 (Finland) 02 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 03 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 04 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 05 🔓2 - sub
@@ -184,17 +130,13 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 08 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 09 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 10 🔓2 - sub
-  - 🇫🇮 芬兰 (Finland) 11 🔓2 - sub
-  - 🇫🇮 芬兰 (Finland) 12 🔓2 - sub
-  - 🇫🇮 芬兰 (Finland) 13 🔓2 - sub
-  - 🇫🇮 芬兰 (Finland) 14 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 🔓2 - sub
-  - 🇫🇮 芬兰 (Finland) 02 🔒 - sub
+  - 🇫🇮 芬兰 (Finland) 02 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 03 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 04 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 05 🔓2 - sub
@@ -203,9 +145,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 08 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 09 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 10 🔓2 - sub
-  - 🇫🇮 芬兰 (Finland) 11 🔓2 - sub
-  - 🇫🇮 芬兰 (Finland) 12 🔓2 - sub
-  - 🇫🇮 芬兰 (Finland) 13 🔓2 - sub
-  - 🇫🇮 芬兰 (Finland) 14 🔓2 - sub
 rules:
 - MATCH,PROXIES

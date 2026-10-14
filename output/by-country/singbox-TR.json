@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 🔓2 - sub",
-      "server": "85.192.48.142",
-      "server_port": 443,
-      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
       "server": "62.60.233.157",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -50,7 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -70,7 +49,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -91,7 +70,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 🔓2 - sub",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub",
       "server": "153.56.210.61",
       "server_port": 443,
       "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
@@ -101,37 +80,13 @@
         "server_name": "amd.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
           "short_id": "a696de84963656de"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 🔓2 - sub",
-      "server": "tr2.h1cloud.net",
-      "server_port": 25375,
-      "uuid": "ec572cf0-1337-4c51-b4ec-ff2f538c1f4c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PdiXtqIEtNpVRKgB1WCKnmIOC7yJ-VR4uUe1uYjcqXM",
-          "short_id": "8e2a0cd6de5dc50a"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "05195f917c82"
       }
     },
     {
@@ -142,9 +97,7 @@
         "🇹🇷 土耳其 (Turkey) 01 🔓2 - sub",
         "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
         "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 05 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 06 🔓2 - sub"
+        "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub"
       ]
     },
     {
@@ -154,9 +107,7 @@
         "🇹🇷 土耳其 (Turkey) 01 🔓2 - sub",
         "🇹🇷 土耳其 (Turkey) 02 🔓2 - sub",
         "🇹🇷 土耳其 (Turkey) 03 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 05 🔓2 - sub",
-        "🇹🇷 土耳其 (Turkey) 06 🔓2 - sub"
+        "🇹🇷 土耳其 (Turkey) 04 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

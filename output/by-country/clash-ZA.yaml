@@ -18,7 +18,7 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: aduB9HGxQHjA2SBMRjkHX6
-- name: 🇿🇦 南非 (South Africa) 03 🔓2 - sub
+- name: 🇿🇦 南非 (South Africa) 03 🔓1 - sub
   server: 34.35.189.111
   port: 443
   udp: true
@@ -41,7 +41,7 @@ proxies:
     public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
     short-id: 89b3a20484eb43ec
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,7 +49,7 @@ proxy-groups:
   - AUTO
   - 🇿🇦 南非 (South Africa) 01 🔓2 - sub
   - 🇿🇦 南非 (South Africa) 02 🔓2 - sub
-  - 🇿🇦 南非 (South Africa) 03 🔓2 - sub
+  - 🇿🇦 南非 (South Africa) 03 🔓1 - sub
   - 🇿🇦 南非 (South Africa) 04 🔓2 - sub
 - name: AUTO
   type: url-test
@@ -58,7 +58,7 @@ proxy-groups:
   proxies:
   - 🇿🇦 南非 (South Africa) 01 🔓2 - sub
   - 🇿🇦 南非 (South Africa) 02 🔓2 - sub
-  - 🇿🇦 南非 (South Africa) 03 🔓2 - sub
+  - 🇿🇦 南非 (South Africa) 03 🔓1 - sub
   - 🇿🇦 南非 (South Africa) 04 🔓2 - sub
 rules:
 - MATCH,PROXIES
