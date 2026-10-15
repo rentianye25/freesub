@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 🔓2 - sub",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "b9ede7a5-5b4b-4aee-ac37-2c307e587e47",
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
-        "headers": {
-          "Host": "courses.mftplus.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 🔓2 - sub",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -43,16 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 🔓2 - sub",
-        "🇨🇿 捷克 (Czech) 02 🔓2 - sub"
+        "🇨🇿 捷克 (Czech) 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 🔓2 - sub",
-        "🇨🇿 捷克 (Czech) 02 🔓2 - sub"
+        "🇨🇿 捷克 (Czech) 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

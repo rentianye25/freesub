@@ -12,7 +12,7 @@ proxies:
   uuid: 9b76bc31-17a5-4454-934a-8d5fb602cd70
   alterId: 0
   cipher: auto
-- name: 🇹🇭 泰国 (Thailand) 02 🔓2 - sub
+- name: 🇹🇭 泰国 (Thailand) 02 🔒 - sub
   server: 103.86.49.57
   port: 80
   udp: true
@@ -23,21 +23,8 @@ proxies:
     path: /ws
     headers:
       Host: ais.speedtest.net
-- name: 🇹🇭 泰国 (Thailand) 03 🔓2 - sub
-  server: 154.21.203.106
-  port: 21033
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-    short-id: cbd39bea0805e2
-  servername: www.kaidee.com
-  client-fingerprint: chrome
-- name: 🇹🇭 泰国 (Thailand) 04 🔓2 - sub
-  server: 104.19.32.166
+- name: 🇹🇭 泰国 (Thailand) 03 🔒 - sub
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
@@ -50,14 +37,27 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 (Thailand) 04 🔓2 - sub
+  server: 154.21.203.106
+  port: 21033
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
+  servername: www.kaidee.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 🔓2 - sub
-  - 🇹🇭 泰国 (Thailand) 02 🔓2 - sub
-  - 🇹🇭 泰国 (Thailand) 03 🔓2 - sub
+  - 🇹🇭 泰国 (Thailand) 02 🔒 - sub
+  - 🇹🇭 泰国 (Thailand) 03 🔒 - sub
   - 🇹🇭 泰国 (Thailand) 04 🔓2 - sub
 - name: AUTO
   type: url-test
@@ -65,8 +65,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 🔓2 - sub
-  - 🇹🇭 泰国 (Thailand) 02 🔓2 - sub
-  - 🇹🇭 泰国 (Thailand) 03 🔓2 - sub
+  - 🇹🇭 泰国 (Thailand) 02 🔒 - sub
+  - 🇹🇭 泰国 (Thailand) 03 🔒 - sub
   - 🇹🇭 泰国 (Thailand) 04 🔓2 - sub
 rules:
 - MATCH,PROXIES
