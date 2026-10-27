@@ -25,8 +25,32 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/clashv8",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub",
       "server": "50.7.44.28",
       "server_port": 2091,
       "uuid": "76b6a658-ce80-4500-b24d-404c94639ac6",
@@ -46,12 +70,74 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub",
+      "server": "8.217.13.103",
+      "server_port": 443,
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "qtkdr8jxe3wefxjm.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "qtkdr8jxe3wefxjm.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub",
+      "server": "47.76.57.83",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "vah4urdzl3jdx5r2.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "vah4urdzl3jdx5r2.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub",
+      "server": "lcv8v9l7oyamxxfz.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "lcv8v9l7oyamxxfz.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub"
+        "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub"
       ]
     },
     {
@@ -59,7 +145,12 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub"
+        "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub",
+        "🇭🇰 中国香港 (Hong Kong) 07 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
