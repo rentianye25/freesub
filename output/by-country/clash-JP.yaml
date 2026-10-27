@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 🔓2 - sub
-  server: 149.22.87.240
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 02 🔓2 - sub
+  server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 02 🔓2 - sub
-  server: 191.223.221.53
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: JuD6MNgtX3nVpCzFzXYVYjDTZ7nsmaTv
 - name: 🇯🇵 日本 (Japan) 03 🔓2 - sub
   server: 149.22.87.241
   port: 443
@@ -26,69 +26,58 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 04 🔓2 - sub
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 05 🔓2 - sub
-  server: 149.22.87.204
+  server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 06 🔓2 - sub
-  server: 185.125.103.62
-  port: 8082
-  udp: true
-  type: vless
-  uuid: ee1676ab-360f-4da3-848a-7db3cc574760
-  tls: true
-  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-- name: 🇯🇵 日本 (Japan) 07 🔓2 - sub
-  server: 80.240.18.227
-  port: 10051
-  udp: true
-  type: vless
-  uuid: 711b6476-63fc-4f01-b4e0-d44e17d79383
-  tls: true
-  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-- name: 🇯🇵 日本 (Japan) 08 🔓2 - sub
-  server: 31.76.91.98
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg
-    short-id: bd6f67b6b2152b45
-  servername: fuji.etherhub.cc
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 09 🔓2 - sub
+- name: 🇯🇵 日本 (Japan) 05 🔓2 - sub
   server: 45.32.52.173
   port: 8886
   udp: true
   type: trojan
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   sni: 45.32.52.173
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 06 🔓2 - sub
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇯🇵 日本 (Japan) 07 🔓2 - sub
+  server: 103.75.118.228
+  port: 12683
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 08 🔓2 - sub
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 09 🔓2 - sub
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 138.3.208.26
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 10 🔓2 - sub
   server: 8.209.247.109
@@ -99,14 +88,14 @@ proxies:
   sni: bing.com
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 11 🔓2 - sub
-  server: vp3.yysyy.online
-  port: 443
+  server: 8.211.175.236
+  port: 8443
   udp: true
   type: hysteria2
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 12 🔓1 - sub
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 12 🔓2 - sub
   server: 103.75.118.228
   port: 11452
   udp: true
@@ -120,29 +109,16 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 13 🔓2 - sub
-  server: 3.114.220.22
-  port: 18007
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 14 🔓2 - sub
-  server: 138.3.208.26
-  port: 50160
+  server: vp3.yysyy.online
+  port: 443
   udp: true
   type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 138.3.208.26
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 15 🔓2 - sub
-  server: 103.75.118.228
-  port: 12683
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 14 🔓2 - sub
+  server: 3.114.220.22
+  port: 19645
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -152,7 +128,20 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 15 🔓2 - sub
+  server: 31.76.91.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg
+    short-id: bd6f67b6b2152b45
+  servername: fuji.etherhub.cc
+  client-fingerprint: firefox
 - name: 🇯🇵 日本 (Japan) 16 🔓2 - sub
   server: 45.76.98.127
   port: 443
@@ -168,9 +157,22 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-    headers:
-      Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 17 🔓2 - sub
+  server: 80.240.18.227
+  port: 10051
+  udp: true
+  type: vless
+  uuid: 711b6476-63fc-4f01-b4e0-d44e17d79383
+  tls: true
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇯🇵 日本 (Japan) 18 🔓2 - sub
   server: 203.137.165.164
   port: 57554
   udp: true
@@ -185,27 +187,50 @@ proxies:
     path: /@Marisa_kristi
     headers:
       Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-- name: 🇯🇵 日本 (Japan) 18 🔓2 - sub
-  server: 172.67.217.240
-  port: 443
+- name: 🇯🇵 日本 (Japan) 19 🔓2 - sub
+  server: 185.125.103.62
+  port: 8082
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: ee1676ab-360f-4da3-848a-7db3cc574760
   tls: true
-  servername: jp3.yohototo.top
+  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+- name: 🇯🇵 日本 (Japan) 20 🔓2 - sub
+  server: 162.159.135.234
+  port: 2083
+  udp: true
+  type: vmess
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: cdn.sfacg.uk
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /or3
     headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 19 🔓2 - sub
-  server: 84.247.155.196
-  port: 80
+      Host: or3.sfacg.uk
+- name: 🇯🇵 日本 (Japan) 21 🔓2 - sub
+  server: 3.114.220.22
+  port: 18007
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -222,7 +247,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 09 🔓2 - sub
   - 🇯🇵 日本 (Japan) 10 🔓2 - sub
   - 🇯🇵 日本 (Japan) 11 🔓2 - sub
-  - 🇯🇵 日本 (Japan) 12 🔓1 - sub
+  - 🇯🇵 日本 (Japan) 12 🔓2 - sub
   - 🇯🇵 日本 (Japan) 13 🔓2 - sub
   - 🇯🇵 日本 (Japan) 14 🔓2 - sub
   - 🇯🇵 日本 (Japan) 15 🔓2 - sub
@@ -230,6 +255,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 17 🔓2 - sub
   - 🇯🇵 日本 (Japan) 18 🔓2 - sub
   - 🇯🇵 日本 (Japan) 19 🔓2 - sub
+  - 🇯🇵 日本 (Japan) 20 🔓2 - sub
+  - 🇯🇵 日本 (Japan) 21 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -246,7 +273,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 09 🔓2 - sub
   - 🇯🇵 日本 (Japan) 10 🔓2 - sub
   - 🇯🇵 日本 (Japan) 11 🔓2 - sub
-  - 🇯🇵 日本 (Japan) 12 🔓1 - sub
+  - 🇯🇵 日本 (Japan) 12 🔓2 - sub
   - 🇯🇵 日本 (Japan) 13 🔓2 - sub
   - 🇯🇵 日本 (Japan) 14 🔓2 - sub
   - 🇯🇵 日本 (Japan) 15 🔓2 - sub
@@ -254,5 +281,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 17 🔓2 - sub
   - 🇯🇵 日本 (Japan) 18 🔓2 - sub
   - 🇯🇵 日本 (Japan) 19 🔓2 - sub
+  - 🇯🇵 日本 (Japan) 20 🔓2 - sub
+  - 🇯🇵 日本 (Japan) 21 🔓2 - sub
 rules:
 - MATCH,PROXIES

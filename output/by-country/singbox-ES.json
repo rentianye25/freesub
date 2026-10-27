@@ -5,7 +5,15 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 01 🔓2 - sub",
+      "tag": "🇪🇸 西班牙 (Spain) 01 🔒 - sub",
+      "server": "5.188.181.201",
+      "server_port": 9005,
+      "method": "aes-256-cfb",
+      "password": "ZET59LF6DvCC8KVt"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 02 🔓2 - sub",
       "server": "5.188.181.201",
       "server_port": 9025,
       "method": "aes-256-cfb",
@@ -13,15 +21,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 02 🔓2 - sub",
+      "tag": "🇪🇸 西班牙 (Spain) 03 🔒 - sub",
       "server": "5.188.181.201",
-      "server_port": 9005,
+      "server_port": 9054,
       "method": "aes-256-cfb",
-      "password": "ZET59LF6DvCC8KVt"
+      "password": "VcFuyXvND2yQWSFY"
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 🔓2 - sub",
+      "tag": "🇪🇸 西班牙 (Spain) 04 🔓2 - sub",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -30,7 +38,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -38,14 +46,6 @@
           "short_id": "29e8dcd2b37aaa7f"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 04 🔓2 - sub",
-      "server": "5.188.181.201",
-      "server_port": 9027,
-      "method": "aes-256-cfb",
-      "password": "EXN3S3eQpjE7EJu8"
     },
     {
       "type": "vless",
@@ -68,24 +68,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06 🔓2 - sub",
-      "server": "46.28.71.247",
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 06 🔒 - sub",
+      "server": "66.163.118.244",
       "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
-        }
+        "server_name": "api.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
       }
     },
     {
@@ -114,12 +105,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01 🔓2 - sub",
+        "🇪🇸 西班牙 (Spain) 01 🔒 - sub",
         "🇪🇸 西班牙 (Spain) 02 🔓2 - sub",
-        "🇪🇸 西班牙 (Spain) 03 🔓2 - sub",
+        "🇪🇸 西班牙 (Spain) 03 🔒 - sub",
         "🇪🇸 西班牙 (Spain) 04 🔓2 - sub",
         "🇪🇸 西班牙 (Spain) 05 🔓2 - sub",
-        "🇪🇸 西班牙 (Spain) 06 🔓2 - sub",
+        "🇪🇸 西班牙 (Spain) 06 🔒 - sub",
         "🇪🇸 西班牙 (Spain) 07 🔓2 - sub"
       ]
     },
@@ -127,12 +118,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01 🔓2 - sub",
+        "🇪🇸 西班牙 (Spain) 01 🔒 - sub",
         "🇪🇸 西班牙 (Spain) 02 🔓2 - sub",
-        "🇪🇸 西班牙 (Spain) 03 🔓2 - sub",
+        "🇪🇸 西班牙 (Spain) 03 🔒 - sub",
         "🇪🇸 西班牙 (Spain) 04 🔓2 - sub",
         "🇪🇸 西班牙 (Spain) 05 🔓2 - sub",
-        "🇪🇸 西班牙 (Spain) 06 🔓2 - sub",
+        "🇪🇸 西班牙 (Spain) 06 🔒 - sub",
         "🇪🇸 西班牙 (Spain) 07 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
