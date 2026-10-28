@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 爱沙尼亚 (Estonia) 01 🔒 - sub
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 🔓2 - sub
   server: 79.182.39.232
   port: 25895
   udp: true
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 🔒 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 🔒 - sub
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 🔓2 - sub
 rules:
 - MATCH,PROXIES

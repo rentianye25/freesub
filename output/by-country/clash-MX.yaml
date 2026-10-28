@@ -4,23 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 塞浦路斯 (Cyprus) 01 🔓2 - sub
-  server: 171.22.119.74
-  port: 8447
+- name: 🇲🇽 墨西哥 (Mexico) 01 🔒 - sub
+  server: 64.177.90.30
+  port: 8388
   udp: true
-  type: vless
-  uuid: 6aed42ba-cd2d-4671-87d9-c949b6876888
+  type: ss
+  cipher: aes-256-gcm
+  password: BWyPPTusFKhGgzKh
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 塞浦路斯 (Cyprus) 01 🔓2 - sub
+  - 🇲🇽 墨西哥 (Mexico) 01 🔒 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 塞浦路斯 (Cyprus) 01 🔓2 - sub
+  - 🇲🇽 墨西哥 (Mexico) 01 🔒 - sub
 rules:
 - MATCH,PROXIES

@@ -6,6 +6,29 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 🔓2 - sub",
+      "server": "172.67.208.235",
+      "server_port": 2096,
+      "uuid": "b9ede7a5-5b4b-4aee-ac37-2c307e587e47",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.mftplus.qzz.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "courses.mftplus.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 🔓2 - sub",
       "server": "195.123.245.241",
       "server_port": 443,
       "uuid": "7c053ca8-38cc-45e2-930c-eda1fd66f903",
@@ -15,7 +38,7 @@
         "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,18 +48,43 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 🔓2 - sub",
+      "server": "cz-prg.dontblockmepls.com",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "rusbid.de",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 🔓2 - sub"
+        "🇨🇿 捷克 (Czech) 01 🔓2 - sub",
+        "🇨🇿 捷克 (Czech) 02 🔓2 - sub",
+        "🇨🇿 捷克 (Czech) 03 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 🔓2 - sub"
+        "🇨🇿 捷克 (Czech) 01 🔓2 - sub",
+        "🇨🇿 捷克 (Czech) 02 🔓2 - sub",
+        "🇨🇿 捷克 (Czech) 03 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
