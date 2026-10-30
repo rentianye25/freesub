@@ -6,31 +6,40 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 🔓1 - sub",
+      "server": "103.116.7.30",
+      "server_port": 8880,
+      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vms.lifetime35.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 🔓2 - sub",
       "server": "185.253.116.33",
       "server_port": 14430,
       "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "185.253.116.33"
-        }
+        "path": "/vless"
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 🔓2 - sub",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 🔓2 - sub",
+      "server": "95.174.68.188",
+      "server_port": 14430,
+      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "95.174.68.188"
+        }
       }
     },
     {
@@ -39,7 +48,8 @@
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 🔓1 - sub",
-        "🇦🇪 阿联酋 (UAE) 02 🔓2 - sub"
+        "🇦🇪 阿联酋 (UAE) 02 🔓2 - sub",
+        "🇦🇪 阿联酋 (UAE) 03 🔓2 - sub"
       ]
     },
     {
@@ -47,7 +57,8 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 🔓1 - sub",
-        "🇦🇪 阿联酋 (UAE) 02 🔓2 - sub"
+        "🇦🇪 阿联酋 (UAE) 02 🔓2 - sub",
+        "🇦🇪 阿联酋 (UAE) 03 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
