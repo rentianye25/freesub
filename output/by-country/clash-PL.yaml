@@ -5,25 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 🔓2 - sub
-  server: site.teslamotor.site
-  port: 20001
+  server: 217.30.10.44
+  port: 9006
   udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  type: ss
+  cipher: aes-256-cfb
+  password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 02 🔓2 - sub
-  server: 54.37.131.126
-  port: 80
+  server: 217.30.10.44
+  port: 9052
   udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 03 🔓1 - sub
+  type: ss
+  cipher: aes-256-cfb
+  password: jt2ekBNc9HuVtm2a
+- name: 🇵🇱 波兰 (Poland) 03 🔓2 - sub
+  server: 70.34.252.255
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 04 🔓2 - sub
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -32,7 +35,6 @@ proxies:
   tls: true
   servername: 2.26.6.1
   skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,7 +42,8 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 02 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 03 🔓1 - sub
+  - 🇵🇱 波兰 (Poland) 03 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 04 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,6 +51,7 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 02 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 03 🔓1 - sub
+  - 🇵🇱 波兰 (Poland) 03 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 04 🔓2 - sub
 rules:
 - MATCH,PROXIES

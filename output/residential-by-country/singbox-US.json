@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇳 CN 01 🔓2 - sub",
-      "server": "vpn.cintaku.qzz.io",
+      "tag": "🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub",
+      "server": "ld.235231.xyz",
       "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "uuid": "65d3f9b3-d289-4a8e-9c87-90bba156de30",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
+        "server_name": "ld.235231.xyz",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,10 +20,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
-        }
+        "path": "/"
       }
     },
     {
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 🔓2 - sub"
+        "🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 🔓2 - sub"
+        "🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

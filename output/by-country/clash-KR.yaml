@@ -5,35 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 🔓2 - sub
-  server: 49.254.204.134
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇰🇷 韩国 (South Korea) 02 🔓2 - sub
-  server: 211.178.105.134
-  port: 6123
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 03 🔓2 - sub
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇰🇷 韩国 (South Korea) 04 🔓2 - sub
-  server: 152.70.237.123
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05 🔓2 - sub
   server: 152.69.226.63
   port: 25555
   udp: true
@@ -42,41 +13,31 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇰🇷 韩国 (South Korea) 06 🔓2 - sub
-  server: kr002.zestapp778.com
+- name: 🇰🇷 韩国 (South Korea) 02 🔓2 - sub
+  server: 158.247.255.150
   port: 48851
   udp: true
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: kr002.zestapp778.com
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 03 🔓2 - sub
+  server: 152.70.237.123
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: maintell
+  sni: bing.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 🔓2 - sub
-  server: 132.145.80.230
-  port: 80
+- name: 🇰🇷 韩国 (South Korea) 04 🔓2 - sub
+  server: 152.67.200.82
+  port: 50160
   udp: true
-  type: vmess
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr02.a0a.xyz
-- name: 🇰🇷 韩国 (South Korea) 08 🔓2 - sub
-  server: 3.39.4.109
-  port: 18967
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 09 🔓2 - sub
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: 152.67.200.82
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05 🔓2 - sub
   server: 3.39.4.109
   port: 13672
   udp: true
@@ -89,7 +50,20 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 10 🔓2 - sub
+- name: 🇰🇷 韩国 (South Korea) 06 🔓2 - sub
+  server: 3.39.4.109
+  port: 18967
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 07 🔓2 - sub
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -113,9 +87,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 🔓2 - sub
   - 🇰🇷 韩国 (South Korea) 06 🔓2 - sub
   - 🇰🇷 韩国 (South Korea) 07 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 08 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 09 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 10 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,8 +99,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 05 🔓2 - sub
   - 🇰🇷 韩国 (South Korea) 06 🔓2 - sub
   - 🇰🇷 韩国 (South Korea) 07 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 08 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 09 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 10 🔓2 - sub
 rules:
 - MATCH,PROXIES

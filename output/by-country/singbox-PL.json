@@ -4,41 +4,47 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 🔓2 - sub",
-      "server": "site.teslamotor.site",
-      "server_port": 20001,
-      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
+      "server": "217.30.10.44",
+      "server_port": 9006,
+      "method": "aes-256-cfb",
+      "password": "FAdUvMJUq5vDgKEq"
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 02 🔓2 - sub",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+      "server": "217.30.10.44",
+      "server_port": 9052,
+      "method": "aes-256-cfb",
+      "password": "jt2ekBNc9HuVtm2a"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 03 🔓2 - sub",
+      "server": "70.34.252.255",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 🔓1 - sub",
+      "tag": "🇵🇱 波兰 (Poland) 04 🔓2 - sub",
       "server": "2.26.6.1",
       "server_port": 2087,
       "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
       "tls": {
         "enabled": true,
         "server_name": "2.26.6.1",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
     },
     {
@@ -48,7 +54,8 @@
         "auto",
         "🇵🇱 波兰 (Poland) 01 🔓2 - sub",
         "🇵🇱 波兰 (Poland) 02 🔓2 - sub",
-        "🇵🇱 波兰 (Poland) 03 🔓1 - sub"
+        "🇵🇱 波兰 (Poland) 03 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 04 🔓2 - sub"
       ]
     },
     {
@@ -57,7 +64,8 @@
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 🔓2 - sub",
         "🇵🇱 波兰 (Poland) 02 🔓2 - sub",
-        "🇵🇱 波兰 (Poland) 03 🔓1 - sub"
+        "🇵🇱 波兰 (Poland) 03 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 04 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
