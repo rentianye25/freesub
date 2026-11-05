@@ -4,23 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub",
-      "server": "ld.235231.xyz",
-      "server_port": 443,
-      "uuid": "65d3f9b3-d289-4a8e-9c87-90bba156de30",
+      "server": "130.94.19.95",
+      "server_port": 57277,
+      "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
-        "server_name": "ld.235231.xyz",
+        "server_name": "us001.zestapp778.com",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/"
       }
     },
     {

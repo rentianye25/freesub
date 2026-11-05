@@ -5,20 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) 🔓2 - sub",
-      "server": "a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com",
-      "server_port": 443,
-      "uuid": "6d56436c-150d-11f0-b0c8-f23c913c8d2b",
+      "tag": "🇶🇦 卡塔尔 (Qatar) 01 🔓2 - sub",
+      "server": "149.104.121.174",
+      "server_port": 8443,
+      "uuid": "1506f2e0-ae12-4718-b5ab-c5609161300e",
       "tls": {
         "enabled": true,
-        "server_name": "download.windowsupdate.com",
+        "server_name": "as10.cdn77.icu",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
+          "public_key": "EltWI8AOqkN8lMjRycweRRoFRah5hu6xiKtgBmQOdE8",
           "short_id": ""
         }
       }
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) 🔓2 - sub"
+        "🇶🇦 卡塔尔 (Qatar) 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) 🔓2 - sub"
+        "🇶🇦 卡塔尔 (Qatar) 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,61 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 01 🔓2 - sub",
-      "server": "185.253.116.33",
-      "server_port": 14430,
-      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "185.253.116.33"
-        }
-      }
+      "server": "151.241.19.36",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 02 🔓2 - sub",
-      "server": "hy2.aspidnet.xyz",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
+      "server": "151.241.19.29",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 03 🔓2 - sub",
-      "server": "104.21.108.4",
-      "server_port": 443,
-      "uuid": "fa45096d-bed0-ad80-c773-23c300000018",
-      "tls": {
-        "enabled": true,
-        "server_name": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 🔓2 - sub",
       "server": "95.174.68.188",
       "server_port": 14430,
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
@@ -71,60 +34,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 🔓2 - sub",
-      "server": "app-mi-26.spbstudentlife.com",
-      "server_port": 443,
-      "uuid": "07680ffb-0666-4836-b6ad-ec0de62bc38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets-mi-26.spbstudentlife.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc",
-          "short_id": "a7856800c2deb7b2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 🔓2 - sub",
-      "server": "172.105.241.119",
-      "server_port": 1916,
-      "uuid": "df54bb48-921e-446a-9b10-1a2a0bef680b",
-      "tls": {
-        "enabled": true,
-        "server_name": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 🔓2 - sub",
         "🇦🇪 阿联酋 (UAE) 02 🔓2 - sub",
-        "🇦🇪 阿联酋 (UAE) 03 🔓2 - sub",
-        "🇦🇪 阿联酋 (UAE) 04 🔓2 - sub",
-        "🇦🇪 阿联酋 (UAE) 05 🔓2 - sub",
-        "🇦🇪 阿联酋 (UAE) 06 🔓2 - sub"
+        "🇦🇪 阿联酋 (UAE) 03 🔓2 - sub"
       ]
     },
     {
@@ -133,10 +49,7 @@
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 🔓2 - sub",
         "🇦🇪 阿联酋 (UAE) 02 🔓2 - sub",
-        "🇦🇪 阿联酋 (UAE) 03 🔓2 - sub",
-        "🇦🇪 阿联酋 (UAE) 04 🔓2 - sub",
-        "🇦🇪 阿联酋 (UAE) 05 🔓2 - sub",
-        "🇦🇪 阿联酋 (UAE) 06 🔓2 - sub"
+        "🇦🇪 阿联酋 (UAE) 03 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

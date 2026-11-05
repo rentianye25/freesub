@@ -5,59 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 🔓2 - sub
-  server: 138.124.58.206
-  port: 8443
+  server: ee2.japancase.site
+  port: 443
   udp: true
   type: vless
-  uuid: a52fd54b-ba4d-4d11-8e00-301e2646cd66
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1H1DiBCBB7fpALV71pH1q66ePybBFlVOcxftdlQimQ8
-    short-id: 385cb18df0892069
-  servername: fr1.vpngold.ru
-  client-fingerprint: firefox
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 🔓2 - sub
-  server: 5.253.42.164
-  port: 40443
-  udp: true
-  type: vless
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  servername: deepl.com
-  client-fingerprint: firefox
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 🔓2 - sub
-  server: 5.253.28.240
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: chrome
+    public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
+    short-id: 41ae8e266bc3346f
+  servername: ee2.japancase.site
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01 🔓2 - sub
-  - 🇨🇾 塞浦路斯 (Cyprus) 02 🔓2 - sub
-  - 🇨🇾 塞浦路斯 (Cyprus) 03 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 🔓2 - sub
-  - 🇨🇾 塞浦路斯 (Cyprus) 02 🔓2 - sub
-  - 🇨🇾 塞浦路斯 (Cyprus) 03 🔓2 - sub
 rules:
 - MATCH,PROXIES

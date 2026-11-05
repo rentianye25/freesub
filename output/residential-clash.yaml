@@ -5,18 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub
-  server: ld.235231.xyz
-  port: 443
+  server: 130.94.19.95
+  port: 57277
   udp: true
-  type: vless
-  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
-  tls: true
-  servername: ld.235231.xyz
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: us001.zestapp778.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
   server: 125.227.86.45
   port: 443
@@ -28,17 +23,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: db
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) 🔓2 - sub
-  server: a736eb68-tmb1c0-tpkh0c-1r7od.hk2.hyhuawei.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
-  tls: true
-  reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) 🔓2 - sub
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) 🔓2 - sub
 rules:
 - MATCH,PROXIES
