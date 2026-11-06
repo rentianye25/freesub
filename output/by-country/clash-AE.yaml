@@ -5,36 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 🔓2 - sub
-  server: 57.129.130.57
-  port: 52014
-  udp: true
-  type: vless
-  uuid: 609b0d70-e2d0-4a48-95b1-02754e9b249a
-  tls: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 02 🔓2 - sub
-  server: 79.137.199.52
-  port: 21
-  udp: true
-  type: vless
-  uuid: f346f223-ebf6-4da3-955e-425de7e9c372
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 03 🔓2 - sub
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -51,15 +21,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01 🔓2 - sub
-  - 🇦🇪 阿联酋 (UAE) 02 🔓2 - sub
-  - 🇦🇪 阿联酋 (UAE) 03 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01 🔓2 - sub
-  - 🇦🇪 阿联酋 (UAE) 02 🔓2 - sub
-  - 🇦🇪 阿联酋 (UAE) 03 🔓2 - sub
 rules:
 - MATCH,PROXIES

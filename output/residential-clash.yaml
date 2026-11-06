@@ -4,25 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub
-  server: 130.94.19.95
-  port: 57277
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) 🔓2 - sub
+  server: 125.227.86.45
+  port: 443
   udp: true
   type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: us001.zestapp778.com
-  skip-cert-verify: false
+  password: 0a9f1f5a397bd427
+  sni: TG.freecodes
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: db
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (移动家宽) 🔓2 - sub
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) 🔓2 - sub
 rules:
 - MATCH,PROXIES
