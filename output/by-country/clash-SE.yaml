@@ -23,16 +23,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 03 🔓2 - sub
-  server: 194.104.94.141
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  tls: true
-  servername: se3.shtil.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 02 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 03 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 🔓2 - sub
   - 🇸🇪 瑞典 (Sweden) 02 🔓2 - sub
-  - 🇸🇪 瑞典 (Sweden) 03 🔓2 - sub
 rules:
 - MATCH,PROXIES
