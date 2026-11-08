@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 🔓2 - sub
   server: 217.30.10.44
-  port: 9076
+  port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
+  password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 02 🔓2 - sub
   server: 217.30.10.44
   port: 9099
@@ -18,41 +18,21 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 7heRqkPG3hg4UnRm
-- name: 🇵🇱 波兰 (Poland) 03 🔒 - sub
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 04 🔓2 - sub
-  server: 217.30.10.44
-  port: 9006
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 05 🔓2 - sub
+- name: 🇵🇱 波兰 (Poland) 03 🔓2 - sub
   server: 217.30.10.44
   port: 9095
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 06 🔓2 - sub
-  server: 2.26.255.215
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 04 🔓2 - sub
+  server: 217.30.10.44
+  port: 9063
   udp: true
-  type: vless
-  uuid: 69e41e64-a832-471a-b740-94577ca85520
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
-  servername: cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 07 🔓2 - sub
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
+- name: 🇵🇱 波兰 (Poland) 05 🔓2 - sub
   server: 70.34.252.255
   port: 443
   udp: true
@@ -67,11 +47,9 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 02 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 03 🔒 - sub
+  - 🇵🇱 波兰 (Poland) 03 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 04 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 05 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 06 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 07 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,10 +57,8 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 02 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 03 🔒 - sub
+  - 🇵🇱 波兰 (Poland) 03 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 04 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 05 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 06 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 07 🔓2 - sub
 rules:
 - MATCH,PROXIES
