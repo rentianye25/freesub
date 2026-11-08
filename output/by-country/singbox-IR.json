@@ -4,18 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇵🇭 菲律宾 (Philippines) 01 🔓2 - sub",
-      "server": "130.94.51.219",
-      "server_port": 46298,
-      "password": "5t6i121em5lkmsmk",
+      "type": "vless",
+      "tag": "🇮🇷 IR 01 🔓1 - sub",
+      "server": "198.16.113.220",
+      "server_port": 8443,
+      "uuid": "eb6fbbdd-669b-4055-9379-4eeba938578a",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ph001.zestapp778.com",
-        "insecure": false,
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE",
+          "short_id": "69984b9e02545831"
         }
       }
     },
@@ -24,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 菲律宾 (Philippines) 01 🔓2 - sub"
+        "🇮🇷 IR 01 🔓1 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 菲律宾 (Philippines) 01 🔓2 - sub"
+        "🇮🇷 IR 01 🔓1 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

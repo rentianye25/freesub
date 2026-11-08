@@ -32,18 +32,6 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
-  - 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
-  - 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
 rules:
 - MATCH,PROXIES
