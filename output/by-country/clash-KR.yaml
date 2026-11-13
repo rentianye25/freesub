@@ -5,28 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 🔓2 - sub
-  server: 211.178.105.134
-  port: 6123
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 02 🔓2 - sub
-  server: 140.238.2.250
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 03 🔓2 - sub
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 04 🔓2 - sub
   server: 129.154.61.196
   port: 800
   udp: true
@@ -34,52 +12,22 @@ proxies:
   uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
   alterId: 0
   cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 05 🔓2 - sub
-  server: 3.39.4.109
-  port: 18967
+- name: 🇰🇷 韩国 (South Korea) 02 🔓2 - sub
+  server: 211.178.105.134
+  port: 6123
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 06 🔓2 - sub
-  server: 158.247.220.26
-  port: 48851
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷 韩国 (South Korea) 03 🔓2 - sub
+  server: 158.247.253.243
+  port: 443
   udp: true
   type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: kr002.zestapp778.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 07 🔓2 - sub
-  server: 3.39.4.109
-  port: 13672
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 08 🔓2 - sub
-  server: 132.145.80.230
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇰🇷 韩国 (South Korea) 09 🔓2 - sub
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 04 🔓2 - sub
   server: 152.69.226.63
   port: 25555
   udp: true
@@ -88,22 +36,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇰🇷 韩国 (South Korea) 10 🔓2 - sub
-  server: 141.164.45.187
-  port: 5001
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇰🇷 韩国 (South Korea) 11 🔓2 - sub
-  server: 154.90.62.70
-  port: 56127
-  udp: true
-  type: trojan
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  sni: 154.90.62.70
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 12 🔓2 - sub
+- name: 🇰🇷 韩国 (South Korea) 05 🔓2 - sub
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -114,14 +47,15 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 13 🔓2 - sub
-  server: 141.164.45.187
-  port: 8888
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 06 🔓2 - sub
+  server: 154.90.62.70
+  port: 56127
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  type: trojan
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  sni: 154.90.62.70
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -133,13 +67,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04 🔓2 - sub
   - 🇰🇷 韩国 (South Korea) 05 🔓2 - sub
   - 🇰🇷 韩国 (South Korea) 06 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 07 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 08 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 09 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 10 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 11 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 12 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 13 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -151,12 +78,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 04 🔓2 - sub
   - 🇰🇷 韩国 (South Korea) 05 🔓2 - sub
   - 🇰🇷 韩国 (South Korea) 06 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 07 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 08 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 09 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 10 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 11 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 12 🔓2 - sub
-  - 🇰🇷 韩国 (South Korea) 13 🔓2 - sub
 rules:
 - MATCH,PROXIES

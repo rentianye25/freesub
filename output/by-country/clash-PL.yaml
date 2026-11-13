@@ -6,88 +6,60 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 🔓2 - sub
   server: 217.30.10.44
-  port: 9095
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 02 🔓2 - sub
-  server: 217.30.10.44
-  port: 9062
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 03 🔓2 - sub
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 04 🔓2 - sub
-  server: 217.30.10.44
-  port: 9076
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
-- name: 🇵🇱 波兰 (Poland) 05 🔓2 - sub
-  server: 217.30.10.44
   port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7heRqkPG3hg4UnRm
-- name: 🇵🇱 波兰 (Poland) 06 🔓2 - sub
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 07 🔓2 - sub
-  server: 217.30.10.44
-  port: 9063
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
-- name: 🇵🇱 波兰 (Poland) 08 🔓2 - sub
+- name: 🇵🇱 波兰 (Poland) 02 🔓2 - sub
   server: 217.30.10.44
   port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: S7KwUu7yBy58S3Ga
-- name: 🇵🇱 波兰 (Poland) 09 🔓2 - sub
+- name: 🇵🇱 波兰 (Poland) 03 🔓2 - sub
+  server: 217.30.10.44
+  port: 9052
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: jt2ekBNc9HuVtm2a
+- name: 🇵🇱 波兰 (Poland) 04 🔓2 - sub
+  server: 217.30.10.44
+  port: 9071
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 05 🔓2 - sub
   server: 217.30.10.44
   port: 9006
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 10 🔓2 - sub
-  server: 70.34.252.255
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 06 🔓2 - sub
+  server: 217.30.10.44
+  port: 9062
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 11 🔓2 - sub
-  server: 94.183.234.245
-  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: tkhHVxxfM2QErBWe
+- name: 🇵🇱 波兰 (Poland) 07 🔓2 - sub
+  server: 217.30.10.44
+  port: 9095
   udp: true
-  type: vless
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
-    short-id: 7f1e29593aa94ad1
-  servername: www.bing.com
-  client-fingerprint: qq
+  type: ss
+  cipher: aes-256-cfb
+  password: N7j3pdTYkKmsy8CR
+- name: 🇵🇱 波兰 (Poland) 08 🔓2 - sub
+  server: 217.30.10.44
+  port: 9076
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S2zDyyPcmZN2h8EC
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,9 +73,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 07 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 08 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 09 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 10 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 11 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -117,8 +86,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 07 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 08 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 09 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 10 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 11 🔓2 - sub
 rules:
 - MATCH,PROXIES

@@ -4,24 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 🔓2 - sub",
-      "server": "209.33.160.122",
-      "server_port": 39098,
-      "uuid": "7852e4df-db54-4f75-a35e-3b8fbe89e56d",
-      "flow": "xtls-rprx-vision",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "dash.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg",
-          "short_id": ""
-        }
+        "server_name": "https://t.me/wangcai2üá",
+        "insecure": true
       }
     },
     {
@@ -37,38 +28,12 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub"
+        "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub"
       ]
     },
     {
@@ -76,9 +41,7 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub",
-        "🇭🇰 中国香港 (Hong Kong) 04 🔓2 - sub"
+        "🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
