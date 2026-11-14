@@ -37,6 +37,19 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub
+  server: 185.39.204.117
+  port: 10002
+  udp: true
+  type: vless
+  uuid: facb802c-de2e-11f1-9a22-a3404e852f3b
+  tls: true
+  servername: tr2.vpnjantit.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vpnjantit
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +58,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +67,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
   - 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub
 rules:
 - MATCH,PROXIES

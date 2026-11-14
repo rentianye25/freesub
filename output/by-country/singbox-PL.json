@@ -7,45 +7,21 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 🔓2 - sub",
       "server": "217.30.10.44",
-      "server_port": 9099,
-      "method": "aes-256-cfb",
-      "password": "7heRqkPG3hg4UnRm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 02 🔓2 - sub",
-      "server": "217.30.10.44",
-      "server_port": 9052,
-      "method": "aes-256-cfb",
-      "password": "jt2ekBNc9HuVtm2a"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 03 🔓2 - sub",
-      "server": "217.30.10.44",
-      "server_port": 9062,
-      "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 04 🔓2 - sub",
-      "server": "217.30.10.44",
-      "server_port": 9042,
-      "method": "aes-256-cfb",
-      "password": "S7KwUu7yBy58S3Ga"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 05 🔓2 - sub",
-      "server": "217.30.10.44",
       "server_port": 9006,
       "method": "aes-256-cfb",
       "password": "FAdUvMJUq5vDgKEq"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 06 🔓2 - sub",
+      "tag": "🇵🇱 波兰 (Poland) 02 🔓2 - sub",
+      "server": "217.30.10.44",
+      "server_port": 9071,
+      "method": "aes-256-cfb",
+      "password": "mENfxTFQpRKKh4As"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 03 🔓2 - sub",
       "server": "217.30.10.44",
       "server_port": 9095,
       "method": "aes-256-cfb",
@@ -53,19 +29,43 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 04 🔓2 - sub",
+      "server": "217.30.10.44",
+      "server_port": 9062,
+      "method": "aes-256-cfb",
+      "password": "tkhHVxxfM2QErBWe"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 05 🔓2 - sub",
+      "server": "217.30.10.44",
+      "server_port": 9052,
+      "method": "aes-256-cfb",
+      "password": "jt2ekBNc9HuVtm2a"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 06 🔓2 - sub",
+      "server": "217.30.10.44",
+      "server_port": 9099,
+      "method": "aes-256-cfb",
+      "password": "7heRqkPG3hg4UnRm"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 07 🔓2 - sub",
       "server": "217.30.10.44",
-      "server_port": 9076,
+      "server_port": 9042,
       "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC"
+      "password": "S7KwUu7yBy58S3Ga"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 08 🔓2 - sub",
       "server": "217.30.10.44",
-      "server_port": 9071,
+      "server_port": 9076,
       "method": "aes-256-cfb",
-      "password": "mENfxTFQpRKKh4As"
+      "password": "S2zDyyPcmZN2h8EC"
     },
     {
       "type": "vless",
