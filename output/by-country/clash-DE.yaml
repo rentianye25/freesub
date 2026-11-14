@@ -5,74 +5,75 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 🔓2 - sub
-  server: 193.108.117.111
-  port: 19999
+  server: 213.202.208.199
+  port: 7001
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: RexnBgU7EV5ADxG
 - name: 🇩🇪 德国 (Germany) 02 🔓2 - sub
-  server: 193.108.117.84
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 (Germany) 03 🔓2 - sub
-  server: 23.157.88.43
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 (Germany) 04 🔓2 - sub
-  server: 185.176.204.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 (Germany) 05 🔓2 - sub
   server: 193.108.119.83
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 03 🔓2 - sub
+  server: 193.108.117.111
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 04 🔓2 - sub
+  server: 193.108.117.84
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 05 🔓2 - sub
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
 - name: 🇩🇪 德国 (Germany) 06 🔓2 - sub
-  server: 193.108.118.247
-  port: 19999
+  server: 213.202.208.199
+  port: 5000
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  password: Y6R9pAtvxxzmGC
 - name: 🇩🇪 德国 (Germany) 07 🔓2 - sub
-  server: 193.108.116.98
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 (Germany) 08 🔓2 - sub
   server: 193.108.119.3
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 08 🔓2 - sub
+  server: 185.176.204.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇩🇪 德国 (Germany) 09 🔓2 - sub
-  server: 193.108.119.2
+  server: 193.108.118.247
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇩🇪 德国 (Germany) 10 🔓2 - sub
-  server: 167.233.129.126
-  port: 2474
+  server: 193.108.119.2
+  port: 19999
   udp: true
-  type: vless
-  uuid: 287db857-de04-4212-bd69-5d14083e340e
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇩🇪 德国 (Germany) 11 🔓2 - sub
   server: 159.195.207.238
   port: 49313
@@ -80,21 +81,42 @@ proxies:
   type: vless
   uuid: 855c7aaa-e7d6-463e-971e-d36032744428
 - name: 🇩🇪 德国 (Germany) 12 🔓2 - sub
-  server: 193.108.119.78
-  port: 443
+  server: 91.107.147.12
+  port: 31377
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 193.108.119.78
-  skip-cert-verify: true
+  type: vmess
+  uuid: 3f2a36f7-2cb3-4181-ae70-7c6d22dc3b01
+  alterId: 0
+  cipher: auto
 - name: 🇩🇪 德国 (Germany) 13 🔓2 - sub
+  server: 23.157.88.43
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 14 🔓2 - sub
+  server: 193.108.116.98
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 15 🔓2 - sub
+  server: 51.38.127.93
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 03y5gbnyl4o1hc2n
+- name: 🇩🇪 德国 (Germany) 16 🔓2 - sub
   server: 169.150.210.233
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 14 🔒 - sub
+- name: 🇩🇪 德国 (Germany) 17 🔒 - sub
   server: 9.247.23.209
   port: 443
   udp: true
@@ -106,39 +128,13 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: mother-earth.fyi
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 15 🔓2 - sub
-  server: 193.108.119.96
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.iloverussia2026.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 16 🔓2 - sub
-  server: 193.108.117.61
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 17 🔓2 - sub
+- name: 🇩🇪 德国 (Germany) 18 🔓2 - sub
   server: 146.70.20.147
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 18 🔓2 - sub
-  server: 185.226.172.8
-  port: 8008
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
 - name: 🇩🇪 德国 (Germany) 19 🔓2 - sub
   server: 193.108.119.29
   port: 443
@@ -148,26 +144,14 @@ proxies:
   sni: blog.iloverussia2026.com
   skip-cert-verify: false
 - name: 🇩🇪 德国 (Germany) 20 🔓2 - sub
-  server: 193.108.119.193
+  server: 193.108.119.78
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.iloverussia2026.com
+  sni: www.iloverussia2026.com
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 21 🔒 - sub
-  server: edge.bookmai.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 22 🔓2 - sub
+- name: 🇩🇪 德国 (Germany) 21 🔓2 - sub
   server: 5.83.129.236
   port: 443
   udp: true
@@ -180,47 +164,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: a9w9wmko0k2od14hv8v
-- name: 🇩🇪 德国 (Germany) 23 🔓2 - sub
-  server: 144.31.157.41
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
-    short-id: 8f3c6e2a1b5d4f09
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 24 🔓2 - sub
-  server: germany1.xorsand.eu
-  port: 10105
-  udp: true
-  type: vless
-  uuid: ad3f4a0a-a89f-498e-9869-a93c8fa185b1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es
-    short-id: 12e321badd07906e
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 25 🔓2 - sub
-  server: 144.31.140.125
-  port: 8443
-  udp: true
-  type: vless
-  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wgyw3OxZw4HEzedNdY_eHdcVkrtT7GEeZSHfzcZ8iDo
-    short-id: 168c15efac9df5fd
-  servername: twitch.tv
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 26 🔓2 - sub
-  server: 193.108.119.87
+- name: 🇩🇪 德国 (Germany) 22 🔓2 - sub
+  server: 193.108.117.61
   port: 1270
   udp: true
   type: vmess
@@ -230,7 +175,31 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 27 🔓2 - sub
+- name: 🇩🇪 德国 (Germany) 23 🔓2 - sub
+  server: 193.108.119.134
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 24 🔓2 - sub
+  server: 201.8.71.59
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 23c82941-70f4-4381-90db-bd28e9a902e9
+  sni: steel7.hadsvpn.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 25 🔓2 - sub
+  server: 193.108.119.15
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 26 🔓2 - sub
   server: 185.177.229.95
   port: 1270
   udp: true
@@ -241,23 +210,37 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 28 🔓2 - sub
-  server: online.shop.ir.eeso.cc
-  port: 39653
+- name: 🇩🇪 德国 (Germany) 27 🔓2 - sub
+  server: 3.76.203.180
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 28 🔒 - sub
+  server: edge.bookmai.com
+  port: 443
   udp: true
   type: vless
-  uuid: baded307-189c-4ffc-a271-9acdab51a324
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
   tls: true
-  servername: online.shop.ir.eeso.cc
-  skip-cert-verify: false
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 29 🔓2 - sub
-  server: 213.202.208.199
-  port: 5000
+- name: 🇩🇪 德国 (Germany) 29 🔒 - sub
+  server: 57.129.41.216
+  port: 80
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  type: vless
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
 - name: 🇩🇪 德国 (Germany) 30 🔓2 - sub
   server: 88.216.67.54
   port: 443
@@ -274,75 +257,75 @@ proxies:
     headers:
       Host: 52z4vtewuass.game4090taking.workers.dev
 - name: 🇩🇪 德国 (Germany) 31 🔓2 - sub
-  server: derfderf.ru
-  port: 12824
+  server: 193.108.119.87
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 32 🔓2 - sub
+  server: 18.193.79.104
+  port: 443
   udp: true
   type: hysteria2
-  password: d62s7ghfehm742us
-  sni: derfderf.ru
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 32 🔒 - sub
-  server: ov-germany1.09vpn.com
-  port: 80
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 18.193.79.104
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 33 🔓2 - sub
+  server: 144.31.140.125
+  port: 8443
   udp: true
   type: vless
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 33 🔒 - sub
-  server: OV-Germany1.09vpn.com
-  port: 80
+  uuid: f5e70ce3-cfb4-4df1-b25c-d19bfae627c0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wgyw3OxZw4HEzedNdY_eHdcVkrtT7GEeZSHfzcZ8iDo
+    short-id: 168c15efac9df5fd
+  servername: twitch.tv
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 34 🔓2 - sub
+  server: germany1.xorsand.eu
+  port: 10105
   udp: true
   type: vless
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 34 🔒 - sub
-  server: OV-Germany1.09vpn.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 35 🔒 - sub
-  server: ov-germany1.09vpn.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 36 🔓2 - sub
-  server: base.hosamobenl.co.uk
+  uuid: ad3f4a0a-a89f-498e-9869-a93c8fa185b1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es
+    short-id: 12e321badd07906e
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 35 🔓2 - sub
+  server: 3.69.232.199
   port: 443
   udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 3.69.232.199
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 36 🔓2 - sub
+  server: 57.129.113.16
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: NcAXc0UZI6yQJE1p8QmOv8
+- name: 🇩🇪 德国 (Germany) 37 🔓2 - sub
+  server: online.shop.ir.eeso.cc
+  port: 39653
+  udp: true
   type: vless
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  uuid: baded307-189c-4ffc-a271-9acdab51a324
   tls: true
-  servername: base.hosamobenl.co.uk
+  servername: online.shop.ir.eeso.cc
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 37 🔓2 - sub
-  server: 193.108.119.15
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.iloverussia2026.com
-  skip-cert-verify: false
 - name: 🇩🇪 德国 (Germany) 38 🔓2 - sub
   server: 82.39.171.12
   port: 443
@@ -355,7 +338,43 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   servername: yahoo.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 39 🔓2 - sub
+  server: 87.248.149.50
+  port: 443
+  udp: true
+  type: vless
+  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  tls: true
+  servername: base.hosamobenl.co.uk
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 40 🔓2 - sub
+  server: 103.31.4.205
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
+  tls: true
+  servername: moz.ar-marz.fun
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /man
+    headers:
+      Host: moz.ar-marz.fun
+- name: 🇩🇪 德国 (Germany) 41 🔓2 - sub
+  server: cip.cloudof1.ir
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 00f7637c-acab-465b-933a-727becde5c1b
+  network: ws
+  ws-opts:
+    path: /sxzwer
+    headers:
+      Host: cip.cloudof1.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -374,31 +393,34 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 11 🔓2 - sub
   - 🇩🇪 德国 (Germany) 12 🔓2 - sub
   - 🇩🇪 德国 (Germany) 13 🔓2 - sub
-  - 🇩🇪 德国 (Germany) 14 🔒 - sub
+  - 🇩🇪 德国 (Germany) 14 🔓2 - sub
   - 🇩🇪 德国 (Germany) 15 🔓2 - sub
   - 🇩🇪 德国 (Germany) 16 🔓2 - sub
-  - 🇩🇪 德国 (Germany) 17 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 17 🔒 - sub
   - 🇩🇪 德国 (Germany) 18 🔓2 - sub
   - 🇩🇪 德国 (Germany) 19 🔓2 - sub
   - 🇩🇪 德国 (Germany) 20 🔓2 - sub
-  - 🇩🇪 德国 (Germany) 21 🔒 - sub
+  - 🇩🇪 德国 (Germany) 21 🔓2 - sub
   - 🇩🇪 德国 (Germany) 22 🔓2 - sub
   - 🇩🇪 德国 (Germany) 23 🔓2 - sub
   - 🇩🇪 德国 (Germany) 24 🔓2 - sub
   - 🇩🇪 德国 (Germany) 25 🔓2 - sub
   - 🇩🇪 德国 (Germany) 26 🔓2 - sub
   - 🇩🇪 德国 (Germany) 27 🔓2 - sub
-  - 🇩🇪 德国 (Germany) 28 🔓2 - sub
-  - 🇩🇪 德国 (Germany) 29 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 28 🔒 - sub
+  - 🇩🇪 德国 (Germany) 29 🔒 - sub
   - 🇩🇪 德国 (Germany) 30 🔓2 - sub
   - 🇩🇪 德国 (Germany) 31 🔓2 - sub
-  - 🇩🇪 德国 (Germany) 32 🔒 - sub
-  - 🇩🇪 德国 (Germany) 33 🔒 - sub
-  - 🇩🇪 德国 (Germany) 34 🔒 - sub
-  - 🇩🇪 德国 (Germany) 35 🔒 - sub
+  - 🇩🇪 德国 (Germany) 32 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 33 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 34 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 35 🔓2 - sub
   - 🇩🇪 德国 (Germany) 36 🔓2 - sub
   - 🇩🇪 德国 (Germany) 37 🔓2 - sub
   - 🇩🇪 德国 (Germany) 38 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 39 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 40 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 41 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -417,30 +439,33 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 11 🔓2 - sub
   - 🇩🇪 德国 (Germany) 12 🔓2 - sub
   - 🇩🇪 德国 (Germany) 13 🔓2 - sub
-  - 🇩🇪 德国 (Germany) 14 🔒 - sub
+  - 🇩🇪 德国 (Germany) 14 🔓2 - sub
   - 🇩🇪 德国 (Germany) 15 🔓2 - sub
   - 🇩🇪 德国 (Germany) 16 🔓2 - sub
-  - 🇩🇪 德国 (Germany) 17 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 17 🔒 - sub
   - 🇩🇪 德国 (Germany) 18 🔓2 - sub
   - 🇩🇪 德国 (Germany) 19 🔓2 - sub
   - 🇩🇪 德国 (Germany) 20 🔓2 - sub
-  - 🇩🇪 德国 (Germany) 21 🔒 - sub
+  - 🇩🇪 德国 (Germany) 21 🔓2 - sub
   - 🇩🇪 德国 (Germany) 22 🔓2 - sub
   - 🇩🇪 德国 (Germany) 23 🔓2 - sub
   - 🇩🇪 德国 (Germany) 24 🔓2 - sub
   - 🇩🇪 德国 (Germany) 25 🔓2 - sub
   - 🇩🇪 德国 (Germany) 26 🔓2 - sub
   - 🇩🇪 德国 (Germany) 27 🔓2 - sub
-  - 🇩🇪 德国 (Germany) 28 🔓2 - sub
-  - 🇩🇪 德国 (Germany) 29 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 28 🔒 - sub
+  - 🇩🇪 德国 (Germany) 29 🔒 - sub
   - 🇩🇪 德国 (Germany) 30 🔓2 - sub
   - 🇩🇪 德国 (Germany) 31 🔓2 - sub
-  - 🇩🇪 德国 (Germany) 32 🔒 - sub
-  - 🇩🇪 德国 (Germany) 33 🔒 - sub
-  - 🇩🇪 德国 (Germany) 34 🔒 - sub
-  - 🇩🇪 德国 (Germany) 35 🔒 - sub
+  - 🇩🇪 德国 (Germany) 32 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 33 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 34 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 35 🔓2 - sub
   - 🇩🇪 德国 (Germany) 36 🔓2 - sub
   - 🇩🇪 德国 (Germany) 37 🔓2 - sub
   - 🇩🇪 德国 (Germany) 38 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 39 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 40 🔓2 - sub
+  - 🇩🇪 德国 (Germany) 41 🔓2 - sub
 rules:
 - MATCH,PROXIES

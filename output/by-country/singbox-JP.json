@@ -6,42 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 01 🔓2 - sub",
-      "server": "jpa.123069.xyz",
+      "server": "168.138.205.100",
       "server_port": 53758,
       "method": "aes-128-gcm",
       "password": "Bwlqh7GcFB"
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 02 🔓2 - sub",
-      "server": "152.69.195.67",
-      "server_port": 47878,
-      "uuid": "eb8613e3-8393-4cff-a3ad-6501fd4adc63"
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 03 🔓2 - sub",
-      "server": "103.75.118.228",
-      "server_port": 12683,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 04 🔓2 - sub",
+      "tag": "🇯🇵 日本 (Japan) 02 🔓2 - sub",
       "server": "168.138.43.75",
       "server_port": 80,
       "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
@@ -50,42 +22,34 @@
         "type": "ws",
         "path": "/cctv13.m3u8",
         "headers": {
-          "Host": "None"
+          "Host": "168.138.43.75"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 05 🔓2 - sub",
-      "server": "3.114.220.22",
-      "server_port": 19645,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "tag": "🇯🇵 日本 (Japan) 03 🔓2 - sub",
+      "server": "168.110.45.41",
+      "server_port": 23444,
+      "uuid": "ee2112e4-1e58-4f77-b162-5ef869358df9",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.microsoft.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
+          "public_key": "zfxKuH7gDFZ2EMjdt8zMfnsZFpeckMhM5q5XZ3ATe2c",
+          "short_id": "119c9e68498f5900"
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 06 🔓2 - sub",
-      "server": "84.247.155.196",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 07 🔓2 - sub",
+      "tag": "🇯🇵 日本 (Japan) 04 🔓2 - sub",
       "server": "84.247.155.196",
       "server_port": 80,
       "method": "aes-256-gcm",
@@ -99,10 +63,7 @@
         "🇯🇵 日本 (Japan) 01 🔓2 - sub",
         "🇯🇵 日本 (Japan) 02 🔓2 - sub",
         "🇯🇵 日本 (Japan) 03 🔓2 - sub",
-        "🇯🇵 日本 (Japan) 04 🔓2 - sub",
-        "🇯🇵 日本 (Japan) 05 🔓2 - sub",
-        "🇯🇵 日本 (Japan) 06 🔓2 - sub",
-        "🇯🇵 日本 (Japan) 07 🔓2 - sub"
+        "🇯🇵 日本 (Japan) 04 🔓2 - sub"
       ]
     },
     {
@@ -112,10 +73,7 @@
         "🇯🇵 日本 (Japan) 01 🔓2 - sub",
         "🇯🇵 日本 (Japan) 02 🔓2 - sub",
         "🇯🇵 日本 (Japan) 03 🔓2 - sub",
-        "🇯🇵 日本 (Japan) 04 🔓2 - sub",
-        "🇯🇵 日本 (Japan) 05 🔓2 - sub",
-        "🇯🇵 日本 (Japan) 06 🔓2 - sub",
-        "🇯🇵 日本 (Japan) 07 🔓2 - sub"
+        "🇯🇵 日本 (Japan) 04 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

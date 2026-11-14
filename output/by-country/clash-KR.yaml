@@ -13,12 +13,13 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02 🔓2 - sub
-  server: 211.178.105.134
-  port: 6123
+  server: 152.70.237.123
+  port: 2053
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: hysteria2
+  password: maintell
+  sni: bing.com
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 03 🔓2 - sub
   server: 158.247.253.243
   port: 443
@@ -28,15 +29,6 @@ proxies:
   sni: connectgraduateswithjobopeningsandgrowprofessionally.com
   skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 04 🔓2 - sub
-  server: 152.69.226.63
-  port: 25555
-  udp: true
-  type: vless
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇰🇷 韩国 (South Korea) 05 🔓2 - sub
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -48,6 +40,15 @@ proxies:
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 05 🔓2 - sub
+  server: 152.69.226.63
+  port: 25555
+  udp: true
+  type: vless
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇰🇷 韩国 (South Korea) 06 🔓2 - sub
   server: 154.90.62.70
   port: 56127
