@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
-  server: 45.92.219.47
-  port: 443
-  udp: true
-  type: vless
-  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
-  servername: ty.galactichub.online
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -31,20 +19,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
-  server: 212.98.224.35
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 9_UhwEt_9pf8WahM1K9O6-_0vAK6q0uiNGFoHBO7s3A
-    short-id: 0e3e4d96
-  servername: tr1.gofizzin.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 🔓2 - sub
+- name: 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
   server: 185.246.155.91
   port: 10103
   udp: true
@@ -64,8 +39,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
-  - 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
-  - 🇹🇷 土耳其 (Turkey) 04 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,7 +46,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 🔓2 - sub
   - 🇹🇷 土耳其 (Turkey) 02 🔓2 - sub
-  - 🇹🇷 土耳其 (Turkey) 03 🔓2 - sub
-  - 🇹🇷 土耳其 (Turkey) 04 🔓2 - sub
 rules:
 - MATCH,PROXIES

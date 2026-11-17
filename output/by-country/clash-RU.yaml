@@ -5,30 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub
-  server: 178.130.46.226
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3619ae0e-bd3a-458c-bb0a-c0479019d9ec
-  flow: xtls-rprx-vision
-  tls: true
-  servername: serv1.fishtohome.ru
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
-  server: 178.162.147.131
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OH9jKzqAqEg98VDxmxReqrC_jbJWNwr-ipj2cNRgazc
-    short-id: 2237b916
-  servername: zovira.me
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
   server: 147.45.47.101
   port: 8443
   udp: true
@@ -41,28 +17,8 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: apple.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-- name: 🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub
-  server: 87.232.116.20
-  port: 443
-  udp: true
-  type: vless
-  uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
-  tls: true
-  servername: fafeqdhlett2p5la6d.cdn.cachefleet.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 67h2o3erm0t9imsj
-- name: 🇷🇺 俄罗斯 (Russia) 06 🔓1 - sub
-  server: 201.51.12.98
+- name: 🇷🇺 俄罗斯 (Russia) 02 🔓1 - sub
+  server: vps3.nemnogogo.com
   port: 443
   udp: true
   type: vless
@@ -74,42 +30,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 07 🔓2 - sub
-  server: 185.39.204.117
-  port: 10002
-  udp: true
-  type: vless
-  uuid: facb802c-de2e-11f1-9a22-a3404e852f3b
-  tls: true
-  servername: tr2.vpnjantit.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vpnjantit
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 06 🔓1 - sub
-  - 🇷🇺 俄罗斯 (Russia) 07 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 02 🔓1 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub
-  - 🇷🇺 俄罗斯 (Russia) 06 🔓1 - sub
-  - 🇷🇺 俄罗斯 (Russia) 07 🔓2 - sub
+  - 🇷🇺 俄罗斯 (Russia) 02 🔓1 - sub
 rules:
 - MATCH,PROXIES
