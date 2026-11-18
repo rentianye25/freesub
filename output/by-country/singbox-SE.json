@@ -12,8 +12,22 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 🔓2 - sub",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 🔓2 - sub",
       "server": "62.93.166.184",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -26,7 +40,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 🔓2 - sub",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub",
       "server": "88.216.214.159",
       "server_port": 443,
       "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
@@ -36,26 +50,6 @@
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "a7c92e4b10d6f835"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub",
-      "server": "88.216.60.73",
-      "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
-      "tls": {
-        "enabled": true,
-        "server_name": "ns-api-gw.galioncc.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -85,22 +79,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 🔓2 - sub",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 🔓2 - sub",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 🔓2 - sub",
       "server": "138.199.55.230",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -113,7 +93,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 🔓2 - sub",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 🔓1 - sub",
       "server": "95.143.196.97",
       "server_port": 443,
       "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
@@ -142,8 +122,7 @@
         "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 05 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 06 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 07 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 08 🔓2 - sub"
+        "🇸🇪 瑞典 (Sweden) 07 🔓1 - sub"
       ]
     },
     {
@@ -156,8 +135,7 @@
         "🇸🇪 瑞典 (Sweden) 04 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 05 🔓2 - sub",
         "🇸🇪 瑞典 (Sweden) 06 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 07 🔓2 - sub",
-        "🇸🇪 瑞典 (Sweden) 08 🔓2 - sub"
+        "🇸🇪 瑞典 (Sweden) 07 🔓1 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

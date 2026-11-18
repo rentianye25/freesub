@@ -6,46 +6,46 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 🔓2 - sub
   server: 217.30.10.44
-  port: 9042
+  port: 9063
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
+  password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 02 🔓2 - sub
-  server: 217.30.10.44
-  port: 9095
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 03 🔓2 - sub
-  server: 217.30.10.44
-  port: 9076
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
-- name: 🇵🇱 波兰 (Poland) 04 🔓2 - sub
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 05 🔓2 - sub
   server: 217.30.10.44
   port: 9071
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 06 🔓2 - sub
+- name: 🇵🇱 波兰 (Poland) 03 🔓2 - sub
+  server: 217.30.10.44
+  port: 9052
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: jt2ekBNc9HuVtm2a
+- name: 🇵🇱 波兰 (Poland) 04 🔓2 - sub
+  server: 217.30.10.70
+  port: 9040
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: p9z5BVADH2YFs3MN
+- name: 🇵🇱 波兰 (Poland) 05 🔓2 - sub
   server: 217.30.10.44
   port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7heRqkPG3hg4UnRm
+- name: 🇵🇱 波兰 (Poland) 06 🔓2 - sub
+  server: 217.30.10.44
+  port: 9095
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: N7j3pdTYkKmsy8CR
 - name: 🇵🇱 波兰 (Poland) 07 🔓2 - sub
   server: 217.30.10.44
   port: 9006
@@ -54,12 +54,12 @@ proxies:
   cipher: aes-256-cfb
   password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 08 🔓2 - sub
-  server: 217.30.10.70
-  port: 9018
+  server: 217.30.10.44
+  port: 9076
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: fG2artUmHfNT2cX7
+  password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 09 🔓2 - sub
   server: 217.30.10.70
   port: 9098
@@ -68,12 +68,12 @@ proxies:
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
 - name: 🇵🇱 波兰 (Poland) 10 🔓2 - sub
-  server: 217.30.10.44
-  port: 9062
+  server: 217.30.10.70
+  port: 9020
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
+  password: BNmAXXxAHYpTRdzu
 - name: 🇵🇱 波兰 (Poland) 11 🔓2 - sub
   server: 80.47.10.106
   port: 443
@@ -87,18 +87,12 @@ proxies:
   servername: pl8.galioncc.com
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 12 🔓2 - sub
-  server: 82.118.22.161
-  port: 443
+  server: 217.30.10.44
+  port: 9062
   udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: safari
+  type: ss
+  cipher: aes-256-cfb
+  password: tkhHVxxfM2QErBWe
 - name: 🇵🇱 波兰 (Poland) 13 🔓2 - sub
   server: 54.37.131.126
   port: 80
