@@ -6,6 +6,20 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 🔓2 - sub",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 🔓2 - sub",
       "server": "157.180.98.124",
       "server_port": 49659,
       "uuid": "88a558b1-9645-42f3-89e5-341570d8486d",
@@ -25,16 +39,49 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 03 🔓2 - sub",
+      "server": "fi1.obxodvpn.us",
+      "server_port": 443,
+      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi1.obxodvpn.us",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 04 🔓2 - sub",
+      "server": "94.183.164.119",
+      "server_port": 24433,
+      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
+      "tls": {
+        "enabled": true,
+        "server_name": "lakes.blog-forme.ru",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 🔓2 - sub",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "tag": "🇫🇮 芬兰 (Finland) 05 🔓2 - sub",
+      "server": "198.202.24.142",
+      "server_port": 2083,
+      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
+      "tls": {
+        "enabled": true,
+        "server_name": "vipfree.dr-ping.ir",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/",
         "headers": {
-          "Host": "45.144.234.157"
+          "Host": "vipfree.dr-ping.ir"
         }
       }
     },
@@ -44,7 +91,10 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 🔓2 - sub",
-        "🇫🇮 芬兰 (Finland) 02 🔓2 - sub"
+        "🇫🇮 芬兰 (Finland) 02 🔓2 - sub",
+        "🇫🇮 芬兰 (Finland) 03 🔓2 - sub",
+        "🇫🇮 芬兰 (Finland) 04 🔓2 - sub",
+        "🇫🇮 芬兰 (Finland) 05 🔓2 - sub"
       ]
     },
     {
@@ -52,7 +102,10 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 🔓2 - sub",
-        "🇫🇮 芬兰 (Finland) 02 🔓2 - sub"
+        "🇫🇮 芬兰 (Finland) 02 🔓2 - sub",
+        "🇫🇮 芬兰 (Finland) 03 🔓2 - sub",
+        "🇫🇮 芬兰 (Finland) 04 🔓2 - sub",
+        "🇫🇮 芬兰 (Finland) 05 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

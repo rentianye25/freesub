@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 🔓2 - sub
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 02 🔓2 - sub
   server: 157.180.98.124
   port: 49659
   udp: true
@@ -17,17 +28,37 @@ proxies:
     short-id: 81959fce
   servername: apple.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 02 🔓2 - sub
-  server: 45.144.234.157
-  port: 14430
+- name: 🇫🇮 芬兰 (Finland) 03 🔓2 - sub
+  server: fi1.obxodvpn.us
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 04 🔓2 - sub
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: lakes.blog-forme.ru
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 05 🔓2 - sub
+  server: 198.202.24.142
+  port: 2083
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  tls: true
+  servername: vipfree.dr-ping.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 45.144.234.157
+      Host: vipfree.dr-ping.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +66,9 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 02 🔓2 - sub
+  - 🇫🇮 芬兰 (Finland) 03 🔓2 - sub
+  - 🇫🇮 芬兰 (Finland) 04 🔓2 - sub
+  - 🇫🇮 芬兰 (Finland) 05 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +76,8 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 🔓2 - sub
   - 🇫🇮 芬兰 (Finland) 02 🔓2 - sub
+  - 🇫🇮 芬兰 (Finland) 03 🔓2 - sub
+  - 🇫🇮 芬兰 (Finland) 04 🔓2 - sub
+  - 🇫🇮 芬兰 (Finland) 05 🔓2 - sub
 rules:
 - MATCH,PROXIES

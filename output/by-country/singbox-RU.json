@@ -26,8 +26,65 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 🔓1 - sub",
-      "server": "vps3.nemnogogo.com",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
+      "server": "37.235.247.81",
+      "server_port": 8443,
+      "uuid": "2ae0670d-0bdf-409e-9a55-4e970252d378",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU="
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
+      "server": "87.232.116.20",
+      "server_port": 443,
+      "uuid": "d86e6fda-e519-46ab-98eb-9ff9a9da5984",
+      "tls": {
+        "enabled": true,
+        "server_name": "fafeqdhlett2p5la6d.cdn.cachefleet.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "67h2o3erm0t9imsj"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 🔓1 - sub",
+      "server": "46.17.47.194",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 🔓1 - sub",
+      "server": "201.51.12.98",
       "server_port": 443,
       "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
@@ -48,12 +105,38 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 🔓1 - sub",
+      "server": "104.171.135.229",
+      "server_port": 443,
+      "uuid": "Fluffy_VPN-Oth8rOq3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "absolute-disaster.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mpo4BIcoWiMXAQGt5a8IJ4MFkPJQyLC50dO_bXzC7z0",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 02 🔓1 - sub"
+        "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
+        "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
+        "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
+        "🇷🇺 俄罗斯 (Russia) 05 🔓1 - sub",
+        "🇷🇺 俄罗斯 (Russia) 06 🔓1 - sub",
+        "🇷🇺 俄罗斯 (Russia) 07 🔓1 - sub"
       ]
     },
     {
@@ -61,7 +144,12 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 02 🔓1 - sub"
+        "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
+        "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
+        "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
+        "🇷🇺 俄罗斯 (Russia) 05 🔓1 - sub",
+        "🇷🇺 俄罗斯 (Russia) 06 🔓1 - sub",
+        "🇷🇺 俄罗斯 (Russia) 07 🔓1 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
