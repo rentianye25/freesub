@@ -20,61 +20,59 @@ proxies:
   password: 7heRqkPG3hg4UnRm
 - name: 🇵🇱 波兰 (Poland) 03 🔓2 - sub
   server: 217.30.10.44
-  port: 9063
+  port: 9076
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
+  password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 04 🔓2 - sub
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 05 🔓2 - sub
-  server: 217.30.10.70
-  port: 9020
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: BNmAXXxAHYpTRdzu
-- name: 🇵🇱 波兰 (Poland) 06 🔓2 - sub
   server: 217.30.10.44
   port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 07 🔓2 - sub
+- name: 🇵🇱 波兰 (Poland) 05 🔓2 - sub
   server: 217.30.10.44
-  port: 9006
+  port: 9063
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 08 🔓2 - sub
+  password: aQqJbtwFGcCCaeL3
+- name: 🇵🇱 波兰 (Poland) 06 🔓2 - sub
   server: 217.30.10.44
   port: 9095
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 09 🔓2 - sub
+- name: 🇵🇱 波兰 (Poland) 07 🔓2 - sub
   server: 217.30.10.70
   port: 9040
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: p9z5BVADH2YFs3MN
-- name: 🇵🇱 波兰 (Poland) 10 🔓2 - sub
+- name: 🇵🇱 波兰 (Poland) 08 🔓2 - sub
   server: 217.30.10.44
-  port: 9076
+  port: 9071
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
-- name: 🇵🇱 波兰 (Poland) 11 🔓2 - sub
+  password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 09 🔓2 - sub
+  server: 150.241.87.52
+  port: 443
+  udp: true
+  type: vless
+  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
+  servername: pl.galacticworld.online
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 10 🔓2 - sub
   server: 80.47.10.106
   port: 443
   udp: true
@@ -85,8 +83,8 @@ proxies:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: a7c92e4b10d6f835
   servername: pl8.galioncc.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 12 🔓2 - sub
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 11 🔓2 - sub
   server: 54.37.131.126
   port: 80
   udp: true
@@ -115,7 +113,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 09 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 10 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 11 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 12 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,6 +129,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 09 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 10 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 11 🔓2 - sub
-  - 🇵🇱 波兰 (Poland) 12 🔓2 - sub
 rules:
 - MATCH,PROXIES

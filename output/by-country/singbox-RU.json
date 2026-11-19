@@ -27,27 +27,6 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
-      "server": "37.235.247.81",
-      "server_port": 8443,
-      "uuid": "2ae0670d-0bdf-409e-9a55-4e970252d378",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "6ba85179e30d4fc2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
       "server": "178.130.46.188",
       "server_port": 443,
       "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
@@ -67,31 +46,24 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU="
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub",
-      "server": "185.39.204.117",
-      "server_port": 10002,
-      "uuid": "facb802c-de2e-11f1-9a22-a3404e852f3b",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
+      "server": "37.235.247.81",
+      "server_port": 8443,
+      "uuid": "2ae0670d-0bdf-409e-9a55-4e970252d378",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tr2.vpnjantit.com",
-        "insecure": false,
+        "server_name": "apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vpnjantit"
       }
     },
     {
@@ -101,9 +73,7 @@
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub",
         "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub"
+        "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub"
       ]
     },
     {
@@ -112,9 +82,7 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub",
         "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub"
+        "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -23,29 +23,13 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 03 🔓2 - sub",
       "server": "217.30.10.44",
-      "server_port": 9063,
+      "server_port": 9076,
       "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
+      "password": "S2zDyyPcmZN2h8EC"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 04 🔓2 - sub",
-      "server": "217.30.10.44",
-      "server_port": 9071,
-      "method": "aes-256-cfb",
-      "password": "mENfxTFQpRKKh4As"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 05 🔓2 - sub",
-      "server": "217.30.10.70",
-      "server_port": 9020,
-      "method": "aes-256-cfb",
-      "password": "BNmAXXxAHYpTRdzu"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 06 🔓2 - sub",
       "server": "217.30.10.44",
       "server_port": 9052,
       "method": "aes-256-cfb",
@@ -53,15 +37,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 07 🔓2 - sub",
+      "tag": "🇵🇱 波兰 (Poland) 05 🔓2 - sub",
       "server": "217.30.10.44",
-      "server_port": 9006,
+      "server_port": 9063,
       "method": "aes-256-cfb",
-      "password": "FAdUvMJUq5vDgKEq"
+      "password": "aQqJbtwFGcCCaeL3"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 08 🔓2 - sub",
+      "tag": "🇵🇱 波兰 (Poland) 06 🔓2 - sub",
       "server": "217.30.10.44",
       "server_port": 9095,
       "method": "aes-256-cfb",
@@ -69,7 +53,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 09 🔓2 - sub",
+      "tag": "🇵🇱 波兰 (Poland) 07 🔓2 - sub",
       "server": "217.30.10.70",
       "server_port": 9040,
       "method": "aes-256-cfb",
@@ -77,15 +61,36 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 10 🔓2 - sub",
+      "tag": "🇵🇱 波兰 (Poland) 08 🔓2 - sub",
       "server": "217.30.10.44",
-      "server_port": 9076,
+      "server_port": 9071,
       "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC"
+      "password": "mENfxTFQpRKKh4As"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 11 🔓2 - sub",
+      "tag": "🇵🇱 波兰 (Poland) 09 🔓2 - sub",
+      "server": "150.241.87.52",
+      "server_port": 443,
+      "uuid": "ecc0e60a-f2cc-4266-8353-b228df89730a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.galacticworld.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 10 🔓2 - sub",
       "server": "80.47.10.106",
       "server_port": 443,
       "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
@@ -94,7 +99,7 @@
         "server_name": "pl8.galioncc.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -105,7 +110,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 12 🔓2 - sub",
+      "tag": "🇵🇱 波兰 (Poland) 11 🔓2 - sub",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "1e55beca-3c69-4fa7-fb1f-15c1b767435f",
@@ -133,8 +138,7 @@
         "🇵🇱 波兰 (Poland) 08 🔓2 - sub",
         "🇵🇱 波兰 (Poland) 09 🔓2 - sub",
         "🇵🇱 波兰 (Poland) 10 🔓2 - sub",
-        "🇵🇱 波兰 (Poland) 11 🔓2 - sub",
-        "🇵🇱 波兰 (Poland) 12 🔓2 - sub"
+        "🇵🇱 波兰 (Poland) 11 🔓2 - sub"
       ]
     },
     {
@@ -151,8 +155,7 @@
         "🇵🇱 波兰 (Poland) 08 🔓2 - sub",
         "🇵🇱 波兰 (Poland) 09 🔓2 - sub",
         "🇵🇱 波兰 (Poland) 10 🔓2 - sub",
-        "🇵🇱 波兰 (Poland) 11 🔓2 - sub",
-        "🇵🇱 波兰 (Poland) 12 🔓2 - sub"
+        "🇵🇱 波兰 (Poland) 11 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,11 +5,10 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 01 🔓2 - sub",
-      "server": "46.28.67.55",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01 🔓1 - sub",
+      "server": "31.222.235.81",
       "server_port": 443,
-      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
-      "flow": "xtls-rprx-vision",
+      "uuid": "d8b58872-cc25-4bb2-badb-b86399c075fa",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
@@ -19,8 +18,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
-          "short_id": "d06d78e974491b6e"
+          "public_key": "L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk",
+          "short_id": "d8b58872"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 (Romania) 01 🔓2 - sub"
+        "🇺🇦 乌克兰 (Ukraine) 01 🔓1 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 (Romania) 01 🔓2 - sub"
+        "🇺🇦 乌克兰 (Ukraine) 01 🔓1 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
