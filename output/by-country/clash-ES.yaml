@@ -6,39 +6,39 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 🔓2 - sub
   server: 5.188.181.201
-  port: 9027
+  port: 9019
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: EXN3S3eQpjE7EJu8
+  password: GA9KzeEgvfxNrgmM
 - name: 🇪🇸 西班牙 (Spain) 02 🔓2 - sub
   server: 5.188.181.201
-  port: 9003
+  port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: JdmRK9gMEqFgs8nP
+  password: S7KwUu7yBy58S3Ga
 - name: 🇪🇸 西班牙 (Spain) 03 🔓2 - sub
-  server: 5.188.181.201
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇪🇸 西班牙 (Spain) 04 🔓2 - sub
-  server: 5.188.181.201
-  port: 9000
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: a3GFYt36Sm82Vys9
-- name: 🇪🇸 西班牙 (Spain) 05 🔓2 - sub
   server: 5.188.181.201
   port: 9020
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: BNmAXXxAHYpTRdzu
+- name: 🇪🇸 西班牙 (Spain) 04 🔓2 - sub
+  server: 5.188.181.201
+  port: 9041
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: U6qnYRhfyDmn8sgn
+- name: 🇪🇸 西班牙 (Spain) 05 🔓2 - sub
+  server: 5.188.181.201
+  port: 9025
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: XPtzA9sCug3SPR4c
 - name: 🇪🇸 西班牙 (Spain) 06 🔓2 - sub
   server: 5.188.181.201
   port: 9005
@@ -53,13 +53,13 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 08 🔓2 - sub
-  server: 62.93.179.97
-  port: 19999
+- name: 🇪🇸 西班牙 (Spain) 08 🔒 - sub
+  server: 5.188.181.201
+  port: 9029
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-cfb
+  password: dU3DSNS8wYPXzEKw
 - name: 🇪🇸 西班牙 (Spain) 09 🔓2 - sub
   server: 62.93.179.117
   port: 19999
@@ -68,43 +68,27 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 10 🔓2 - sub
-  server: 5.188.181.201
-  port: 9019
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: GA9KzeEgvfxNrgmM
-- name: 🇪🇸 西班牙 (Spain) 11 🔓2 - sub
-  server: 66.163.118.103
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 12 🔓2 - sub
   server: 167.17.71.167
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 13 🔓1 - sub
-  server: 66.163.118.62
-  port: 443
+- name: 🇪🇸 西班牙 (Spain) 11 🔓2 - sub
+  server: 62.93.179.97
+  port: 19999
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 66.163.118.62
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 14 🔓2 - sub
-  server: 66.163.118.244
-  port: 443
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇪🇸 西班牙 (Spain) 12 🔓2 - sub
+  server: 66.163.118.103
+  port: 19999
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 66.163.118.244
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 15 🔓2 - sub
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇪🇸 西班牙 (Spain) 13 🔓2 - sub
   server: 66.163.118.113
   port: 443
   udp: true
@@ -117,14 +101,6 @@ proxies:
     short-id: 32209e627ee109c7
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 16 🔒 - sub
-  server: 66.163.118.251
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -137,15 +113,12 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 05 🔓2 - sub
   - 🇪🇸 西班牙 (Spain) 06 🔓2 - sub
   - 🇪🇸 西班牙 (Spain) 07 🔓2 - sub
-  - 🇪🇸 西班牙 (Spain) 08 🔓2 - sub
+  - 🇪🇸 西班牙 (Spain) 08 🔒 - sub
   - 🇪🇸 西班牙 (Spain) 09 🔓2 - sub
   - 🇪🇸 西班牙 (Spain) 10 🔓2 - sub
   - 🇪🇸 西班牙 (Spain) 11 🔓2 - sub
   - 🇪🇸 西班牙 (Spain) 12 🔓2 - sub
-  - 🇪🇸 西班牙 (Spain) 13 🔓1 - sub
-  - 🇪🇸 西班牙 (Spain) 14 🔓2 - sub
-  - 🇪🇸 西班牙 (Spain) 15 🔓2 - sub
-  - 🇪🇸 西班牙 (Spain) 16 🔒 - sub
+  - 🇪🇸 西班牙 (Spain) 13 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -158,14 +131,11 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 05 🔓2 - sub
   - 🇪🇸 西班牙 (Spain) 06 🔓2 - sub
   - 🇪🇸 西班牙 (Spain) 07 🔓2 - sub
-  - 🇪🇸 西班牙 (Spain) 08 🔓2 - sub
+  - 🇪🇸 西班牙 (Spain) 08 🔒 - sub
   - 🇪🇸 西班牙 (Spain) 09 🔓2 - sub
   - 🇪🇸 西班牙 (Spain) 10 🔓2 - sub
   - 🇪🇸 西班牙 (Spain) 11 🔓2 - sub
   - 🇪🇸 西班牙 (Spain) 12 🔓2 - sub
-  - 🇪🇸 西班牙 (Spain) 13 🔓1 - sub
-  - 🇪🇸 西班牙 (Spain) 14 🔓2 - sub
-  - 🇪🇸 西班牙 (Spain) 15 🔓2 - sub
-  - 🇪🇸 西班牙 (Spain) 16 🔒 - sub
+  - 🇪🇸 西班牙 (Spain) 13 🔓2 - sub
 rules:
 - MATCH,PROXIES

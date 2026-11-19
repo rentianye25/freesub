@@ -5,23 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01 🔓2 - sub",
-      "server": "186.190.215.251",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub",
-      "server": "79.127.184.104",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub",
+      "tag": "🇨🇭 瑞士 (Switzerland) 01 🔓1 - sub",
       "server": "23.166.88.189",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -29,26 +13,30 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub",
       "server": "23.166.88.127",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "trojan",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 🔓2 - sub",
-      "server": "208.69.78.222",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub",
+      "server": "79.127.184.104",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
       "tls": {
         "enabled": true,
-        "server_name": "yourultimateprofessionalcareerhub.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "140.238.213.114",
+        "insecure": true
       }
     },
     {
@@ -56,22 +44,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇭 瑞士 (Switzerland) 01 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 01 🔓1 - sub",
         "🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub",
         "🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub",
-        "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub",
-        "🇨🇭 瑞士 (Switzerland) 05 🔓2 - sub"
+        "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇭 瑞士 (Switzerland) 01 🔓2 - sub",
+        "🇨🇭 瑞士 (Switzerland) 01 🔓1 - sub",
         "🇨🇭 瑞士 (Switzerland) 02 🔓2 - sub",
         "🇨🇭 瑞士 (Switzerland) 03 🔓2 - sub",
-        "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub",
-        "🇨🇭 瑞士 (Switzerland) 05 🔓2 - sub"
+        "🇨🇭 瑞士 (Switzerland) 04 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
