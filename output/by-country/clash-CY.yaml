@@ -4,28 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 塞浦路斯 (Cyprus) 01 🔓2 - sub
-  server: 132.243.212.204
-  port: 443
+- name: 🇨🇾 塞浦路斯 (Cyprus) 01 🔒 - sub
+  server: 132.243.242.246
+  port: 9543
   udp: true
   type: vless
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
   flow: xtls-rprx-vision
   tls: true
-  servername: 10w0wjw.virtual-network.lol
-  skip-cert-verify: false
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 塞浦路斯 (Cyprus) 01 🔓2 - sub
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 🔒 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 塞浦路斯 (Cyprus) 01 🔓2 - sub
+  - 🇨🇾 塞浦路斯 (Cyprus) 01 🔒 - sub
 rules:
 - MATCH,PROXIES

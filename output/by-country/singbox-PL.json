@@ -7,29 +7,61 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 🔓2 - sub",
       "server": "217.30.10.44",
-      "server_port": 9063,
+      "server_port": 9042,
       "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
+      "password": "S7KwUu7yBy58S3Ga"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 02 🔓2 - sub",
-      "server": "217.30.10.44",
-      "server_port": 9099,
+      "server": "217.30.10.70",
+      "server_port": 9084,
       "method": "aes-256-cfb",
-      "password": "7heRqkPG3hg4UnRm"
+      "password": "c3NtHJ5ujV2tGDfj"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 03 🔓2 - sub",
-      "server": "217.30.10.44",
-      "server_port": 9052,
+      "server": "217.30.10.70",
+      "server_port": 9044,
       "method": "aes-256-cfb",
-      "password": "jt2ekBNc9HuVtm2a"
+      "password": "KBGjZYcy4SyRShmA"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 04 🔓2 - sub",
+      "server": "217.30.10.70",
+      "server_port": 9088,
+      "method": "aes-256-cfb",
+      "password": "f8npKgNzdkss2ytn"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 05 🔓2 - sub",
+      "server": "217.30.10.70",
+      "server_port": 9045,
+      "method": "aes-256-cfb",
+      "password": "Lp27rqyJq72bZsqX"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 06 🔓2 - sub",
+      "server": "217.30.10.70",
+      "server_port": 9027,
+      "method": "aes-256-cfb",
+      "password": "EXN3S3eQpjE7EJu8"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 07 🔓2 - sub",
+      "server": "217.30.10.44",
+      "server_port": 9062,
+      "method": "aes-256-cfb",
+      "password": "tkhHVxxfM2QErBWe"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 08 🔓2 - sub",
       "server": "217.30.10.44",
       "server_port": 9006,
       "method": "aes-256-cfb",
@@ -37,55 +69,83 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 05 🔓2 - sub",
+      "tag": "🇵🇱 波兰 (Poland) 09 🔓2 - sub",
       "server": "217.30.10.44",
-      "server_port": 9042,
+      "server_port": 9063,
       "method": "aes-256-cfb",
-      "password": "S7KwUu7yBy58S3Ga"
+      "password": "aQqJbtwFGcCCaeL3"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 06 🔓2 - sub",
-      "server": "217.30.10.44",
-      "server_port": 9076,
+      "tag": "🇵🇱 波兰 (Poland) 10 🔓2 - sub",
+      "server": "217.30.10.70",
+      "server_port": 9057,
       "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC"
+      "password": "wjTugX3ZtHMB9c3Z"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 07 🔓2 - sub",
+      "tag": "🇵🇱 波兰 (Poland) 11 🔓2 - sub",
       "server": "217.30.10.44",
-      "server_port": 9095,
+      "server_port": 9099,
       "method": "aes-256-cfb",
-      "password": "N7j3pdTYkKmsy8CR"
+      "password": "7heRqkPG3hg4UnRm"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 08 🔓2 - sub",
+      "tag": "🇵🇱 波兰 (Poland) 12 🔓2 - sub",
+      "server": "217.30.10.70",
+      "server_port": 9031,
+      "method": "aes-256-cfb",
+      "password": "BwcAUZk8hUFAkDGN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 13 🔓2 - sub",
+      "server": "217.30.10.44",
+      "server_port": 9052,
+      "method": "aes-256-cfb",
+      "password": "jt2ekBNc9HuVtm2a"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 14 🔓2 - sub",
+      "server": "217.30.10.70",
+      "server_port": 9040,
+      "method": "aes-256-cfb",
+      "password": "p9z5BVADH2YFs3MN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 15 🔓2 - sub",
       "server": "217.30.10.44",
       "server_port": 9071,
       "method": "aes-256-cfb",
       "password": "mENfxTFQpRKKh4As"
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 09 🔓2 - sub",
-      "server": "80.47.10.106",
-      "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl8.galioncc.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "a7c92e4b10d6f835"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 16 🔓2 - sub",
+      "server": "217.30.10.70",
+      "server_port": 9059,
+      "method": "aes-256-cfb",
+      "password": "9XwYyZsK8SNzQDtY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 17 🔓2 - sub",
+      "server": "217.30.10.70",
+      "server_port": 9015,
+      "method": "aes-256-cfb",
+      "password": "ZpNDDKRu9MagNvaf"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 18 🔓2 - sub",
+      "server": "217.30.10.70",
+      "server_port": 9098,
+      "method": "aes-256-cfb",
+      "password": "aLpQtfEZe445QyHk"
     },
     {
       "type": "selector",
@@ -100,7 +160,16 @@
         "🇵🇱 波兰 (Poland) 06 🔓2 - sub",
         "🇵🇱 波兰 (Poland) 07 🔓2 - sub",
         "🇵🇱 波兰 (Poland) 08 🔓2 - sub",
-        "🇵🇱 波兰 (Poland) 09 🔓2 - sub"
+        "🇵🇱 波兰 (Poland) 09 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 10 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 11 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 12 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 13 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 14 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 15 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 16 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 17 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 18 🔓2 - sub"
       ]
     },
     {
@@ -115,7 +184,16 @@
         "🇵🇱 波兰 (Poland) 06 🔓2 - sub",
         "🇵🇱 波兰 (Poland) 07 🔓2 - sub",
         "🇵🇱 波兰 (Poland) 08 🔓2 - sub",
-        "🇵🇱 波兰 (Poland) 09 🔓2 - sub"
+        "🇵🇱 波兰 (Poland) 09 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 10 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 11 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 12 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 13 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 14 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 15 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 16 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 17 🔓2 - sub",
+        "🇵🇱 波兰 (Poland) 18 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,72 +6,130 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 🔓2 - sub
   server: 217.30.10.44
-  port: 9063
+  port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
+  password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 02 🔓2 - sub
-  server: 217.30.10.44
-  port: 9099
+  server: 217.30.10.70
+  port: 9084
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
+  password: c3NtHJ5ujV2tGDfj
 - name: 🇵🇱 波兰 (Poland) 03 🔓2 - sub
-  server: 217.30.10.44
-  port: 9052
+  server: 217.30.10.70
+  port: 9044
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
+  password: KBGjZYcy4SyRShmA
 - name: 🇵🇱 波兰 (Poland) 04 🔓2 - sub
+  server: 217.30.10.70
+  port: 9088
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: f8npKgNzdkss2ytn
+- name: 🇵🇱 波兰 (Poland) 05 🔓2 - sub
+  server: 217.30.10.70
+  port: 9045
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
+- name: 🇵🇱 波兰 (Poland) 06 🔓2 - sub
+  server: 217.30.10.70
+  port: 9027
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: EXN3S3eQpjE7EJu8
+- name: 🇵🇱 波兰 (Poland) 07 🔓2 - sub
+  server: 217.30.10.44
+  port: 9062
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: tkhHVxxfM2QErBWe
+- name: 🇵🇱 波兰 (Poland) 08 🔓2 - sub
   server: 217.30.10.44
   port: 9006
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 05 🔓2 - sub
+- name: 🇵🇱 波兰 (Poland) 09 🔓2 - sub
   server: 217.30.10.44
-  port: 9042
+  port: 9063
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
-- name: 🇵🇱 波兰 (Poland) 06 🔓2 - sub
-  server: 217.30.10.44
-  port: 9076
+  password: aQqJbtwFGcCCaeL3
+- name: 🇵🇱 波兰 (Poland) 10 🔓2 - sub
+  server: 217.30.10.70
+  port: 9057
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
-- name: 🇵🇱 波兰 (Poland) 07 🔓2 - sub
+  password: wjTugX3ZtHMB9c3Z
+- name: 🇵🇱 波兰 (Poland) 11 🔓2 - sub
   server: 217.30.10.44
-  port: 9095
+  port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 08 🔓2 - sub
+  password: 7heRqkPG3hg4UnRm
+- name: 🇵🇱 波兰 (Poland) 12 🔓2 - sub
+  server: 217.30.10.70
+  port: 9031
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: BwcAUZk8hUFAkDGN
+- name: 🇵🇱 波兰 (Poland) 13 🔓2 - sub
+  server: 217.30.10.44
+  port: 9052
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: jt2ekBNc9HuVtm2a
+- name: 🇵🇱 波兰 (Poland) 14 🔓2 - sub
+  server: 217.30.10.70
+  port: 9040
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: p9z5BVADH2YFs3MN
+- name: 🇵🇱 波兰 (Poland) 15 🔓2 - sub
   server: 217.30.10.44
   port: 9071
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 09 🔓2 - sub
-  server: 80.47.10.106
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 16 🔓2 - sub
+  server: 217.30.10.70
+  port: 9059
   udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: pl8.galioncc.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-256-cfb
+  password: 9XwYyZsK8SNzQDtY
+- name: 🇵🇱 波兰 (Poland) 17 🔓2 - sub
+  server: 217.30.10.70
+  port: 9015
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: ZpNDDKRu9MagNvaf
+- name: 🇵🇱 波兰 (Poland) 18 🔓2 - sub
+  server: 217.30.10.70
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,6 +144,15 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 08 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 09 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 10 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 11 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 12 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 13 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 14 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 15 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 16 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 17 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 18 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,5 +167,14 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 08 🔓2 - sub
   - 🇵🇱 波兰 (Poland) 09 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 10 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 11 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 12 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 13 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 14 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 15 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 16 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 17 🔓2 - sub
+  - 🇵🇱 波兰 (Poland) 18 🔓2 - sub
 rules:
 - MATCH,PROXIES
