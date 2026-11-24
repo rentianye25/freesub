@@ -5,62 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 🔓2 - sub
-  server: 129.150.59.74
-  port: 14384
+  server: 149.88.107.74
+  port: 19999
   udp: true
   type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 02 🔓2 - sub
-  server: 51.79.228.131
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 03 🔓2 - sub
-  server: 15.235.182.183
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 04 🔓2 - sub
-  server: 149.88.106.73
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 05 🔒 - sub
-  server: 68.183.235.240
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 06 🔓1 - sub
-  server: 128.1.186.132
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 07 🔓2 - sub
   server: 149.88.107.47
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 08 🔓1 - sub
-  server: 68.183.235.122
-  port: 8080
+- name: 🇸🇬 新加坡 (Singapore) 03 🔓2 - sub
+  server: 149.88.106.73
+  port: 19999
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 09 🔓2 - sub
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 04 🔓2 - sub
+  server: 149.88.23.202
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 05 🔓2 - sub
+  server: 15.235.182.183
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 06 🔓2 - sub
+  server: 149.88.106.74
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 新加坡 (Singapore) 07 🔓2 - sub
   server: 149.88.23.207
   port: 18000
   udp: true
@@ -68,48 +55,80 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 10 🔓2 - sub
-  server: 149.88.107.74
+- name: 🇸🇬 新加坡 (Singapore) 08 🔓2 - sub
+  server: 15.235.164.133
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 11 🔓2 - sub
-  server: 168.138.177.98
-  port: 56927
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: c11JMfCMQ3Y4aGlhMX5LrMpM13uvw+UVbjGfHP+eKkY=
-- name: 🇸🇬 新加坡 (Singapore) 12 🔓2 - sub
-  server: 149.88.106.74
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇸🇬 新加坡 (Singapore) 13 🔓2 - sub
-  server: 140.245.113.33
+- name: 🇸🇬 新加坡 (Singapore) 09 🔓2 - sub
+  server: 43.156.36.253
   port: 443
   udp: true
-  type: vless
-  uuid: f4ca59b2-767d-3425-8dfc-95a96a0e6802
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tF9nKF6amexok5wKbieQ2QRKQI5_ZTFE6MUj1hUBBkY
-    short-id: c940a3b6d60b8611
-  servername: learn.microsoft.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 14 🔒 - sub
-  server: 128.1.186.73
+  type: trojan
+  password: WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0
+  sni: tx-hy2
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 10 🔓1 - sub
+  server: 68.183.235.122
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 11 🔓1 - sub
+  server: 128.1.186.132
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 12 🔓1 - sub
+  server: 68.183.227.4
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 13 🔓2 - sub
+  server: 47.129.241.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 14 🔓2 - sub
+  server: 54.179.113.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: 54.179.113.70
+  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 15 🔓2 - sub
+  server: 13.212.78.215
+  port: 443
+  udp: true
+  type: hysteria2
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 16 🔓2 - sub
+  server: 47.84.226.221
+  port: 443
+  udp: true
+  type: vless
+  uuid: 49b91402-f8e3-4390-9d7b-b7eddc2684a4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gVQsvRtzd77zlvKW4Gk0dAOJNPRa7cfN1-jVe_AJ8Bo
+    short-id: e1c483f9d4437d42
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 17 🔓2 - sub
   server: 15.235.144.92
   port: 1270
   udp: true
@@ -120,14 +139,51 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 16 🔓2 - sub
-  server: 43.106.81.90
+- name: 🇸🇬 新加坡 (Singapore) 18 🔓2 - sub
+  server: 138.2.73.238
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 19 🔓2 - sub
+  server: 206.206.78.36
   port: 443
   udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8SrAY2kEk9UHKSgUJjQvfdTJP9oPlSPVP1wICL7n3hk=
-- name: 🇸🇬 新加坡 (Singapore) 17 🔓2 - sub
+  type: vless
+  uuid: e3f0c894-0f76-4683-a751-6a93da8fd14d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: UOLfRKeEoVxkp-APTF2OlvFkKSoiR2mWzUuhSWxcVmQ
+    short-id: 133a3f10a1581047
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 20 🔓2 - sub
+  server: 86.38.247.109
+  port: 2087
+  udp: true
+  type: trojan
+  password: sshs8_6481354771
+  sni: ul-singapore1.09vpn.com
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 21 🔓2 - sub
+  server: 139.162.27.96
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  tls: true
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 22 🔓2 - sub
   server: 67.159.52.81
   port: 443
   udp: true
@@ -140,7 +196,7 @@ proxies:
     short-id: feedbacc
   servername: sg.fasti.win
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 18 🔓2 - sub
+- name: 🇸🇬 新加坡 (Singapore) 23 🔓2 - sub
   server: 139.162.20.241
   port: 443
   udp: true
@@ -157,7 +213,7 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇸🇬 新加坡 (Singapore) 19 🔓2 - sub
+- name: 🇸🇬 新加坡 (Singapore) 24 🔓2 - sub
   server: 139.180.221.53
   port: 443
   udp: true
@@ -174,38 +230,6 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇸🇬 新加坡 (Singapore) 20 🔓2 - sub
-  server: 139.162.27.96
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  tls: true
-  servername: free-server.techsonic.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 21 🔓2 - sub
-  server: 45.76.191.30
-  port: 443
-  udp: true
-  type: vless
-  uuid: d8aaaf9a-cea4-4c5a-975b-68ddc26f9891
-  tls: true
-  reality-opts:
-    public-key: -KlJUCwLvYy2pz5jR2RgmYMEhacPNPhwvlbdiKkAh1Y
-    short-id: 6cc51755
-  servername: itunes.apple.com
-  client-fingerprint: ''
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -215,16 +239,16 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 02 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 03 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 04 🔓2 - sub
-  - 🇸🇬 新加坡 (Singapore) 05 🔒 - sub
-  - 🇸🇬 新加坡 (Singapore) 06 🔓1 - sub
+  - 🇸🇬 新加坡 (Singapore) 05 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 06 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 07 🔓2 - sub
-  - 🇸🇬 新加坡 (Singapore) 08 🔓1 - sub
+  - 🇸🇬 新加坡 (Singapore) 08 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 09 🔓2 - sub
-  - 🇸🇬 新加坡 (Singapore) 10 🔓2 - sub
-  - 🇸🇬 新加坡 (Singapore) 11 🔓2 - sub
-  - 🇸🇬 新加坡 (Singapore) 12 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 10 🔓1 - sub
+  - 🇸🇬 新加坡 (Singapore) 11 🔓1 - sub
+  - 🇸🇬 新加坡 (Singapore) 12 🔓1 - sub
   - 🇸🇬 新加坡 (Singapore) 13 🔓2 - sub
-  - 🇸🇬 新加坡 (Singapore) 14 🔒 - sub
+  - 🇸🇬 新加坡 (Singapore) 14 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 15 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 16 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 17 🔓2 - sub
@@ -232,6 +256,9 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 19 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 20 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 21 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 22 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 23 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 24 🔓2 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -241,16 +268,16 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 02 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 03 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 04 🔓2 - sub
-  - 🇸🇬 新加坡 (Singapore) 05 🔒 - sub
-  - 🇸🇬 新加坡 (Singapore) 06 🔓1 - sub
+  - 🇸🇬 新加坡 (Singapore) 05 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 06 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 07 🔓2 - sub
-  - 🇸🇬 新加坡 (Singapore) 08 🔓1 - sub
+  - 🇸🇬 新加坡 (Singapore) 08 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 09 🔓2 - sub
-  - 🇸🇬 新加坡 (Singapore) 10 🔓2 - sub
-  - 🇸🇬 新加坡 (Singapore) 11 🔓2 - sub
-  - 🇸🇬 新加坡 (Singapore) 12 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 10 🔓1 - sub
+  - 🇸🇬 新加坡 (Singapore) 11 🔓1 - sub
+  - 🇸🇬 新加坡 (Singapore) 12 🔓1 - sub
   - 🇸🇬 新加坡 (Singapore) 13 🔓2 - sub
-  - 🇸🇬 新加坡 (Singapore) 14 🔒 - sub
+  - 🇸🇬 新加坡 (Singapore) 14 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 15 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 16 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 17 🔓2 - sub
@@ -258,5 +285,8 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 19 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 20 🔓2 - sub
   - 🇸🇬 新加坡 (Singapore) 21 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 22 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 23 🔓2 - sub
+  - 🇸🇬 新加坡 (Singapore) 24 🔓2 - sub
 rules:
 - MATCH,PROXIES

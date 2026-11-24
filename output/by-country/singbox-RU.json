@@ -5,50 +5,35 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub",
-      "server": "201.51.12.98",
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 🔒 - sub",
+      "server": "136.148.83.69",
       "server_port": 443,
-      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
+      "uuid": "7dff1be7-b930-0001-a8ad-dc7850168215",
       "tls": {
         "enabled": true,
-        "server_name": "vps3.nemnogogo.com",
+        "server_name": "szqbx-ru-77dc.my-fade.cloud",
         "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "mobile.api.Event"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
-      "server": "201.51.12.98",
-      "server_port": 443,
-      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps3.nemnogogo.com",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "mobile.api.Event"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
+      "server": "103.88.243.142",
+      "server_port": 11592,
+      "password": "41edb44c8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "103.88.243.142",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 🔓1 - sub",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub",
       "server": "201.24.116.192",
       "server_port": 443,
       "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
@@ -67,69 +52,22 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
-      "server": "vps3.nemnogogo.com",
-      "server_port": 443,
-      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps3.nemnogogo.com",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "mobile.api.Event"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub",
-      "server": "xssite.webredirect.org",
-      "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
-      "tls": {
-        "enabled": true,
-        "server_name": "xssite.webredirect.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-ru"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub",
+        "🇷🇺 俄罗斯 (Russia) 01 🔒 - sub",
         "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 03 🔓1 - sub",
-        "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub"
+        "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01 🔓2 - sub",
+        "🇷🇺 俄罗斯 (Russia) 01 🔒 - sub",
         "🇷🇺 俄罗斯 (Russia) 02 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 03 🔓1 - sub",
-        "🇷🇺 俄罗斯 (Russia) 04 🔓2 - sub",
-        "🇷🇺 俄罗斯 (Russia) 05 🔓2 - sub"
+        "🇷🇺 俄罗斯 (Russia) 03 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

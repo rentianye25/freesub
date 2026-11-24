@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 乌克兰 (Ukraine) 01 🔓2 - sub
+- name: 🇺🇦 乌克兰 (Ukraine) 01 🔒 - sub
   server: 31.222.235.81
   port: 443
   udp: true
@@ -21,12 +21,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 乌克兰 (Ukraine) 01 🔓2 - sub
+  - 🇺🇦 乌克兰 (Ukraine) 01 🔒 - sub
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 乌克兰 (Ukraine) 01 🔓2 - sub
+  - 🇺🇦 乌克兰 (Ukraine) 01 🔒 - sub
 rules:
 - MATCH,PROXIES

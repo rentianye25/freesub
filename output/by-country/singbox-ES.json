@@ -7,37 +7,21 @@
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 🔓2 - sub",
       "server": "5.188.181.201",
-      "server_port": 9054,
-      "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 02 🔓2 - sub",
-      "server": "5.188.181.201",
-      "server_port": 9001,
-      "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 03 🔓2 - sub",
-      "server": "5.188.181.201",
-      "server_port": 9025,
-      "method": "aes-256-cfb",
-      "password": "XPtzA9sCug3SPR4c"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 04 🔓2 - sub",
-      "server": "5.188.181.201",
       "server_port": 9011,
       "method": "aes-256-cfb",
       "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 05 🔓2 - sub",
+      "tag": "🇪🇸 西班牙 (Spain) 02 🔓2 - sub",
+      "server": "5.188.181.201",
+      "server_port": 9031,
+      "method": "aes-256-cfb",
+      "password": "BwcAUZk8hUFAkDGN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 03 🔓2 - sub",
       "server": "5.188.181.201",
       "server_port": 9037,
       "method": "aes-256-cfb",
@@ -45,7 +29,39 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 04 🔓2 - sub",
+      "server": "5.188.181.201",
+      "server_port": 9000,
+      "method": "aes-256-cfb",
+      "password": "a3GFYt36Sm82Vys9"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 05 🔓2 - sub",
+      "server": "5.188.181.201",
+      "server_port": 9041,
+      "method": "aes-256-cfb",
+      "password": "U6qnYRhfyDmn8sgn"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 06 🔓2 - sub",
+      "server": "5.188.181.201",
+      "server_port": 9005,
+      "method": "aes-256-cfb",
+      "password": "ZET59LF6DvCC8KVt"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 07 🔓2 - sub",
+      "server": "5.188.181.201",
+      "server_port": 9040,
+      "method": "aes-256-cfb",
+      "password": "p9z5BVADH2YFs3MN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 08 🔓2 - sub",
       "server": "5.188.181.201",
       "server_port": 9020,
       "method": "aes-256-cfb",
@@ -53,7 +69,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 07 🔓2 - sub",
+      "tag": "🇪🇸 西班牙 (Spain) 09 🔒 - sub",
+      "server": "5.188.181.201",
+      "server_port": 9029,
+      "method": "aes-256-cfb",
+      "password": "dU3DSNS8wYPXzEKw"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 10 🔓2 - sub",
       "server": "5.188.181.201",
       "server_port": 9003,
       "method": "aes-256-cfb",
@@ -61,31 +85,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 08 🔓2 - sub",
-      "server": "5.188.181.201",
-      "server_port": 9042,
-      "method": "aes-256-cfb",
-      "password": "S7KwUu7yBy58S3Ga"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 09 🔓2 - sub",
-      "server": "5.188.181.201",
-      "server_port": 9030,
-      "method": "aes-256-cfb",
-      "password": "GeregetR8cvQHzYr"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 10 🔓2 - sub",
-      "server": "79.127.139.242",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 11 🔓2 - sub",
+      "server": "5.188.181.201",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 12 🔓2 - sub",
       "server": "62.93.179.117",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -93,7 +101,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 12 🔓2 - sub",
+      "tag": "🇪🇸 西班牙 (Spain) 13 🔓2 - sub",
       "server": "62.93.179.97",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -101,15 +109,31 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 13 🔓2 - sub",
+      "tag": "🇪🇸 西班牙 (Spain) 14 🔓2 - sub",
       "server": "5.188.181.201",
-      "server_port": 9027,
+      "server_port": 9014,
       "method": "aes-256-cfb",
-      "password": "EXN3S3eQpjE7EJu8"
+      "password": "KnJGad3FqTvjqbaX"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 14 🔓2 - sub",
+      "tag": "🇪🇸 西班牙 (Spain) 15 🔓2 - sub",
+      "server": "5.188.181.201",
+      "server_port": 9019,
+      "method": "aes-256-cfb",
+      "password": "GA9KzeEgvfxNrgmM"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 16 🔓2 - sub",
+      "server": "167.17.71.167",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 17 🔓2 - sub",
       "server": "66.163.118.103",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -117,40 +141,27 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 15 🔓2 - sub",
-      "server": "5.188.181.201",
-      "server_port": 9014,
-      "method": "aes-256-cfb",
-      "password": "KnJGad3FqTvjqbaX"
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 16 🔓2 - sub",
-      "server": "66.163.118.113",
-      "server_port": 443,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PwN5VWqwWKVfrqqrbLE4kzVu9vIXSENAUiAPjMWIrVY",
-          "short_id": "32209e627ee109c7"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 17 🔓2 - sub",
-      "server": "167.17.71.167",
+      "tag": "🇪🇸 西班牙 (Spain) 18 🔓2 - sub",
+      "server": "79.127.139.242",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 19 🔒 - sub",
+      "server": "66.163.118.251",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "resources.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
     },
     {
       "type": "selector",
@@ -165,7 +176,7 @@
         "🇪🇸 西班牙 (Spain) 06 🔓2 - sub",
         "🇪🇸 西班牙 (Spain) 07 🔓2 - sub",
         "🇪🇸 西班牙 (Spain) 08 🔓2 - sub",
-        "🇪🇸 西班牙 (Spain) 09 🔓2 - sub",
+        "🇪🇸 西班牙 (Spain) 09 🔒 - sub",
         "🇪🇸 西班牙 (Spain) 10 🔓2 - sub",
         "🇪🇸 西班牙 (Spain) 11 🔓2 - sub",
         "🇪🇸 西班牙 (Spain) 12 🔓2 - sub",
@@ -173,7 +184,9 @@
         "🇪🇸 西班牙 (Spain) 14 🔓2 - sub",
         "🇪🇸 西班牙 (Spain) 15 🔓2 - sub",
         "🇪🇸 西班牙 (Spain) 16 🔓2 - sub",
-        "🇪🇸 西班牙 (Spain) 17 🔓2 - sub"
+        "🇪🇸 西班牙 (Spain) 17 🔓2 - sub",
+        "🇪🇸 西班牙 (Spain) 18 🔓2 - sub",
+        "🇪🇸 西班牙 (Spain) 19 🔒 - sub"
       ]
     },
     {
@@ -188,7 +201,7 @@
         "🇪🇸 西班牙 (Spain) 06 🔓2 - sub",
         "🇪🇸 西班牙 (Spain) 07 🔓2 - sub",
         "🇪🇸 西班牙 (Spain) 08 🔓2 - sub",
-        "🇪🇸 西班牙 (Spain) 09 🔓2 - sub",
+        "🇪🇸 西班牙 (Spain) 09 🔒 - sub",
         "🇪🇸 西班牙 (Spain) 10 🔓2 - sub",
         "🇪🇸 西班牙 (Spain) 11 🔓2 - sub",
         "🇪🇸 西班牙 (Spain) 12 🔓2 - sub",
@@ -196,7 +209,9 @@
         "🇪🇸 西班牙 (Spain) 14 🔓2 - sub",
         "🇪🇸 西班牙 (Spain) 15 🔓2 - sub",
         "🇪🇸 西班牙 (Spain) 16 🔓2 - sub",
-        "🇪🇸 西班牙 (Spain) 17 🔓2 - sub"
+        "🇪🇸 西班牙 (Spain) 17 🔓2 - sub",
+        "🇪🇸 西班牙 (Spain) 18 🔓2 - sub",
+        "🇪🇸 西班牙 (Spain) 19 🔒 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
