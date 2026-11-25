@@ -5,18 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 01 (移动家宽) 🔓2 - sub",
-      "server": "31.59.179.210",
-      "server_port": 443,
-      "uuid": "0209fe17-f29e-4384-93bc-a7d7ca83decb",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 🔓2 - sub",
+      "server": "46.29.255.123",
+      "server_port": 59539,
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "gr3.xt-game.top",
-        "insecure": false,
+        "server_name": "cloudflare-dns.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ",
+          "short_id": ""
         }
       }
     },
@@ -25,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 德国 (Germany) 01 (移动家宽) 🔓2 - sub"
+        "🇸🇨 塞舌尔 (Seychelles) 01 🔓2 - sub"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 德国 (Germany) 01 (移动家宽) 🔓2 - sub"
+        "🇸🇨 塞舌尔 (Seychelles) 01 🔓2 - sub"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

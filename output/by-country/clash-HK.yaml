@@ -13,17 +13,17 @@ proxies:
   sni: ali-hk.b-gfw.cfd
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 🔓2 - sub
-  server: 2.26.204.46
-  port: 31001
+  server: 8.210.92.38
+  port: 443
   udp: true
   type: vless
-  uuid: 12a4f736-2238-49ee-831f-5516f15cc951
+  uuid: 4fc9dc3d-0d57-49e7-9bc0-e323165241bf
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: lzpIiMqHXas_qayw-HvrySb78FNkVroBOqniwqPXPzY
-    short-id: 39793bc4708abbbb
-  servername: mensura.cdn-apple.com
+    public-key: vhu6gifBQ8-hRzW1gqKFkEXDlQbf6Ex8kKj1FcxhmzA
+    short-id: d78318845237d9a9
+  servername: www.ebay.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 03 🔓2 - sub
   server: 202.146.222.89
@@ -39,29 +39,29 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 🔓2 - sub
+  server: leviko-hk4530.shopingggg.ir
+  port: 31001
+  udp: true
+  type: vless
+  uuid: 12a4f736-2238-49ee-831f-5516f15cc951
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lzpIiMqHXas_qayw-HvrySb78FNkVroBOqniwqPXPzY
+    short-id: 39793bc4708abbbb
+  servername: mensura.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: google.com
+  sni: https://t.me/wangcai2�
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 🔓2 - sub
-  server: 116.213.43.43
-  port: 11107
-  udp: true
-  type: vless
-  uuid: 08a37d1f-7bf1-4b5d-a2ec-5ced6a633d7f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6GRzkPbs12fKBdBBFzs5dmtmbSHCXMngUCBKLrXYm3U
-    short-id: e2ccd8eedcbee2ce
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
