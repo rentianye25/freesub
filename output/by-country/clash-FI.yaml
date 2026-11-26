@@ -5,26 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 🔓2 - sub
-  server: 157.180.98.124
-  port: 49659
+  server: 153.56.231.124
+  port: 443
   udp: true
   type: vless
-  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
-    short-id: 81959fce
-  servername: apple.com
-  client-fingerprint: chrome
+    public-key: tZoiwNSZeaVBoLJJcXe9A-GzCtbvU95fKkAJLc0vrgU
+    short-id: 6fddab1e1e358290
+  servername: f309e0t.fi4.h1clayd.click
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 02 🔓2 - sub
   server: 94.183.164.119
   port: 24433
   udp: true
   type: hysteria2
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: 94.183.164.119
-  skip-cert-verify: true
+  sni: lakes.blog-forme.ru
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 03 🔓2 - sub
   server: 31.76.77.231
   port: 443
